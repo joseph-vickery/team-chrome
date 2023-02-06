@@ -1,77 +1,77 @@
-	Variant and risk allele	P-value	P-value annotation	RAF	OR	Beta	CI	Mapped gene	Reported trait	Trait(s)	Background trait(s)	Study accession	Location	Chromosome	Locality
-15	rs924043-?	8 x 10-9		0.85	1.35	'-	[NR]	'-	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST001255	6:170063801	6	170063801
-26	rs11755527-G	5 x 10-12		0.47	1.13	'-	[1.08-1.19]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000258	6:90248512	6	90248512
-36	rs9272346-G	6 x 10-129		NR	'-	'-	'-	HLA-DQA1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000258	6:32636595	6	32636595
-47	rs9388489-G	4 x 10-13		0.45	1.17	'-	[1.10-1.24]	CENPW	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000392	6:126377573	6	126377573
-57	rs9268645-?	1 x 10-100		NR	'-	'-	'-	HLA-DRA	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000392	6:32440750	6	32440750
-69	rs11755527-?	5 x 10-8		NR	'-	'-	'-	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000392	6:90248512	6	90248512
-95	rs11755527-G	3 x 10-8		NR	1.1	'-	[NR]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST001191	6:90248512	6	90248512
-101	rs73043122-C	4 x 10-6		0.013	3.351	'-	'-	RNASET2, MIR3939	Type 1 diabetes in high risk HLA genotype individuals (time to event)	disease free survival, type 1 diabetes mellitus	carrier status	GCST006196	6:166969779	6	166969779
-111	rs114631266-C	2 x 10-6		0.974	'-	0.284 unit increase	[0.17-0.4]	OR2P1P, OR2W1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:29058810	6	29058810
-112	rs2471863-C	8 x 10-7		0.526	'-	0.057 unit increase	[0.033-0.081]	HLA-U, HLA-K	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:29931850	6	29931850
-113	rs34941730-G	2 x 10-9		0.119	'-	0.102 unit decrease	[0.069-0.135]	HLA-W, HLA-A	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:29946109	6	29946109
-114	rs45626136-C	1 x 10-6		0.939	'-	0.111 unit increase	[0.066-0.156]	RPP21, TRIM39-RPP21	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:30345252	6	30345252
-115	rs116020851-C	3 x 10-7		0.971	'-	0.182 unit increase	[0.11-0.25]	HCG21, SFTA2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:30954755	6	30954755
-116	rs1265057-C	2 x 10-6		0.491	'-	0.053 unit decrease	[0.031-0.075]	RNU6-1133P, C6orf15	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31110838	6	31110838
-117	rs116763857-G	1 x 10-14		0.027	'-	0.295 unit decrease	[0.22-0.37]	POU5F1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31173705	6	31173705
-118	rs9264758-G	3 x 10-7		0.866	'-	0.082 unit increase	[0.051-0.113]	RPL3P2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31280657	6	31280657
-119	rs9501130-G	2 x 10-11		0.822	'-	0.099 unit increase	[0.07-0.128]	HCP5, LINC01149	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31449679	6	31449679
-120	rs3093664-G	3 x 10-7		0.048	'-	0.13 unit increase	[0.081-0.179]	TNF	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31576865	6	31576865
-121	rs3134938-C	8 x 10-7		0.832	'-	0.076 unit decrease	[0.047-0.105]	NOTCH4, TSBP1-AS1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32238711	6	32238711
-122	rs926592-C	6 x 10-6		0.658	'-	0.059 unit increase	[0.034-0.084]	TSBP1-AS1, TSBP1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32337881	6	32337881
-123	rs3135365-C	9 x 10-6		0.022	'-	0.202 unit increase	[0.11-0.29]	HLA-DRA, TSBP1-AS1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32421478	6	32421478
-124	rs9268576-C	2 x 10-8		0.359	'-	0.111 unit decrease	[0.072-0.15]	TSBP1-AS1, HLA-DRA	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32427864	6	32427864
-125	rs7760731-C	6 x 10-11		0.642	'-	0.087 unit increase	[0.062-0.112]	HLA-DRB1, HLA-DQA1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32615624	6	32615624
-126	rs9275358-G	3 x 10-7		0.475	'-	0.083 unit decrease	[0.052-0.114]	MTCO3P1, HLA-DQB1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32700118	6	32700118
-127	rs35122968-C	4 x 10-11		0.043	'-	0.2 unit increase	[0.14-0.26]	HLA-DQB3, MTCO3P1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32714422	6	32714422
-128	rs3997848-G	2 x 10-14		0.117	'-	0.135 unit increase	[0.1-0.17]	MTCO3P1, HLA-DQB3	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32714617	6	32714617
-129	rs241427-G	4 x 10-6		0.797	'-	0.062 unit decrease	[0.035-0.089]	TAP2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32836637	6	32836637
-130	rs4148870-C	2 x 10-6		0.402	'-	0.053 unit increase	[0.031-0.075]	TAP2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32838614	6	32838614
-131	rs3128930-C	7 x 10-6		0.683	'-	0.053 unit increase	[0.029-0.077]	HLA-DPB2, COL11A2P1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:33107889	6	33107889
-140	rs78824139-C	9 x 10-6		0.986	'-	0.294 unit increase	[0.16-0.42]	EYS	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:64748694	6	64748694
-171	rs1050979-G	6 x 10-14		0.515138	'-	0.106195554 unit increase	[0.079-0.134]	IRF4	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90014023	6:410417	6	410417
-185	rs12203596-C	6 x 10-6		NR	2.84	'-	[1.78-4.53]	STMND1	Fulminant type 1 diabetes	type 1 diabetes mellitus	'-	GCST007433	6:17120009	6	17120009
-186	rs9356171-A	9 x 10-6		NR	1.9	'-	[1.43-2.52]	RN7SL366P	Fulminant type 1 diabetes	type 1 diabetes mellitus	'-	GCST007433	6:163922743	6	163922743
-191	rs9268853-?	2 x 10-23		NR	3.18	'-	[2.53-4.01]	HLA-DRB9	Fulminant type 1 diabetes	type 1 diabetes mellitus	'-	GCST007433	6:32461866	6	32461866
-454	rs9273368-G	8 x 10-40		0.35	2.99	'-	[2.60-3.91]	HLA-DQB1, HLA-DQA1	Latent autoimmune diabetes vs. type 1 diabetes	type 1 diabetes mellitus, latent autoimmune diabetes in adults	'-	GCST007247	6:32658698	6	32658698
-457	rs2523989-A	2 x 10-8		NR	1.7499	'-	'-	TRIM31, TRIM31-AS1	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:30110498	6	30110498
-458	rs886424-A	3 x 10-14		NR	2.2107	'-	'-	LINC00243	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:30814225	6	30814225
-459	rs2251396-T	1 x 10-22		NR	2.2132	'-	'-	MICA, HLA-S	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:31396930	6	31396930
-460	rs2857595-T	2 x 10-23		NR	2.3765	'-	'-	NCR3, UQCRHP1	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:31600692	6	31600692
-461	rs1270942-C	5 x 10-25		NR	3.0494	'-	'-	CFB	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:31951083	6	31951083
-462	rs1980493-G	2 x 10-20		NR	2.5034	'-	'-	TSBP1-AS1, BTNL2	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:32395438	6	32395438
-463	rs1015166-T	4 x 10-22		NR	2.1428	'-	'-	TAP2	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:32830954	6	32830954
-467	rs2647044-A	1 x 10-16		0.13	8.3	'-	[6.97-9.89]	HLA-DQB1, MTCO3P1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000054	6:32700133	6	32700133
-481	rs3757247-A	1 x 10-6		NR	1.13	'-	[1.08-1.19]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000244	6:90247744	6	90247744
-499	rs9273367-T	6 x 10-306		NR	'-	0.7272 unit increase	[0.69-0.77]	HLA-DQB1, HLA-DQA1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90018925	6:32658661	6	32658661
-500	rs17711850-C	2 x 10-9		NR	'-	0.1236 unit increase	[0.083-0.164]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90018925	6:90155151	6	90155151
-547	rs72928038-A	6 x 10-14		0.17	1.2	'-	'-	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST005536	6:90267049	6	90267049
-548	rs1538171-G	7 x 10-10		0.45	1.12	'-	'-	CENPW, MIR588	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST005536	6:126431738	6	126431738
-560	rs138748427-A	3 x 10-9		0.507810792	'-	0.29127777 unit increase	[0.2-0.39]	HLA-DRB5, HLA-DRB9	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90018705	6:32516743	6	32516743
-564	rs9273363-A	5 x 10-138		0.13	5.48	'-	[4.80–6.27]	HLA-DQA1, HLA-DQB1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST009916	6:32658495	6	32658495
-565	rs1578060-C	2 x 10-6		0.13	1.42	'-	[1.23–1.64]	MIR588, CENPW	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST009916	6:126391101	6	126391101
-609	rs9405661-A	2 x 10-9		0.514	1.08	'-	'-	IRF4, EXOC2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:424915	6	424915
-611	rs12665429-C	1 x 10-13		0.37	0.907	'-	'-	LINC02539	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:137682468	6	137682468
-612	rs212408-T	1 x 10-15		0.638	1.112	'-	'-	TAGAP-AS1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:159049210	6	159049210
-620	rs9405661-A	2 x 10-9		0.514	1.08	'-	'-	IRF4, EXOC2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:424915	6	424915
-621	rs12665429-C	1 x 10-13		0.37	0.907	'-	'-	LINC02539	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:137682468	6	137682468
-622	rs212408-T	1 x 10-15		0.638	1.112	'-	'-	TAGAP-AS1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:159049210	6	159049210
-652	rs4320356-T	3 x 10-8		0.28	1.26	'-	[1.16-1.36]	BTN2A3P	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST008377	6:26423332	6	26423332
-654	rs1770-G	2 x 10-232		0.46	4.28	'-	[3.92-4.68]	HLA-DQB1, HLA-DQB1-AS1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST008377	6:32660056	6	32660056
-656	rs3761980-C	9 x 10-8	(Type 2 diabetes)	NR	'-	'-	'-	MAPK14, SLC26A8	Foot ulcer in diabetes and neuropathy	diabetic foot	type 1 diabetes mellitus, type 2 diabetes mellitus, neuropathy	GCST004724	6:36026129	6	36026129
-657	rs80028505-T	3 x 10-8		0.09	1.71	'-	[1.41-2.06]	MAPK14	Foot ulcer in diabetes and neuropathy	diabetic foot	type 1 diabetes mellitus, type 2 diabetes mellitus, neuropathy	GCST004724	6:36030611	6	36030611
-659	rs11154178-?	2 x 10-7		NR	1.37	'-	[1.22-1.55]	TRDN	Foot ulcer and neuropathy in diabetes	diabetic foot, neuropathy	type 1 diabetes mellitus, type 2 diabetes mellitus	GCST004725	6:123540174	6	123540174
-662	rs61211515-?	1 x 10-7		0.16	'-	0.39 unit decrease	[0.25-0.53]	TRIM31-AS1, TRIM40	Stimulated C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005435	6:30133199	6	30133199
-663	rs3135002-A	3 x 10-8		0.03	'-	'-	'-	HLA-DQB1, MTCO3P1	Random C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005437	6:32700662	6	32700662
-665	rs9260151-T	8 x 10-8		0.09	'-	'-	'-	HLA-A	C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005436	6:29943253	6	29943253
-666	rs61211515-?	2 x 10-6		0.16	'-	'-	'-	TRIM31-AS1, TRIM40	C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005436	6:30133199	6	30133199
-667	rs3135002-A	7 x 10-8		0.03	'-	'-	'-	HLA-DQB1, MTCO3P1	C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005436	6:32700662	6	32700662
-670	rs6931865-A	4 x 10-6		0.336	'-	'-	'-	PHACTR2	Erectile dysfunction in type 1 diabetes	erectile dysfunction	type 1 diabetes mellitus	GCST001572	6:143758717	6	143758717
-676	rs11755527-G	1 x 10-6		'-	1.2	'-	'-	BACH2	Thyroid peroxidase autoantibody levels in type 1 diabetes	thyroid peroxidase antibody measurement	type 1 diabetes mellitus	GCST004383	6:90248512	6	90248512
-682	rs138181578-AT	7 x 10-7		0.99	0.18	'-	[0.09-0.35]	RUNX2	Coronary artery disease in type 1 diabetes	coronary artery disease	type 1 diabetes mellitus	GCST011116	6:45758094	6	45758094
-695	rs9354144-A	6 x 10-6	(EA)	0.105	1.71	'-	[NR]	'-	Coronary artery disease in type 1 diabetes	coronary artery disease	type 1 diabetes mellitus	GCST006281	6:94847753	6	94847753
-766	rs9272346-G	5 x 10-134		0.61	5.49	'-	[4.83-6.24]	HLA-DQA1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000043	6:32636595	6	32636595
-775	rs13217044-A	4 x 10-6		0.71	1.15	'-	[1.07-1.23]	PDE10A	Chronic kidney disease (chronic kidney disease vs normal or mildly reduced eGFR) in type 1 diabetes	chronic kidney disease, diabetic nephropathy	type 1 diabetes mellitus	GCST003867	6:8226764	6	8226764
-777	rs11755527-?	1 x 10-7		0.443857	1.203898	'-	[1.125016-1.288312]	BACH2	Latent autoimmune diabetes	latent autoimmune diabetes in adults	'-	GCST007245	6:90248512	6	90248512
-779	rs9273368-?	3 x 10-78		0.301	2.439	'-	[2.222-2.676]	HLA-DQB1, HLA-DQA1	Latent autoimmune diabetes vs. type 2 diabetes	latent autoimmune diabetes in adults, type 2 diabetes mellitus	'-	GCST007246	6:32658698	6	32658698
-805	rs118124843-T	4 x 10-8		0.011	3.79	'-	[NR]	VARS2	Microalbuminuria in type 1 diabetes	Moderate albuminuria	type 1 diabetes mellitus	GCST009281	6:30919688	6	30919688
+	rsID	P-value	P-value annotation	RAF	OR	Beta	CI	Mapped gene	Reported trait	Trait(s)	Background trait(s)	Study accession	Location	Risk Allele	Chromosome	Locality
+15	rs924043	8 x 10-9		0.85	1.35	'-	[NR]	'-	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST001255	6:170063801	?	6	170063801
+26	rs11755527	5 x 10-12		0.47	1.13	'-	[1.08-1.19]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000258	6:90248512	G	6	90248512
+36	rs9272346	6 x 10-129		NR	'-	'-	'-	HLA-DQA1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000258	6:32636595	G	6	32636595
+47	rs9388489	4 x 10-13		0.45	1.17	'-	[1.10-1.24]	CENPW	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000392	6:126377573	G	6	126377573
+57	rs9268645	1 x 10-100		NR	'-	'-	'-	HLA-DRA	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000392	6:32440750	?	6	32440750
+69	rs11755527	5 x 10-8		NR	'-	'-	'-	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000392	6:90248512	?	6	90248512
+95	rs11755527	3 x 10-8		NR	1.1	'-	[NR]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST001191	6:90248512	G	6	90248512
+101	rs73043122	4 x 10-6		0.013	3.351	'-	'-	RNASET2, MIR3939	Type 1 diabetes in high risk HLA genotype individuals (time to event)	disease free survival, type 1 diabetes mellitus	carrier status	GCST006196	6:166969779	C	6	166969779
+111	rs114631266	2 x 10-6		0.974	'-	0.284 unit increase	[0.17-0.4]	OR2P1P, OR2W1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:29058810	C	6	29058810
+112	rs2471863	8 x 10-7		0.526	'-	0.057 unit increase	[0.033-0.081]	HLA-U, HLA-K	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:29931850	C	6	29931850
+113	rs34941730	2 x 10-9		0.119	'-	0.102 unit decrease	[0.069-0.135]	HLA-W, HLA-A	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:29946109	G	6	29946109
+114	rs45626136	1 x 10-6		0.939	'-	0.111 unit increase	[0.066-0.156]	RPP21, TRIM39-RPP21	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:30345252	C	6	30345252
+115	rs116020851	3 x 10-7		0.971	'-	0.182 unit increase	[0.11-0.25]	HCG21, SFTA2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:30954755	C	6	30954755
+116	rs1265057	2 x 10-6		0.491	'-	0.053 unit decrease	[0.031-0.075]	RNU6-1133P, C6orf15	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31110838	C	6	31110838
+117	rs116763857	1 x 10-14		0.027	'-	0.295 unit decrease	[0.22-0.37]	POU5F1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31173705	G	6	31173705
+118	rs9264758	3 x 10-7		0.866	'-	0.082 unit increase	[0.051-0.113]	RPL3P2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31280657	G	6	31280657
+119	rs9501130	2 x 10-11		0.822	'-	0.099 unit increase	[0.07-0.128]	HCP5, LINC01149	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31449679	G	6	31449679
+120	rs3093664	3 x 10-7		0.048	'-	0.13 unit increase	[0.081-0.179]	TNF	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:31576865	G	6	31576865
+121	rs3134938	8 x 10-7		0.832	'-	0.076 unit decrease	[0.047-0.105]	NOTCH4, TSBP1-AS1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32238711	C	6	32238711
+122	rs926592	6 x 10-6		0.658	'-	0.059 unit increase	[0.034-0.084]	TSBP1-AS1, TSBP1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32337881	C	6	32337881
+123	rs3135365	9 x 10-6		0.022	'-	0.202 unit increase	[0.11-0.29]	HLA-DRA, TSBP1-AS1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32421478	C	6	32421478
+124	rs9268576	2 x 10-8		0.359	'-	0.111 unit decrease	[0.072-0.15]	TSBP1-AS1, HLA-DRA	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32427864	C	6	32427864
+125	rs7760731	6 x 10-11		0.642	'-	0.087 unit increase	[0.062-0.112]	HLA-DRB1, HLA-DQA1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32615624	C	6	32615624
+126	rs9275358	3 x 10-7		0.475	'-	0.083 unit decrease	[0.052-0.114]	MTCO3P1, HLA-DQB1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32700118	G	6	32700118
+127	rs35122968	4 x 10-11		0.043	'-	0.2 unit increase	[0.14-0.26]	HLA-DQB3, MTCO3P1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32714422	C	6	32714422
+128	rs3997848	2 x 10-14		0.117	'-	0.135 unit increase	[0.1-0.17]	MTCO3P1, HLA-DQB3	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32714617	G	6	32714617
+129	rs241427	4 x 10-6		0.797	'-	0.062 unit decrease	[0.035-0.089]	TAP2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32836637	G	6	32836637
+130	rs4148870	2 x 10-6		0.402	'-	0.053 unit increase	[0.031-0.075]	TAP2	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:32838614	C	6	32838614
+131	rs3128930	7 x 10-6		0.683	'-	0.053 unit increase	[0.029-0.077]	HLA-DPB2, COL11A2P1	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:33107889	C	6	33107889
+140	rs78824139	9 x 10-6		0.986	'-	0.294 unit increase	[0.16-0.42]	EYS	Type 1 diabetes (age at diagnosis)	age at diagnosis, type 1 diabetes mellitus	'-	GCST011773	6:64748694	C	6	64748694
+171	rs1050979	6 x 10-14		0.515138	'-	0.106195554 unit increase	[0.079-0.134]	IRF4	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90014023	6:410417	G	6	410417
+185	rs12203596	6 x 10-6		NR	2.84	'-	[1.78-4.53]	STMND1	Fulminant type 1 diabetes	type 1 diabetes mellitus	'-	GCST007433	6:17120009	C	6	17120009
+186	rs9356171	9 x 10-6		NR	1.9	'-	[1.43-2.52]	RN7SL366P	Fulminant type 1 diabetes	type 1 diabetes mellitus	'-	GCST007433	6:163922743	A	6	163922743
+191	rs9268853	2 x 10-23		NR	3.18	'-	[2.53-4.01]	HLA-DRB9	Fulminant type 1 diabetes	type 1 diabetes mellitus	'-	GCST007433	6:32461866	?	6	32461866
+454	rs9273368	8 x 10-40		0.35	2.99	'-	[2.60-3.91]	HLA-DQB1, HLA-DQA1	Latent autoimmune diabetes vs. type 1 diabetes	type 1 diabetes mellitus, latent autoimmune diabetes in adults	'-	GCST007247	6:32658698	G	6	32658698
+457	rs2523989	2 x 10-8		NR	1.7499	'-	'-	TRIM31, TRIM31-AS1	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:30110498	A	6	30110498
+458	rs886424	3 x 10-14		NR	2.2107	'-	'-	LINC00243	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:30814225	A	6	30814225
+459	rs2251396	1 x 10-22		NR	2.2132	'-	'-	MICA, HLA-S	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:31396930	T	6	31396930
+460	rs2857595	2 x 10-23		NR	2.3765	'-	'-	NCR3, UQCRHP1	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:31600692	T	6	31600692
+461	rs1270942	5 x 10-25		NR	3.0494	'-	'-	CFB	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:31951083	C	6	31951083
+462	rs1980493	2 x 10-20		NR	2.5034	'-	'-	TSBP1-AS1, BTNL2	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:32395438	G	6	32395438
+463	rs1015166	4 x 10-22		NR	2.1428	'-	'-	TAP2	Type 1 diabetes and autoimmune thyroid diseases	autoimmune thyroid disease, type 1 diabetes mellitus	'-	GCST002876	6:32830954	T	6	32830954
+467	rs2647044	1 x 10-16		0.13	8.3	'-	[6.97-9.89]	HLA-DQB1, MTCO3P1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000054	6:32700133	A	6	32700133
+481	rs3757247	1 x 10-6		NR	1.13	'-	[1.08-1.19]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000244	6:90247744	A	6	90247744
+499	rs9273367	6 x 10-306		NR	'-	0.7272 unit increase	[0.69-0.77]	HLA-DQB1, HLA-DQA1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90018925	6:32658661	T	6	32658661
+500	rs17711850	2 x 10-9		NR	'-	0.1236 unit increase	[0.083-0.164]	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90018925	6:90155151	C	6	90155151
+547	rs72928038	6 x 10-14		0.17	1.2	'-	'-	BACH2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST005536	6:90267049	A	6	90267049
+548	rs1538171	7 x 10-10		0.45	1.12	'-	'-	CENPW, MIR588	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST005536	6:126431738	G	6	126431738
+560	rs138748427	3 x 10-9		0.507810792	'-	0.29127777 unit increase	[0.2-0.39]	HLA-DRB5, HLA-DRB9	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90018705	6:32516743	A	6	32516743
+564	rs9273363	5 x 10-138		0.13	5.48	'-	[4.80–6.27]	HLA-DQA1, HLA-DQB1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST009916	6:32658495	A	6	32658495
+565	rs1578060	2 x 10-6		0.13	1.42	'-	[1.23–1.64]	MIR588, CENPW	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST009916	6:126391101	C	6	126391101
+609	rs9405661	2 x 10-9		0.514	1.08	'-	'-	IRF4, EXOC2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:424915	A	6	424915
+611	rs12665429	1 x 10-13		0.37	0.907	'-	'-	LINC02539	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:137682468	C	6	137682468
+612	rs212408	1 x 10-15		0.638	1.112	'-	'-	TAGAP-AS1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:159049210	T	6	159049210
+620	rs9405661	2 x 10-9		0.514	1.08	'-	'-	IRF4, EXOC2	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:424915	A	6	424915
+621	rs12665429	1 x 10-13		0.37	0.907	'-	'-	LINC02539	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:137682468	C	6	137682468
+622	rs212408	1 x 10-15		0.638	1.112	'-	'-	TAGAP-AS1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST90013445	6:159049210	T	6	159049210
+652	rs4320356	3 x 10-8		0.28	1.26	'-	[1.16-1.36]	BTN2A3P	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST008377	6:26423332	T	6	26423332
+654	rs1770	2 x 10-232		0.46	4.28	'-	[3.92-4.68]	HLA-DQB1, HLA-DQB1-AS1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST008377	6:32660056	G	6	32660056
+656	rs3761980	9 x 10-8	(Type 2 diabetes)	NR	'-	'-	'-	MAPK14, SLC26A8	Foot ulcer in diabetes and neuropathy	diabetic foot	type 1 diabetes mellitus, type 2 diabetes mellitus, neuropathy	GCST004724	6:36026129	C	6	36026129
+657	rs80028505	3 x 10-8		0.09	1.71	'-	[1.41-2.06]	MAPK14	Foot ulcer in diabetes and neuropathy	diabetic foot	type 1 diabetes mellitus, type 2 diabetes mellitus, neuropathy	GCST004724	6:36030611	T	6	36030611
+659	rs11154178	2 x 10-7		NR	1.37	'-	[1.22-1.55]	TRDN	Foot ulcer and neuropathy in diabetes	diabetic foot, neuropathy	type 1 diabetes mellitus, type 2 diabetes mellitus	GCST004725	6:123540174	?	6	123540174
+662	rs61211515	1 x 10-7		0.16	'-	0.39 unit decrease	[0.25-0.53]	TRIM31-AS1, TRIM40	Stimulated C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005435	6:30133199	?	6	30133199
+663	rs3135002	3 x 10-8		0.03	'-	'-	'-	HLA-DQB1, MTCO3P1	Random C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005437	6:32700662	A	6	32700662
+665	rs9260151	8 x 10-8		0.09	'-	'-	'-	HLA-A	C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005436	6:29943253	T	6	29943253
+666	rs61211515	2 x 10-6		0.16	'-	'-	'-	TRIM31-AS1, TRIM40	C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005436	6:30133199	?	6	30133199
+667	rs3135002	7 x 10-8		0.03	'-	'-	'-	HLA-DQB1, MTCO3P1	C-peptide levels in type I diabetes	C-peptide measurement	type 1 diabetes mellitus	GCST005436	6:32700662	A	6	32700662
+670	rs6931865	4 x 10-6		0.336	'-	'-	'-	PHACTR2	Erectile dysfunction in type 1 diabetes	erectile dysfunction	type 1 diabetes mellitus	GCST001572	6:143758717	A	6	143758717
+676	rs11755527	1 x 10-6		'-	1.2	'-	'-	BACH2	Thyroid peroxidase autoantibody levels in type 1 diabetes	thyroid peroxidase antibody measurement	type 1 diabetes mellitus	GCST004383	6:90248512	G	6	90248512
+682	rs138181578	7 x 10-7		0.99	0.18	'-	[0.09-0.35]	RUNX2	Coronary artery disease in type 1 diabetes	coronary artery disease	type 1 diabetes mellitus	GCST011116	6:45758094	AT	6	45758094
+695	rs9354144	6 x 10-6	(EA)	0.105	1.71	'-	[NR]	'-	Coronary artery disease in type 1 diabetes	coronary artery disease	type 1 diabetes mellitus	GCST006281	6:94847753	A	6	94847753
+766	rs9272346	5 x 10-134		0.61	5.49	'-	[4.83-6.24]	HLA-DQA1	Type 1 diabetes	type 1 diabetes mellitus	'-	GCST000043	6:32636595	G	6	32636595
+775	rs13217044	4 x 10-6		0.71	1.15	'-	[1.07-1.23]	PDE10A	Chronic kidney disease (chronic kidney disease vs normal or mildly reduced eGFR) in type 1 diabetes	chronic kidney disease, diabetic nephropathy	type 1 diabetes mellitus	GCST003867	6:8226764	A	6	8226764
+777	rs11755527	1 x 10-7		0.443857	1.203898	'-	[1.125016-1.288312]	BACH2	Latent autoimmune diabetes	latent autoimmune diabetes in adults	'-	GCST007245	6:90248512	?	6	90248512
+779	rs9273368	3 x 10-78		0.301	2.439	'-	[2.222-2.676]	HLA-DQB1, HLA-DQA1	Latent autoimmune diabetes vs. type 2 diabetes	latent autoimmune diabetes in adults, type 2 diabetes mellitus	'-	GCST007246	6:32658698	?	6	32658698
+805	rs118124843	4 x 10-8		0.011	3.79	'-	[NR]	VARS2	Microalbuminuria in type 1 diabetes	Moderate albuminuria	type 1 diabetes mellitus	GCST009281	6:30919688	T	6	30919688
