@@ -1,0 +1,816 @@
+﻿"Variant and risk allele",P-value,"P-value annotation",RAF,OR,Beta,CI,"Mapped gene","Reported trait",Trait(s),"Background trait(s)","Study accession",Location
+rs2304256-<b>C</b>,"4 x 10-9",,0.71,1.16,'-,[1.11-1.22],TYK2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000539,19:10364976
+rs941576-<b>A</b>,"1 x 10-10",,0.57,1.11,'-,[1.06-1.16],MEG3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000539,14:100839708
+rs61839660-<b>?</b>,"5 x 10-9",,NR,1.6,'-,[1.44-1.76],IL2RA,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001394,10:6052734
+rs1265564-<b>?</b>,"1 x 10-16",,NR,1.45,'-,[1.28-1.67],CUX2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001394,12:111270654
+rs55846421-<b>?</b>,"2 x 10-9",,NR,0.113,'-,[0.081-0.156],NEMF,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90095483,14:49843683
+rs4263714-<b>A</b>,"4 x 10-6",,'-,'-,"0.20912386 unit increase",[0.12-0.3],COBL,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,7:50955790
+rs4929965-<b>G</b>,"2 x 10-31",,'-,'-,"0.36365113 unit increase",[0.3-0.42],"ASCL2, MIR4686","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,11:2176056
+rs72802342-<b>A</b>,"6 x 10-10",,'-,'-,"0.2877386 unit increase",[0.2-0.38],"CTRB2, ZFP1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,16:75200974
+rs4366464-<b>C</b>,"1 x 10-9",,'-,'-,"0.403326 unit increase",[0.27-0.53],"IGF2-AS, INS-IGF2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,11:2143569
+rs78896587-<b>T</b>,"1 x 10-9",,'-,'-,"0.20937194 unit decrease",[0.14-0.28],"H19, IGF2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,11:2055620
+rs10974438-<b>C</b>,"1 x 10-6",,'-,'-,"0.12805976 unit increase",[0.076-0.18],GLIS3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,9:4291928
+rs2269247-<b>T</b>,"2 x 10-6",,'-,'-,"0.13817546 unit increase",[0.081-0.195],PGM1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,1:63641613
+rs56337234-<b>T</b>,"4 x 10-6",,'-,'-,"0.1142075 unit increase",[0.066-0.163],"TACC3, FGFR3","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90000529,4:1782676
+rs478222-<b>?</b>,"4 x 10-9",,0.59,1.22,'-,[NR],EFR3B,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,2:25078886
+rs539514-<b>?</b>,"6 x 10-11",,0.50,1.43,'-,[NR],LMO7,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,13:75752146
+rs924043-<b>?</b>,"8 x 10-9",,0.85,1.35,'-,[NR],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,6:170063801
+rs550448-<b>?</b>,"5 x 10-7",,0.86,1.32,'-,[NR],JAZF1-AS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,7:28189423
+rs12679857-<b>?</b>,"4 x 10-7",,0.69,1.2,'-,[NR],"TNFRSF11B, RNU6-12P","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,8:118965098
+rs6547853-<b>?</b>,"8 x 10-7",,0.60,1.19,'-,[NR],"PLB1, FOSL2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,2:28423934
+rs4084127-<b>?</b>,"3 x 10-6",,NR,1.11,'-,[NR],"FGF3, FGF4","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,11:69781755
+rs10786436-<b>T</b>,"8 x 10-7",,NR,1.1,'-,[NR],HPSE2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,10:98540425
+rs10137082-<b>?</b>,"6 x 10-6",,NR,1.1,'-,[NR],"IL25, EFS","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001255,14:23370824
+rs2153977-<b>T</b>,"4 x 10-7",,NR,1.491,'-,'-,MAGI3,"Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,1:113537449
+rs2476601-<b>A</b>,"7 x 10-20",,NR,2.7073,'-,'-,PTPN22,"Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,1:113834946
+rs2358994-<b>A</b>,"2 x 10-11",,NR,1.8688,'-,'-,"AP4B1-AS1, BCL2L15","Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,1:113886839
+rs7679475-<b>A</b>,"4 x 10-10",,NR,1.6198,'-,'-,"TUBB4BP5, QRFPR","Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,4:121392885
+rs11755527-<b>G</b>,"5 x 10-12",,0.47,1.13,'-,[1.08-1.19],BACH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,6:90248512
+rs947474-<b>G</b>,"4 x 10-9",,0.19,1.1,'-,[1.03-1.18],LINC02649,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,10:6348488
+rs3825932-<b>T</b>,"3 x 10-15",,0.68,1.16,'-,[1.10-1.22],CTSH,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,15:78943104
+rs229541-<b>T</b>,"2 x 10-8",,0.43,1.11,'-,[1.05-1.16],C1QTNF6,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,22:37195278
+rs416603-<b>T</b>,"3 x 10-6",,0.44,1.06,'-,[1.01-1.12],RMI2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,16:11270222
+rs6679677-<b>A</b>,"1 x 10-40",,NR,'-,'-,'-,"RSBN1, PHTF1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,1:113761186
+rs3087243-<b>A</b>,"8 x 10-11",,NR,'-,'-,'-,"ICOS, CTLA4","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,2:203874196
+rs17696736-<b>G</b>,"6 x 10-18",,NR,'-,'-,'-,NAA25,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,12:112049014
+rs2292239-<b>A</b>,"3 x 10-16",,NR,'-,'-,'-,ERBB3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,12:56088396
+rs2542151-<b>C</b>,"9 x 10-8",,NR,'-,'-,'-,"LINC01882, PTPN2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,18:12779948
+rs9272346-<b>G</b>,"6 x 10-129",,NR,'-,'-,'-,HLA-DQA1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,6:32636595
+rs2165738-<b>C</b>,"4 x 10-6",,0.27,1.07,'-,[1.01-1.13],"ITSN2, NCOA1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,2:24469940
+rs12251307-<b>T</b>,"2 x 10-6",,NR,'-,'-,'-,"RPL32P23, RBM17","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,10:6081532
+rs12708716-<b>G</b>,"7 x 10-13",,NR,'-,'-,'-,CLEC16A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000258,16:11086016
+rs11258747-<b>?</b>,"1 x 10-7",,NR,'-,'-,'-,PRKCQ,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,10:6430929
+rs2292239-<b>?</b>,"2 x 10-25",,NR,'-,'-,'-,ERBB3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,12:56088396
+rs3184504-<b>?</b>,"3 x 10-27",,NR,'-,'-,'-,"ATXN2, SH2B3","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,12:111446804
+rs3825932-<b>?</b>,"8 x 10-8",,NR,'-,'-,'-,CTSH,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,15:78943104
+rs1893217-<b>?</b>,"4 x 10-15",,NR,'-,'-,'-,PTPN2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,18:12809341
+rs11203203-<b>?</b>,"2 x 10-9",,NR,'-,'-,'-,UBASH3A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,21:42416077
+rs3024505-<b>?</b>,"2 x 10-9",,0.83,1.19,'-,[1.10-1.30],"Y_RNA, IL10","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,1:206766559
+rs9388489-<b>G</b>,"4 x 10-13",,0.45,1.17,'-,[1.10-1.24],CENPW,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,6:126377573
+rs4948088-<b>?</b>,"4 x 10-8",,0.95,1.3,'-,[1.11-1.49],COBL,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,7:50959497
+rs10509540-<b>?</b>,"1 x 10-28",,0.71,1.33,'-,[1.25-1.43],RNLS,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,10:88263276
+rs4763879-<b>A</b>,"2 x 10-11",,0.37,1.09,'-,[1.02-1.16],CD69,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,12:9757568
+rs4900384-<b>G</b>,"4 x 10-9",,0.29,1.09,'-,[1.02-1.16],LINC01550,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,14:98032614
+rs7202877-<b>G</b>,"3 x 10-15",,0.10,1.28,'-,[1.17-1.41],"CTRB1, CTRB2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,16:75213347
+rs2281808-<b>?</b>,"1 x 10-11",,0.64,1.11,'-,[1.05-1.19],SIRPG,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,20:1629905
+rs5753037-<b>T</b>,"3 x 10-16",,0.39,1.1,'-,[1.04-1.17],"LIF-AS1, HORMAD2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,22:30185733
+rs2269241-<b>G</b>,"4 x 10-7",,0.19,1.1,'-,[1.02-1.18],PGM1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,1:63643100
+rs1534422-<b>G</b>,"2 x 10-6",,0.46,1.08,'-,[1.02-1.15],MIR3681HG,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,2:12500615
+rs9268645-<b>?</b>,"1 x 10-100",,NR,'-,'-,'-,HLA-DRA,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,6:32440750
+rs2476601-<b>?</b>,"9 x 10-85",,NR,'-,'-,'-,PTPN22,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,1:113834946
+rs1990760-<b>?</b>,"7 x 10-9",,NR,'-,'-,'-,IFIH1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,2:162267541
+rs4505848-<b>?</b>,"5 x 10-13",,NR,'-,'-,'-,KIAA1109,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,4:122211337
+rs2290400-<b>?</b>,"6 x 10-13",,0.50,1.15,'-,[1.08-1.22],GSDMB,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,17:39909987
+rs3087243-<b>?</b>,"1 x 10-15",,NR,'-,'-,'-,"ICOS, CTLA4","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,2:203874196
+rs7804356-<b>?</b>,"5 x 10-9",,0.76,1.14,'-,[1.06-1.22],SKAP2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,7:26852046
+rs16956936-<b>?</b>,"5 x 10-7",,0.86,1.09,'-,[1.00-1.19],DNAH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,17:7730374
+rs425105-<b>?</b>,"3 x 10-11",,0.84,1.16,'-,[1.08-1.27],PRKD2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,19:46705224
+rs7221109-<b>?</b>,"1 x 10-9",,0.65,1.05,'-,[0.99-1.12],"SMARCE1, CCR7","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,17:40614034
+rs2664170-<b>G</b>,"8 x 10-9",,0.32,1.16,'-,[1.07-1.24],GAB3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,X:154717327
+rs12444268-<b>A</b>,"2 x 10-7",,0.30,1.1,'-,[1.03-1.17],"UMOD, GP2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,16:20331250
+rs11755527-<b>?</b>,"5 x 10-8",,NR,'-,'-,'-,BACH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,6:90248512
+rs12251307-<b>?</b>,"1 x 10-13",,NR,'-,'-,'-,"RPL32P23, RBM17","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,10:6081532
+rs7111341-<b>?</b>,"4 x 10-48",,NR,'-,'-,'-,"ASCL2, MIR4686","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,11:2191936
+rs12708716-<b>?</b>,"2 x 10-16",,NR,'-,'-,'-,CLEC16A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,16:11086016
+rs229541-<b>?</b>,"2 x 10-7",,NR,'-,'-,'-,C1QTNF6,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,22:37195278
+rs10517086-<b>A</b>,"5 x 10-10",,0.30,1.09,'-,[1.02-1.17],LINC02357,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,4:26083889
+rs7020673-<b>?</b>,"5 x 10-12",,0.50,1.14,'-,[1.08-1.20],GLIS3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,9:4291747
+rs1465788-<b>?</b>,"2 x 10-12",,0.71,1.16,'-,[1.10-1.25],"MAGOH3P, ZFP36L1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,14:68796882
+rs4788084-<b>G</b>,"3 x 10-13",,0.42,1.09,'-,[1.02-1.16],"IL27, NUPR1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000392,16:28528527
+rs3024505-<b>G</b>,"5 x 10-10",,NR,1.2,'-,[NR],"Y_RNA, IL10","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,1:206766559
+rs1990760-<b>C</b>,"2 x 10-14",,NR,1.2,'-,[NR],IFIH1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,2:162267541
+rs17388568-<b>A</b>,"6 x 10-6",,NR,1.1,'-,[NR],ADAD1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,4:122408207
+rs12722495-<b>A</b>,"1 x 10-38",,NR,1.61,'-,[NR],IL2RA,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,10:6055320
+rs1004446-<b>G</b>,"3 x 10-23",,NR,1.4,'-,[NR],INS-IGF2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,11:2148913
+rs2292239-<b>T</b>,"3 x 10-27",,NR,1.3,'-,[NR],ERBB3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,12:56088396
+rs12708716-<b>G</b>,"5 x 10-14",,NR,1.2,'-,[NR],CLEC16A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,16:11086016
+rs3788013-<b>A</b>,"1 x 10-7",,NR,1.1,'-,[NR],UBASH3A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,21:42421219
+rs743777-<b>G</b>,"2 x 10-6",,NR,1.1,'-,[NR],IL2RB,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,22:37155567
+rs3087243-<b>A</b>,"2 x 10-17",,NR,1.2,'-,[NR],"ICOS, CTLA4","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,2:203874196
+rs2069762-<b>A</b>,"5 x 10-7",,NR,1.12,'-,[NR],IL2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,4:122456825
+rs4788084-<b>C</b>,"1 x 10-8",,NR,1.15,'-,[NR],"IL27, NUPR1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,16:28528527
+rs763361-<b>C</b>,"1 x 10-9",,NR,1.12,'-,[NR],CD226,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,18:69864406
+rs2304256-<b>?</b>,"1 x 10-10",,NR,'-,'-,'-,TYK2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,19:10364976
+rs2476601-<b>A</b>,"2 x 10-111",,NR,2,'-,[NR],PTPN22,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,1:113834946
+rs3184504-<b>T</b>,"2 x 10-38",,NR,1.3,'-,[NR],"ATXN2, SH2B3","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,12:111446804
+rs7171171-<b>G</b>,"2 x 10-7",,NR,'-,'-,'-,"LINC02694, RASGRP1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,15:38614840
+rs11755527-<b>G</b>,"3 x 10-8",,NR,1.1,'-,[NR],BACH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,6:90248512
+rs1701704-<b>T</b>,"5 x 10-18",,NR,1.25,'-,[NR],IKZF4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,12:56018703
+rs2872507-<b>A</b>,"2 x 10-6",,NR,1.1,'-,[NR],"GSDMB, ZPBP2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,17:39884510
+rs689-<b>A</b>,"5 x 10-196",,NR,'-,'-,'-,"INS-IGF2, INS","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,11:2160994
+rs2542151-<b>G</b>,"4 x 10-13",,NR,1.3,'-,[NR],"LINC01882, PTPN2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST001191,18:12779948
+rs3842727-<b>A</b>,"3 x 10-7",,0.716,1.9841269,'-,'-,"INS, TH","Type 1 diabetes in high risk HLA genotype individuals (time to event)","disease free survival, type 1 diabetes mellitus","carrier status",GCST006196,11:2163618
+rs73043122-<b>C</b>,"4 x 10-6",,0.013,3.351,'-,'-,"RNASET2, MIR3939","Type 1 diabetes in high risk HLA genotype individuals (time to event)","disease free survival, type 1 diabetes mellitus","carrier status",GCST006196,6:166969779
+rs113306148-<b>A</b>,"3 x 10-6",,0.013,3.067,'-,'-,PLEKHA1,"Type 1 diabetes in high risk HLA genotype individuals (time to event)","disease free survival, type 1 diabetes mellitus","carrier status",GCST006196,10:122400322
+rs10831551-<b>C</b>,"5 x 10-6",,0.048,2.219,'-,'-,"ASCL2, MIR4686","Type 1 diabetes in high risk HLA genotype individuals (time to event)","disease free survival, type 1 diabetes mellitus","carrier status",GCST006196,11:2217058
+rs428595-<b>A</b>,"2 x 10-6",,0.011,3.424,'-,'-,"PPIL2, MIR130B","Type 1 diabetes in high risk HLA genotype individuals (time to event)","disease free survival, type 1 diabetes mellitus","carrier status",GCST006196,22:21662102
+rs689-<b>T</b>,"1 x 10-160",,0.71,2.21,'-,[2.08-2.34],"INS-IGF2, INS","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST010681,11:2160994
+rs2128344-<b>A</b>,"8 x 10-12",,0.0055,2.12,'-,[1.71-2.63],LINC00320,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST010681,21:20724226
+rs60587303-<b>C</b>,"3 x 10-9",,0.0051,1.97,'-,[1.58-2.47],STK39,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST010681,2:168190122
+rs192324744-<b>G</b>,"2 x 10-11",,0.0131,1.63,'-,[1.41-1.88],LRP1B,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST010681,2:141543366
+rs34536443-<b>G</b>,"2 x 10-11",,0.0515,1.45,'-,[1.31-1.62],TYK2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST010681,19:10352442
+rs2269247-<b>T</b>,"1 x 10-10",,0.18,1.17,'-,[1.12-1.23],PGM1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST010681,1:63641613
+rs114631266-<b>C</b>,"2 x 10-6",,0.974,'-,"0.284 unit increase",[0.17-0.4],"OR2P1P, OR2W1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:29058810
+rs2471863-<b>C</b>,"8 x 10-7",,0.526,'-,"0.057 unit increase",[0.033-0.081],"HLA-U, HLA-K","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:29931850
+rs34941730-<b>G</b>,"2 x 10-9",,0.119,'-,"0.102 unit decrease",[0.069-0.135],"HLA-W, HLA-A","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:29946109
+rs45626136-<b>C</b>,"1 x 10-6",,0.939,'-,"0.111 unit increase",[0.066-0.156],"RPP21, TRIM39-RPP21","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:30345252
+rs116020851-<b>C</b>,"3 x 10-7",,0.971,'-,"0.182 unit increase",[0.11-0.25],"HCG21, SFTA2","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:30954755
+rs1265057-<b>C</b>,"2 x 10-6",,0.491,'-,"0.053 unit decrease",[0.031-0.075],"RNU6-1133P, C6orf15","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:31110838
+rs116763857-<b>G</b>,"1 x 10-14",,0.027,'-,"0.295 unit decrease",[0.22-0.37],POU5F1,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:31173705
+rs9264758-<b>G</b>,"3 x 10-7",,0.866,'-,"0.082 unit increase",[0.051-0.113],RPL3P2,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:31280657
+rs9501130-<b>G</b>,"2 x 10-11",,0.822,'-,"0.099 unit increase",[0.07-0.128],"HCP5, LINC01149","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:31449679
+rs3093664-<b>G</b>,"3 x 10-7",,0.048,'-,"0.13 unit increase",[0.081-0.179],TNF,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:31576865
+rs3134938-<b>C</b>,"8 x 10-7",,0.832,'-,"0.076 unit decrease",[0.047-0.105],"NOTCH4, TSBP1-AS1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32238711
+rs926592-<b>C</b>,"6 x 10-6",,0.658,'-,"0.059 unit increase",[0.034-0.084],"TSBP1-AS1, TSBP1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32337881
+rs3135365-<b>C</b>,"9 x 10-6",,0.022,'-,"0.202 unit increase",[0.11-0.29],"HLA-DRA, TSBP1-AS1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32421478
+rs9268576-<b>C</b>,"2 x 10-8",,0.359,'-,"0.111 unit decrease",[0.072-0.15],"TSBP1-AS1, HLA-DRA","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32427864
+rs7760731-<b>C</b>,"6 x 10-11",,0.642,'-,"0.087 unit increase",[0.062-0.112],"HLA-DRB1, HLA-DQA1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32615624
+rs9275358-<b>G</b>,"3 x 10-7",,0.475,'-,"0.083 unit decrease",[0.052-0.114],"MTCO3P1, HLA-DQB1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32700118
+rs35122968-<b>C</b>,"4 x 10-11",,0.043,'-,"0.2 unit increase",[0.14-0.26],"HLA-DQB3, MTCO3P1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32714422
+rs3997848-<b>G</b>,"2 x 10-14",,0.117,'-,"0.135 unit increase",[0.1-0.17],"MTCO3P1, HLA-DQB3","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32714617
+rs241427-<b>G</b>,"4 x 10-6",,0.797,'-,"0.062 unit decrease",[0.035-0.089],TAP2,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32836637
+rs4148870-<b>C</b>,"2 x 10-6",,0.402,'-,"0.053 unit increase",[0.031-0.075],TAP2,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:32838614
+rs3128930-<b>C</b>,"7 x 10-6",,0.683,'-,"0.053 unit increase",[0.029-0.077],"HLA-DPB2, COL11A2P1","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:33107889
+rs17407280-<b>C</b>,"7 x 10-6",,0.777,'-,"0.058 unit increase",[0.033-0.083],KIF17,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,1:20693912
+rs10919543-<b>G</b>,"6 x 10-6",,0.346,'-,"0.055 unit decrease",[0.031-0.079],"FCGR3A, RPS23P10","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,1:161538827
+rs7524087-<b>G</b>,"8 x 10-6",,0.019,'-,"0.285 unit increase",[0.16-0.41],LINC02771,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,1:212470318
+rs77155259-<b>G</b>,"2 x 10-6",,0.944,'-,"0.142 unit increase",[0.083-0.201],SLC4A10,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,2:161647730
+rs111821448-<b>C</b>,"5 x 10-6",,0.972,'-,"0.164 unit increase",[0.093-0.235],PHLDB2,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,3:111874722
+rs139881548-<b>C</b>,"7 x 10-6",,0.984,'-,"0.222 unit increase",[0.13-0.32],GABRA2,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,4:46372280
+rs34740712-<b>C</b>,"5 x 10-6",,0.104,'-,"0.088 unit decrease",[0.051-0.125],TLL1,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,4:165916328
+rs4513644-<b>T</b>,"8 x 10-7",,0.794,'-,"0.067 unit increase",[0.04-0.094],LINC02225,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,5:57837318
+rs78824139-<b>C</b>,"9 x 10-6",,0.986,'-,"0.294 unit increase",[0.16-0.42],EYS,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,6:64748694
+rs6461299-<b>C</b>,"2 x 10-6",,0.422,'-,"0.078 unit decrease",[0.047-0.109],AHR,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,7:17147155
+rs10255565-<b>C</b>,"1 x 10-6",,0.154,'-,"0.086 unit decrease",[0.051-0.121],HECW1,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,7:43408191
+rs35766765-<b>G</b>,"3 x 10-6",,0.092,'-,"0.091 unit decrease",[0.054-0.128],PHF20L1,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,8:132775726
+rs74629033-<b>G</b>,"5 x 10-6",,0.95,'-,"0.116 unit increase",[0.067-0.165],PLGRKT,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,9:5421234
+rs10961433-<b>G</b>,"2 x 10-6",,0.867,'-,"0.079 unit increase",[0.046-0.112],NFIB,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,9:14228472
+rs4837404-<b>G</b>,"5 x 10-6",,0.368,'-,"0.064 unit increase",[0.037-0.091],PTGES,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,9:129743380
+rs1110458-<b>C</b>,"8 x 10-6",,0.239,'-,"0.055 unit decrease",[0.031-0.079],"HS3ST2, USP31","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,16:22969144
+rs2941522-<b>C</b>,"7 x 10-9",,0.575,'-,"0.069 unit decrease",[0.045-0.093],"IKZF3, GRB7","Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,17:39754115
+rs10258381-<b>G</b>,"5 x 10-6",,0.049,'-,"0.119 unit decrease",[0.068-0.17],'-,"Type 1 diabetes (age at diagnosis)","age at diagnosis, type 1 diabetes mellitus",'-,GCST011773,7:10057028
+rs7301381-<b>C</b>,"5 x 10-11",,0.463691,'-,"0.09358772 unit decrease",[0.066-0.122],KLRG1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,12:8971336
+rs238265-<b>G</b>,"2 x 10-9",,0.695162,'-,"0.09082453 unit decrease",[0.061-0.121],LINC02341,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,13:42356523
+rs4238595-<b>C</b>,"2 x 10-11",,0.680478,'-,"0.11213453 unit decrease",[0.079-0.145],"UMOD, GP2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,16:20331769
+rs8046043-<b>C</b>,"2 x 10-8",,0.391629,'-,"0.08458667 unit decrease",[0.055-0.114],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,16:80250127
+rs61759532-<b>T</b>,"2 x 10-10",,0.234556,'-,"0.11837882 unit increase",[0.082-0.155],ACAP1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,17:7337072
+rs11651753-<b>T</b>,"1 x 10-9",,0.41983,'-,"0.08688845 unit decrease",[0.059-0.115],"PRR15L, PNPO","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,17:47951723
+rs57209021-<b>T</b>,"4 x 10-8",,0.225582,'-,"0.1006932 unit increase",[0.065-0.137],"RDM1P3, ARHGAP27P2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,17:68168777
+rs74203920-<b>T</b>,"2 x 10-8",,0.019793,'-,"0.3138792 unit increase",[0.2-0.42],AIRE,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,21:44294411
+rs10751776-<b>C</b>,"3 x 10-8",,0.509915,'-,"0.07814535 unit increase",[0.051-0.106],"RUNX3, MIR4425","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,1:24970252
+rs574384-<b>A</b>,"2 x 10-8",,0.894668,'-,"0.13360222 unit decrease",[0.087-0.18],PSMB2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,1:35622060
+rs12742756-<b>G</b>,"4 x 10-8",,0.428204,'-,"0.08310696 unit decrease",[0.054-0.113],INPP5B,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,1:37881745
+rs855330-<b>C</b>,"5 x 10-11",,0.259422,'-,"0.111207716 unit increase",[0.078-0.144],PGM1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,1:63648218
+rs1493696-<b>A</b>,"8 x 10-9",,0.13231,'-,"0.12832591 unit increase",[0.085-0.172],NOTCH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,1:119962909
+rs570794153-<b>GA</b>,"4 x 10-11",,0.139675,'-,"0.14543974 unit decrease",[0.1-0.19],"PTPRC, ATP6V1G3","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,1:198629260
+rs12128789-<b>C</b>,"4 x 10-9",,0.131779,'-,"0.12696852 unit increase",[0.085-0.169],"BATF3, LINC02773","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,1:212679490
+rs1881146-<b>T</b>,"5 x 10-8",,0.310529,'-,"0.09517027 unit decrease",[0.061-0.129],MIR3681HG,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,2:12494668
+rs12464462-<b>G</b>,"9 x 10-10",,0.410445,'-,"0.0879553 unit decrease",[0.06-0.116],MIR4432HG,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,2:60409281
+rs13018977-<b>A</b>,"2 x 10-8",,0.224602,'-,"0.100334994 unit increase",[0.065-0.135],SEPTIN2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,2:241338592
+rs12644686-<b>G</b>,"2 x 10-8",,0.193778,'-,"0.10774961 unit decrease",[0.07-0.146],LINC02362,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,4:184381748
+rs114378220-<b>T</b>,"5 x 10-9",,0.070292,'-,"0.17790234 unit increase",[0.12-0.24],CAMK4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,5:111230662
+rs766751473-<b>T</b>,"1 x 10-8",,0.40393,'-,"0.080249354 unit increase",[0.053-0.108],IRF1-AS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,5:132431072
+rs1050979-<b>G</b>,"6 x 10-14",,0.515138,'-,"0.106195554 unit increase",[0.079-0.134],IRF4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,6:410417
+rs7805218-<b>A</b>,"9 x 10-9",,0.30774,'-,"0.09541352 unit increase",[0.063-0.128],ITGB8,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,7:20339178
+rs7795896-<b>T</b>,"2 x 10-16",,0.691577,'-,"0.13543522 unit decrease",[0.1-0.17],CFTR,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,7:117446559
+rs1947178-<b>G</b>,"2 x 10-9",,0.791944,'-,"0.10326733 unit decrease",[0.07-0.137],TOX,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,8:58959618
+rs13259300-<b>C</b>,"3 x 10-10",,0.598278,'-,"0.0921915 unit decrease",[0.063-0.121],COLEC10,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,8:119070702
+rs3802214-<b>C</b>,"3 x 10-8",,0.798827,'-,"0.10660862 unit decrease",[0.069-0.144],AGO2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,8:140606084
+rs541856133-<b>T</b>,"4 x 10-17",,0.001509,'-,"1.1022301 unit increase",[0.85-1.36],"GTF3C5, CEL","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,9:133060938
+rs537544-<b>T</b>,"9 x 10-9",,0.615565,'-,"0.08641077 unit decrease",[0.057-0.116],GATA3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,10:8066419
+rs78325861-<b>G</b>,"2 x 10-11",,0.039037,'-,"0.2820823 unit decrease",[0.2-0.36],"ADAMTS14, PRF1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,10:70618733
+rs140215710-<b>A</b>,"4 x 10-8",,0.010339,'-,"0.412643 unit increase",[0.27-0.56],"KCNQ1DN, CDKN1C","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,11:2881830
+rs7936434-<b>C</b>,"4 x 10-8",,0.464277,'-,"0.07692268 unit increase",[0.05-0.104],"LINC02757, EMSY","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,11:76582761
+rs607703-<b>T</b>,"1 x 10-10",,0.484409,'-,"0.09201457 unit increase",[0.064-0.12],FLI1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90014023,11:128734279
+rs3864055-<b>T</b>,"6 x 10-6",,NR,1.79,'-,[1.39-2.31],"Y_RNA, ARL8B","Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,3:5093886
+rs12644905-<b>C</b>,"4 x 10-6",,NR,1.91,'-,[1.45-2.52],"ACSL1, CENPU","Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,4:184755529
+rs12203596-<b>C</b>,"6 x 10-6",,NR,2.84,'-,[1.78-4.53],STMND1,"Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,6:17120009
+rs9356171-<b>A</b>,"9 x 10-6",,NR,1.9,'-,[1.43-2.52],RN7SL366P,"Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,6:163922743
+rs7871386-<b>C</b>,"5 x 10-6",,NR,2.54,'-,[1.69-3.83],'-,"Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,9:23166744
+rs5790666-<b>?</b>,"8 x 10-9",,NR,2.32,'-,[1.65-3.26],"CBX3P1, BDNF","Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,11:27778324
+rs11170445-<b>T</b>,"8 x 10-9",,NR,1.96,'-,[1.56-2.46],"EIF4A1P4, HIGD1AP1","Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,12:53151908
+rs178050-<b>A</b>,"7 x 10-6",,NR,1.66,'-,[1.33-2.07],PI4KA,"Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,22:20814301
+rs9268853-<b>?</b>,"2 x 10-23",,NR,3.18,'-,[2.53-4.01],HLA-DRB9,"Fulminant type 1 diabetes","type 1 diabetes mellitus",'-,GCST007433,6:32461866
+chr3:27921000-<b>G</b>,"1 x 10-8",,NR,4.263,'-,[2.595-7.005],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr1:182869236-<b>T</b>,"4 x 10-8",,NR,4.545,'-,[2.653-7.787],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr18:21507398-<b>C</b>,"2 x 10-8",,NR,4.641,'-,[2.706-7.96],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr3:114257954-<b>T</b>,"5 x 10-8",,NR,5.021,'-,[2.815-8.955],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr8:20451062-<b>T</b>,"8 x 10-9",,NR,5.251,'-,[2.986-9.233],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:46032617-<b>T</b>,"2 x 10-8",,NR,5.689,'-,[3.094-10.46],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr16:51887655-<b>C</b>,"2 x 10-9",,NR,5.751,'-,[3.246-10.19],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr10:60664647-<b>C</b>,"2 x 10-8",,NR,6.359,'-,[3.331-12.14],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr21:41956642-<b>A</b>,"4 x 10-9",,NR,6.443,'-,[3.463-11.99],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr7:48863732-<b>T</b>,"5 x 10-8",,NR,6.485,'-,[3.318-12.68],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr1:102495801-<b>A</b>,"3 x 10-8",,NR,6.545,'-,[3.363-12.74],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr10:120940685-<b>A</b>,"2 x 10-8",,NR,6.866,'-,[3.513-13.42],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr14:21746775-<b>T</b>,"3 x 10-9",,NR,8.093,'-,[4.06-16.13],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr20:4377254-<b>C</b>,"3 x 10-9",,NR,8.113,'-,[4.07-16.17],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr19:36633617-<b>A</b>,"4 x 10-8",,NR,8.326,'-,[3.917-17.7],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr19:36013582-<b>T</b>,"1 x 10-8",,NR,9.465,'-,[4.375-20.48],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:217759606-<b>C</b>,"4 x 10-8",,NR,10.27,'-,[4.486-23.51],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr1:221898846-<b>A</b>,"3 x 10-8",,NR,10.39,'-,[4.534-23.79],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr19:37034392-<b>G</b>,"3 x 10-8",,NR,10.42,'-,[4.553-23.86],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr4:105683278-<b>T</b>,"2 x 10-8",,NR,11.22,'-,[4.828-26.05],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr15:46441258-<b>T</b>,"4 x 10-9",,NR,11.31,'-,[5.049-25.34],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr8:76353999-<b>T</b>,"1 x 10-8",,NR,12.22,'-,[5.17-28.87],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr1:78372988-<b>C</b>,"3 x 10-8",,NR,13.8,'-,[5.457-34.89],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:8311442-<b>T</b>,"6 x 10-9",,NR,14.63,'-,[5.921-36.17],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32535377-<b>A</b>,"2 x 10-306",,NR,0.113,'-,[0.1008-0.1266],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:32911694-<b>G</b>,"6 x 10-63",,NR,2.858,'-,[2.528-3.232],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr18:69571112-<b>T</b>,"1 x 10-10",,NR,2.858,'-,[2.076-3.935],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr14:96458513-<b>A</b>,"1 x 10-8",,NR,2.907,'-,[2.017-4.19],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31508681-<b>A</b>,"3 x 10-80",,NR,2.956,'-,[2.643-3.306],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr16:61597297-<b>G</b>,"8 x 10-9",,NR,2.981,'-,[2.057-4.322],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr7:117532167-<b>A</b>,"2 x 10-8",,NR,3.107,'-,[2.09-4.619],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31628361-<b>G</b>,"3 x 10-89",,NR,3.135,'-,[2.803-3.505],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31799896-<b>TA</b>,"2 x 10-90",,NR,3.155,'-,[2.822-3.527],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32096949-<b>C</b>,"1 x 10-90",,NR,3.16,'-,[2.826-3.533],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31902549-<b>A</b>,"9 x 10-92",,NR,3.179,'-,[2.844-3.555],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32809144-<b>C</b>,"9 x 10-89",,NR,3.209,'-,[2.862-3.598],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32334605-<b>T</b>,"4 x 10-102",,NR,3.342,'-,[2.993-3.732],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr18:58518360-<b>A</b>,"5 x 10-9",,NR,3.355,'-,[2.235-5.034],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32231204-<b>T</b>,"4 x 10-106",,NR,3.398,'-,[3.045-3.791],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32469977-<b>A</b>,"4 x 10-108",,NR,3.448,'-,[3.09-3.849],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr19:47871241-<b>T</b>,"2 x 10-8",,NR,3.448,'-,[2.241-5.304],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr11:78403273-<b>T</b>,"5 x 10-9",,NR,3.45,'-,[2.279-5.222],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr21:44998426-<b>T</b>,"8 x 10-9",,NR,3.472,'-,[2.274-5.301],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32698749-<b>T</b>,"7 x 10-110",,NR,3.482,'-,[3.12-3.886],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:25865493-<b>C</b>,"5 x 10-9",,NR,3.521,'-,[2.308-5.372],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr18:58389479-<b>T</b>,"5 x 10-10",,NR,3.772,'-,[2.485-5.727],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr4:24259293-<b>G</b>,"4 x 10-8",,NR,3.831,'-,[2.375-6.182],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr1:63633409-<b>G</b>,"2 x 10-8",,NR,3.839,'-,[2.4-6.141],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr15:74624584-<b>T</b>,"3 x 10-9",,NR,3.956,'-,[2.515-6.221],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr11:33955292-<b>G</b>,"2 x 10-9",,NR,4.077,'-,[2.572-6.463],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr12:65543332-<b>G</b>,"1 x 10-9",,NR,1.199,'-,[1.131-1.272],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr19:31157758-<b>C</b>,"4 x 10-16",,NR,1.2,'-,[1.148-1.254],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr1:37781423-<b>G</b>,"6 x 10-16",,NR,1.207,'-,[1.153-1.263],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr4:92954497-<b>G</b>,"7 x 10-9",,NR,1.218,'-,[1.139-1.302],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr8:56693303-<b>ATT</b>,"4 x 10-10",,NR,1.219,'-,[1.146-1.297],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr7:129949957-<b>T</b>,"5 x 10-12",,NR,1.227,'-,[1.158-1.3],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr7:44959149-<b>C</b>,"4 x 10-15",,NR,1.23,'-,[1.168-1.295],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr1:37891198-<b>C</b>,"1 x 10-19",,NR,1.243,'-,[1.186-1.303],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr3:57259774-<b>G</b>,"4 x 10-16",,NR,1.26,'-,[1.192-1.333],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr9:20324372-<b>G</b>,"7 x 10-23",,NR,1.263,'-,[1.206-1.323],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr12:65644210-<b>C</b>,"1 x 10-14",,NR,1.291,'-,[1.21-1.377],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26835246-<b>C</b>,"8 x 10-26",,NR,1.316,'-,[1.25-1.385],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr15:27596077-<b>C</b>,"2 x 10-20",,NR,1.331,'-,[1.253-1.414],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:137009624-<b>A</b>,"2 x 10-26",,NR,1.335,'-,[1.266-1.408],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:134538048-<b>C</b>,"3 x 10-52",,NR,1.398,'-,[1.339-1.459],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:134722410-<b>G</b>,"3 x 10-57",,NR,1.414,'-,[1.355-1.476],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:134845031-<b>T</b>,"1 x 10-58",,NR,1.419,'-,[1.36-1.481],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:134947988-<b>G</b>,"1 x 10-73",,NR,1.481,'-,[1.42-1.546],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr18:69405649-<b>G</b>,"1 x 10-6",,NR,1.657,'-,[1.349-2.034],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:27063201-<b>C</b>,"3 x 10-96",,NR,1.725,'-,[1.638-1.816],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr16:9864106-<b>C</b>,"9 x 10-10",,NR,1.728,'-,[1.451-2.057],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr14:96458513-<b>A</b>,"9 x 10-7",,NR,1.74,'-,[1.395-2.17],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr9:5703334-<b>T</b>,"4 x 10-10",,NR,1.765,'-,[1.477-2.11],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:33160210-<b>C</b>,"2 x 10-151",,NR,1.774,'-,[1.699-1.851],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:25365660-<b>T</b>,"5 x 10-41",,NR,1.798,'-,[1.65-1.959],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:32684938-<b>A</b>,"2 x 10-308",,NR,0.2943,'-,[0.2761-0.3136],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:31275040-<b>A</b>,"2 x 10-286",,NR,0.4354,'-,[0.4162-0.4554],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:135859184-<b>C</b>,"1 x 10-121",,NR,0.5905,'-,[0.5651-0.6171],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:135671796-<b>C</b>,"6 x 10-117",,NR,0.5974,'-,[0.5718-0.6242],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:135149518-<b>G</b>,"1 x 10-116",,NR,0.5995,'-,[0.5739-0.6263],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:135571320-<b>T</b>,"7 x 10-114",,NR,0.603,'-,[0.5772-0.63],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:135403522-<b>G</b>,"2 x 10-113",,NR,0.6048,'-,[0.579-0.6317],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:136026774-<b>G</b>,"1 x 10-91",,NR,0.6281,'-,[0.6006-0.657],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:135265228-<b>T</b>,"2 x 10-75",,NR,0.644,'-,[0.6144-0.6749],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:136221960-<b>G</b>,"2 x 10-73",,NR,0.6755,'-,[0.6474-0.7047],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:29683408-<b>G</b>,"2 x 10-60",,NR,0.6795,'-,[0.6489-0.7117],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:29949300-<b>A</b>,"2 x 10-44",,NR,0.7186,'-,[0.6861-0.7526],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr11:18269981-<b>G</b>,"3 x 10-39",,NR,0.7426,'-,[0.7103-0.7764],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr4:137228466-<b>C</b>,"1 x 10-20",,NR,0.7649,'-,[0.7229-0.8093],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr3:57373867-<b>G</b>,"6 x 10-17",,NR,0.7655,'-,[0.719-0.815],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:41913324-<b>A</b>,"2 x 10-28",,NR,0.7827,'-,[0.7494-0.8174],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr10:131361823-<b>G</b>,"5 x 10-12",,NR,0.8072,'-,[0.7595-0.8578],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr1:151853237-<b>G</b>,"4 x 10-19",,NR,0.8166,'-,[0.7811-0.8537],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr14:22383427-<b>T</b>,"8 x 10-13",,NR,0.8318,'-,[0.7909-0.8749],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr3:64734347-<b>C</b>,"1 x 10-16",,NR,0.8347,'-,[0.7997-0.8713],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr11:68326963-<b>A</b>,"2 x 10-12",,NR,0.8486,'-,[0.8105-0.8885],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr5:6893947-<b>A</b>,"8 x 10-7",,NR,1.158,'-,[1.092-1.227],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr3:57041866-<b>A</b>,"4 x 10-13",,NR,1.171,'-,[1.122-1.223],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr12:65324519-<b>G</b>,"1 x 10-6",,NR,1.189,'-,[1.109-1.276],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr5:80384899-<b>G</b>,"5 x 10-16",,NR,1.192,'-,[1.143-1.244],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:25772946-<b>T</b>,"8 x 10-6",,NR,1.864,'-,[1.418-2.451],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26732200-<b>G</b>,"1 x 10-79",,NR,1.92,'-,[1.794-2.054],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:60197190-<b>T</b>,"1 x 10-14",,NR,1.981,'-,[1.665-2.358],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:25710343-<b>A</b>,"9 x 10-70",,NR,1.985,'-,[1.839-2.141],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:30964532-<b>T</b>,"2 x 10-202",,NR,1.987,'-,[1.901-2.077],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:25513951-<b>A</b>,"3 x 10-65",,NR,1.998,'-,[1.845-2.163],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:27883876-<b>G</b>,"2 x 10-102",,NR,1.998,'-,[1.876-2.128],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:25822433-<b>T</b>,"1 x 10-71",,NR,2,'-,[1.853-2.157],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:25929860-<b>A</b>,"7 x 10-73",,NR,2.007,'-,[1.86-2.164],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:27523520-<b>A</b>,"2 x 10-96",,NR,2.009,'-,[1.882-2.146],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26073147-<b>A</b>,"5 x 10-74",,NR,2.014,'-,[1.868-2.172],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26199675-<b>T</b>,"3 x 10-79",,NR,2.023,'-,[1.88-2.177],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr18:58518360-<b>A</b>,"3 x 10-8",,NR,2.028,'-,[1.58-2.602],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:27174125-<b>T</b>,"9 x 10-87",,NR,2.048,'-,[1.907-2.199],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:27349237-<b>A</b>,"1 x 10-88",,NR,2.05,'-,[1.911-2.2],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:27624224-<b>T</b>,"4 x 10-90",,NR,2.05,'-,[1.912-2.199],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28594470-<b>T</b>,"3 x 10-93",,NR,2.051,'-,[1.915-2.197],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr18:58389479-<b>T</b>,"2 x 10-7",,NR,2.051,'-,[1.568-2.681],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26316067-<b>A</b>,"3 x 10-83",,NR,2.052,'-,[1.908-2.207],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28309894-<b>G</b>,"3 x 10-92",,NR,2.053,'-,[1.915-2.2],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26463346-<b>T</b>,"6 x 10-87",,NR,2.055,'-,[1.914-2.208],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26935600-<b>T</b>,"3 x 10-87",,NR,2.055,'-,[1.914-2.207],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:27731058-<b>T</b>,"6 x 10-91",,NR,2.056,'-,[1.917-2.204],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:26581807-<b>T</b>,"1 x 10-87",,NR,2.06,'-,[1.918-2.213],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28429899-<b>A</b>,"8 x 10-94",,NR,2.061,'-,[1.924-2.208],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28026638-<b>T</b>,"3 x 10-94",,NR,2.07,'-,[1.931-2.218],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28699892-<b>G</b>,"3 x 10-96",,NR,2.073,'-,[1.936-2.221],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28171932-<b>T</b>,"7 x 10-95",,NR,2.075,'-,[1.936-2.224],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:29215110-<b>A</b>,"9 x 10-99",,NR,2.075,'-,[1.939-2.221],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr15:74624584-<b>T</b>,"2 x 10-6",,NR,2.078,'-,[1.541-2.801],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:29100913-<b>A</b>,"4 x 10-99",,NR,2.08,'-,[1.943-2.226],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:29785031-<b>G</b>,"1 x 10-110",,NR,2.106,'-,[1.973-2.249],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:29558785-<b>A</b>,"7 x 10-108",,NR,2.114,'-,[1.978-2.26],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:30064745-<b>C</b>,"2 x 10-113",,NR,2.114,'-,[1.982-2.256],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28939145-<b>G</b>,"1 x 10-101",,NR,2.116,'-,[1.976-2.266],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:28828294-<b>C</b>,"4 x 10-117",,NR,2.13,'-,[1.997-2.272],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:30202510-<b>G</b>,"4 x 10-125",,NR,2.156,'-,[2.023-2.296],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:29388554-<b>G</b>,"3 x 10-114",,NR,2.161,'-,[2.022-2.31],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:30569095-<b>A</b>,"4 x 10-132",,NR,2.162,'-,[2.033-2.3],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:30685004-<b>T</b>,"2 x 10-133",,NR,2.169,'-,[2.04-2.308],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:32836793-<b>A</b>,"9 x 10-273",,NR,2.243,'-,[2.145-2.346],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:30387407-<b>G</b>,"2 x 10-151",,NR,2.262,'-,[2.128-2.404],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr21:44998426-<b>T</b>,"6 x 10-10",,NR,2.265,'-,[1.749-2.933],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:30801949-<b>T</b>,"1 x 10-271",,NR,2.377,'-,[2.265-2.494],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:31395249-<b>T</b>,"3 x 10-279",,NR,2.421,'-,[2.307-2.542],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:31517324-<b>C</b>,"2 x 10-308",,NR,2.557,'-,[2.438-2.682],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:31135418-<b>G</b>,"2 x 10-219",,NR,2.568,'-,[2.423-2.723],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:46032617-<b>T</b>,"9 x 10-6",,NR,2.674,'-,[1.734-4.124],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:32978829-<b>C</b>,"9 x 10-202",,NR,2.699,'-,[2.531-2.878],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:31635993-<b>G</b>,"1 x 10-302",,NR,2.713,'-,[2.574-2.86],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:31799896-<b>TA</b>,"4 x 10-282",,NR,3.076,'-,[2.893-3.27],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:31951083-<b>G</b>,"1 x 10-283",,NR,3.097,'-,[2.912-3.294],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:32061428-<b>A</b>,"7 x 10-285",,NR,3.116,'-,[2.93-3.315],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:32234432-<b>C</b>,"1 x 10-305",,NR,3.251,'-,[3.056-3.458],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr21:41956642-<b>A</b>,"2 x 10-7",,NR,3.264,'-,[2.097-5.082],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr20:4377254-<b>C</b>,"4 x 10-6",,NR,3.403,'-,[2.021-5.731],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:33647094-<b>C</b>,"1 x 10-96",,NR,3.465,'-,[3.083-3.894],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:33489728-<b>A</b>,"2 x 10-108",,NR,3.764,'-,[3.347-4.233],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:33387741-<b>T</b>,"2 x 10-108",,NR,3.776,'-,[3.357-4.248],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr19:35897277-<b>T</b>,"2 x 10-6",,NR,3.883,'-,[2.209-6.826],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr8:76353999-<b>T</b>,"4 x 10-6",,NR,5.092,'-,[2.55-10.17],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr6:32405601-<b>T</b>,"4 x 10-308",,NR,6.977,'-,[6.304-7.722],'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST012179,"Mapping not available"
+chr2:134585720-<b>C</b>,"5 x 10-10",,NR,1.348,'-,[1.227-1.481],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135859184-<b>C</b>,"1 x 10-22",,NR,0.6145,'-,[0.5575-0.6773],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:134688820-<b>G</b>,"7 x 10-12",,NR,1.385,'-,[1.262-1.52],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135197227-<b>C</b>,"4 x 10-22",,NR,0.621,'-,[0.5638-0.6839],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr3:57295247-<b>G</b>,"2 x 10-8",,NR,1.389,'-,[1.24-1.557],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135403522-<b>G</b>,"2 x 10-21",,NR,0.627,'-,[0.5695-0.6903],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr5:6893947-<b>A</b>,"1 x 10-8",,NR,1.418,'-,[1.258-1.599],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr10:131361823-<b>G</b>,"2 x 10-8",,NR,0.6576,'-,[0.5676-0.7619],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135731408-<b>G</b>,"4 x 10-14",,NR,0.6604,'-,[0.5931-0.7354],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr12:65543332-<b>G</b>,"7 x 10-9",,NR,1.428,'-,[1.266-1.611],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:127756593-<b>T</b>,"4 x 10-8",,NR,0.6726,'-,[0.5839-0.7747],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:26835246-<b>C</b>,"5 x 10-11",,NR,1.438,'-,[1.291-1.603],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr8:56693303-<b>ATT</b>,"3 x 10-8",,NR,1.438,'-,[1.265-1.634],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr15:27596077-<b>C</b>,"2 x 10-8",,NR,1.439,'-,[1.267-1.634],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:137009624-<b>A</b>,"4 x 10-11",,NR,1.459,'-,[1.305-1.633],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr4:92954497-<b>G</b>,"4 x 10-8",,NR,1.465,'-,[1.278-1.678],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr14:22390463-<b>A</b>,"1 x 10-8",,NR,0.7387,'-,[0.6653-0.8201],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr1:151853237-<b>G</b>,"3 x 10-8",,NR,0.7523,'-,[0.6806-0.8316],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr3:64722924-<b>C</b>,"6 x 10-9",,NR,0.7524,'-,[0.6835-0.8282],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr5:80384899-<b>G</b>,"5 x 10-8",,NR,1.299,'-,[1.183-1.427],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr19:31157758-<b>C</b>,"2 x 10-8",,NR,1.317,'-,[1.197-1.449],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+rs13147255-<b>A</b>,"1 x 10-8",,NR,1.318,'-,[1.198-1.449],"ANKRD50, LINC02516","Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,4:124578751
+rs857786-<b>T</b>,"6 x 10-9",,NR,1.322,'-,[1.203-1.452],"MNDA, OR10AA1P","Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,1:158815304
+chr19:42174477-<b>CATAA</b>,"2 x 10-8",,NR,1.765,'-,[1.449-2.151],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:33301993-<b>A</b>,"3 x 10-9",,NR,1.784,'-,[1.474-2.159],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:33464895-<b>G</b>,"3 x 10-10",,NR,1.797,'-,[1.498-2.155],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:32596935-<b>G</b>,"3 x 10-28",,NR,0.2314,'-,[0.1784-0.3002],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135623778-<b>A</b>,"8 x 10-23",,NR,0.6145,'-,[0.5577-0.6771],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr9:20324372-<b>G</b>,"3 x 10-9",,NR,1.354,'-,[1.225-1.497],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135080336-<b>A</b>,"9 x 10-23",,NR,0.6175,'-,[0.5608-0.6799],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135516008-<b>C</b>,"9 x 10-21",,NR,0.6253,'-,[0.5666-0.6899],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr3:57269656-<b>G</b>,"4 x 10-9",,NR,1.418,'-,[1.262-1.593],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135301250-<b>A</b>,"3 x 10-15",,NR,0.6558,'-,[0.5904-0.7284],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr7:129944187-<b>A</b>,"8 x 10-9",,NR,1.423,'-,[1.262-1.604],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr7:44959149-<b>C</b>,"1 x 10-10",,NR,1.428,'-,[1.282-1.591],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:135964425-<b>C</b>,"7 x 10-16",,NR,0.6614,'-,[0.5983-0.7312],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:134947988-<b>G</b>,"4 x 10-14",,NR,1.43,'-,[1.304-1.569],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr4:137228466-<b>C</b>,"1 x 10-8",,NR,0.6804,'-,[0.5957-0.7772],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:134846613-<b>C</b>,"2 x 10-13",,NR,0.7009,'-,[0.6375-0.7705],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr11:68326963-<b>A</b>,"1 x 10-9",,NR,0.7195,'-,[0.647-0.8002],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr11:18264227-<b>A</b>,"4 x 10-9",,NR,0.7347,'-,[0.663-0.8142],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:41910220-<b>T</b>,"6 x 10-9",,NR,0.7377,'-,[0.6657-0.8175],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:136221960-<b>A</b>,"4 x 10-16",,NR,1.474,'-,[1.342-1.619],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:33168798-<b>C</b>,"3 x 10-16",,NR,1.483,'-,[1.35-1.63],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr1:37812907-<b>T</b>,"6 x 10-14",,NR,1.485,'-,[1.339-1.646],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr12:65324519-<b>G</b>,"3 x 10-8",,NR,1.491,'-,[1.294-1.718],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr12:65644210-<b>C</b>,"7 x 10-10",,NR,1.519,'-,[1.33-1.735],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:136066296-<b>A</b>,"4 x 10-19",,NR,1.534,'-,[1.397-1.685],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:25371141-<b>T</b>,"1 x 10-9",,NR,1.749,'-,[1.46-2.095],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr3:57041866-<b>A</b>,"4 x 10-9",,NR,1.326,'-,[1.207-1.457],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr9:5703334-<b>T</b>,"5 x 10-8",,NR,2.398,'-,[1.752-3.284],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:28485841-<b>G</b>,"4 x 10-39",,NR,2.4,'-,[2.105-2.736],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:28355925-<b>A</b>,"4 x 10-39",,NR,2.402,'-,[2.107-2.739],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:117481369-<b>T</b>,"4 x 10-8",,NR,2.412,'-,[1.76-3.306],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:29238474-<b>C</b>,"6 x 10-43",,NR,2.422,'-,[2.135-2.748],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:28705657-<b>A</b>,"4 x 10-41",,NR,2.428,'-,[2.133-2.763],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:29051468-<b>G</b>,"3 x 10-42",,NR,2.437,'-,[2.144-2.77],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:29499942-<b>A</b>,"2 x 10-43",,NR,2.449,'-,[2.157-2.78],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:30331468-<b>G</b>,"2 x 10-47",,NR,2.46,'-,[2.178-2.779],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:28939145-<b>G</b>,"7 x 10-43",,NR,2.469,'-,[2.17-2.809],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:29388554-<b>G</b>,"6 x 10-45",,NR,2.475,'-,[2.181-2.808],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:30441472-<b>C</b>,"1 x 10-52",,NR,2.51,'-,[2.23-2.824],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr9:71822481-<b>T</b>,"5 x 10-8",,NR,2.515,'-,[1.806-3.504],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:30157766-<b>T</b>,"1 x 10-51",,NR,2.534,'-,[2.246-2.858],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:30733315-<b>T</b>,"7 x 10-56",,NR,2.545,'-,[2.266-2.858],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:30576624-<b>G</b>,"1 x 10-57",,NR,2.573,'-,[2.292-2.889],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:60197190-<b>T</b>,"2 x 10-9",,NR,2.584,'-,[1.894-3.526],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr16:73991175-<b>G</b>,"2 x 10-8",,NR,2.605,'-,[1.866-3.636],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:30843488-<b>C</b>,"2 x 10-62",,NR,2.634,'-,[2.351-2.951],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31000992-<b>G</b>,"2 x 10-64",,NR,2.658,'-,[2.373-2.976],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr16:9864106-<b>C</b>,"7 x 10-11",,NR,2.708,'-,[2.008-3.652],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31229085-<b>A</b>,"2 x 10-75",,NR,2.724,'-,[2.448-3.031],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31117579-<b>T</b>,"6 x 10-72",,NR,2.761,'-,[2.471-3.085],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr2:62744832-<b>C</b>,"1 x 10-8",,NR,2.793,'-,[1.96-3.98],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:31348918-<b>A</b>,"9 x 10-76",,NR,2.856,'-,[2.555-3.194],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:26935600-<b>T</b>,"1 x 10-31",,NR,2.271,'-,[1.979-2.606],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:26581807-<b>T</b>,"1 x 10-31",,NR,2.275,'-,[1.983-2.61],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:27104763-<b>G</b>,"7 x 10-32",,NR,2.277,'-,[1.985-2.613],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:27559448-<b>G</b>,"2 x 10-34",,NR,2.277,'-,[1.996-2.597],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:27457865-<b>C</b>,"2 x 10-32",,NR,2.29,'-,[1.997-2.626],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:27281907-<b>A</b>,"7 x 10-33",,NR,2.299,'-,[2.006-2.636],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:27911422-<b>A</b>,"2 x 10-35",,NR,2.314,'-,[2.028-2.641],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:28107123-<b>T</b>,"5 x 10-36",,NR,2.338,'-,[2.047-2.67],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:28235278-<b>G</b>,"5 x 10-37",,NR,2.356,'-,[2.065-2.69],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:30018547-<b>A</b>,"3 x 10-42",,NR,2.373,'-,[2.096-2.688],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:29785031-<b>G</b>,"5 x 10-42",,NR,2.378,'-,[2.099-2.694],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:29639324-<b>C</b>,"4 x 10-42",,NR,2.382,'-,[2.102-2.7],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:28594470-<b>T</b>,"7 x 10-39",,NR,2.385,'-,[2.093-2.718],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:33020111-<b>G</b>,"1 x 10-12",,NR,1.912,'-,[1.599-2.286],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:33647094-<b>C</b>,"4 x 10-8",,NR,2.042,'-,[1.581-2.638],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:25864590-<b>T</b>,"2 x 10-22",,NR,2.1,'-,[1.809-2.437],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:26732200-<b>G</b>,"2 x 10-28",,NR,2.11,'-,[1.849-2.408],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:25710343-<b>A</b>,"7 x 10-23",,NR,2.116,'-,[1.823-2.457],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:26073147-<b>A</b>,"9 x 10-24",,NR,2.127,'-,[1.836-2.464],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:26266083-<b>C</b>,"8 x 10-27",,NR,2.158,'-,[1.875-2.484],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr5:81431680-<b>A</b>,"3 x 10-10",,NR,2.185,'-,[1.713-2.788],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:25513951-<b>A</b>,"3 x 10-23",,NR,2.186,'-,[1.873-2.551],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:27700521-<b>C</b>,"4 x 10-33",,NR,2.25,'-,[1.971-2.569],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:26408323-<b>G</b>,"4 x 10-31",,NR,2.262,'-,[1.971-2.597],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+chr6:27803328-<b>C</b>,"6 x 10-34",,NR,2.27,'-,[1.989-2.59],'-,"Type 1 diabetes with low genetic risk score","type 1 diabetes mellitus",'-,GCST90000181,"Mapping not available"
+rs9273368-<b>G</b>,"8 x 10-40",,0.35,2.99,'-,[2.60-3.91],"HLA-DQB1, HLA-DQA1","Latent autoimmune diabetes vs. type 1 diabetes","type 1 diabetes mellitus, latent autoimmune diabetes in adults",'-,GCST007247,6:32658698
+rs11725853-<b>A</b>,"8 x 10-7",,0.15,'-,"0.11 unit increase",[0.07-0.16],GLRA3,"Urinary albumin excretion rate in type 1 diabetes","urinary albumin excretion rate, type 1 diabetes mellitus",'-,GCST002382,4:174721548
+rs2410601-<b>G</b>,"4 x 10-6",,0.47,'-,"0.08 unit increase",[0.04-0.11],PSD3,"Urinary albumin excretion rate in type 1 diabetes","urinary albumin excretion rate, type 1 diabetes mellitus",'-,GCST002382,8:19065067
+rs2523989-<b>A</b>,"2 x 10-8",,NR,1.7499,'-,'-,"TRIM31, TRIM31-AS1","Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,6:30110498
+rs886424-<b>A</b>,"3 x 10-14",,NR,2.2107,'-,'-,LINC00243,"Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,6:30814225
+rs2251396-<b>T</b>,"1 x 10-22",,NR,2.2132,'-,'-,"MICA, HLA-S","Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,6:31396930
+rs2857595-<b>T</b>,"2 x 10-23",,NR,2.3765,'-,'-,"NCR3, UQCRHP1","Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,6:31600692
+rs1270942-<b>C</b>,"5 x 10-25",,NR,3.0494,'-,'-,CFB,"Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,6:31951083
+rs1980493-<b>G</b>,"2 x 10-20",,NR,2.5034,'-,'-,"TSBP1-AS1, BTNL2","Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,6:32395438
+rs1015166-<b>T</b>,"4 x 10-22",,NR,2.1428,'-,'-,TAP2,"Type 1 diabetes and autoimmune thyroid diseases","autoimmune thyroid disease, type 1 diabetes mellitus",'-,GCST002876,6:32830954
+rs1004446-<b>C</b>,"4 x 10-9",,0.65,1.61,'-,[1.37-1.89],INS-IGF2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000054,11:2148913
+rs2903692-<b>G</b>,"7 x 10-11",,0.62,1.54,'-,[1.32-1.79],CLEC16A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000054,16:11144926
+rs2476601-<b>A</b>,"1 x 10-7",,0.09,1.8,'-,[1.44-2.24],PTPN22,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000054,1:113834946
+rs2647044-<b>A</b>,"1 x 10-16",,0.13,8.3,'-,[6.97-9.89],"HLA-DQB1, MTCO3P1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000054,6:32700133
+rs17696736-<b>G</b>,"2 x 10-16",,0.42,1.22,'-,[1.15-1.28],NAA25,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,12:112049014
+rs763361-<b>A</b>,"1 x 10-8",,0.47,1.16,'-,[1.10-1.22],CD226,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,18:69864406
+rs1445898-<b>G</b>,"8 x 10-6",,0.55,1.12,'-,[1.06-1.19],CAPSL,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,5:35910427
+rs2292239-<b>A</b>,"2 x 10-20",,0.34,1.28,'-,[1.21-1.35],ERBB3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,12:56088396
+rs12708716-<b>A</b>,"3 x 10-18",,0.68,1.23,'-,[1.16-1.30],CLEC16A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,16:11086016
+rs2542151-<b>C</b>,"1 x 10-14",,0.16,1.3,'-,[1.22-1.40],"LINC01882, PTPN2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,18:12779948
+rs2476601-<b>T</b>,"2 x 10-80",,0.09,1.98,'-,[1.82-2.15],PTPN22,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,1:113834946
+rs6897932-<b>G</b>,"8 x 10-6",,0.71,1.12,'-,[1.06-1.19],IL7R,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,5:35874473
+rs9653442-<b>G</b>,"5 x 10-6",,0.46,1.11,'-,[1.05-1.17],LINC01104,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,2:100208905
+rs6679677-<b>A</b>,"8 x 10-24",,0.10,1.89,'-,[1.67-2.13],"RSBN1, PHTF1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,1:113761186
+rs3741208-<b>T</b>,"2 x 10-7",,0.38,1.25,'-,[1.15-1.35],"INS-IGF2, IGF2-AS","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,11:2148544
+rs1990760-<b>A</b>,"2 x 10-11",,0.60,1.18,'-,[1.11-1.23],IFIH1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000038,2:162267541
+rs1701704-<b>C</b>,"9 x 10-10",,0.35,1.25,'-,[1.12-1.40],IKZF4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000141,12:56018703
+rs3757247-<b>A</b>,"1 x 10-6",,NR,1.13,'-,[1.08-1.19],BACH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000244,6:90247744
+rs8035957-<b>C</b>,"4 x 10-6",,NR,1.14,'-,[1.08-1.21],RASGRP1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000244,15:38546063
+rs9976767-<b>C</b>,"2 x 10-8",,NR,1.16,'-,[1.10-1.22],UBASH3A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000244,21:42416281
+rs1983853-<b>?</b>,"2 x 10-6",,NR,1.2,'-,[1.11-1.29],LPAR3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000244,1:84845509
+rs10758593-<b>A</b>,"3 x 10-6",,NR,1.13,'-,[1.07-1.19],GLIS3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000244,9:4292083
+rs6679677-<b>A</b>,"2 x 10-6","(any IA)",0.114,1.46,'-,'-,"RSBN1, PHTF1","Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,1:113761186
+rs3184504-<b>A</b>,"4 x 10-7","(any IA)",0.462,1.35,'-,'-,"ATXN2, SH2B3","Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,12:111446804
+rs428595-<b>A</b>,"1 x 10-6","(any IA)",0.011,2.47,'-,'-,"PPIL2, MIR130B","Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,22:21662102
+rs6679677-<b>A</b>,"2 x 10-6",(multiple-IA),0.114,1.592,'-,'-,"RSBN1, PHTF1","Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,1:113761186
+rs3842727-<b>A</b>,"1 x 10-7",(multiple-IA),0.716,1.6638935,'-,'-,"INS, TH","Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,11:2163618
+rs11705721-<b>G</b>,"9 x 10-6",(multiple-IA),0.321,1.41,'-,'-,PXK,"Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,3:58414687
+rs28600853-<b>G</b>,"6 x 10-6",(IAA-first),0.011,3.233,'-,'-,TTC34,"Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,1:2863195
+rs3842727-<b>A</b>,"6 x 10-6",(IAA-first),0.716,1.7513134,'-,'-,"INS, TH","Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,11:2163618
+rs9934817-<b>G</b>,"8 x 10-6",(GADA-first),0.019,2.663,'-,'-,RBFOX1,"Type 1 diabetes autoantibodies in high risk HLA genotype individuals (time to event)","event free survival time, type 1 diabetes mellitus, autoantibody measurement","carrier status",GCST006197,16:6086218
+rs113935429-<b>A</b>,"1 x 10-8",,NR,'-,"0.1044 unit increase",[0.069-0.14],FTO,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,16:53788258
+rs2847278-<b>T</b>,"1 x 10-9",,NR,'-,"0.1554 unit decrease",[0.11-0.21],"PTPN2, LINC01882","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,18:12778716
+rs2476601-<b>G</b>,"1 x 10-50",,NR,'-,"0.4287 unit decrease",[0.37-0.48],PTPN22,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,1:113834946
+rs7567242-<b>A</b>,"4 x 10-9",,NR,'-,"0.1416 unit increase",[0.094-0.189],"RNA5SP94, MIR4432HG","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,2:60326008
+rs9273367-<b>T</b>,"6 x 10-306",,NR,'-,"0.7272 unit increase",[0.69-0.77],"HLA-DQB1, HLA-DQA1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,6:32658661
+rs17711850-<b>C</b>,"2 x 10-9",,NR,'-,"0.1236 unit increase",[0.083-0.164],BACH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,6:90155151
+rs3757787-<b>T</b>,"1 x 10-8",,NR,'-,"0.4363 unit increase",[0.29-0.59],"PAX4, SND1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,7:127618330
+rs10811662-<b>A</b>,"1 x 10-10",,NR,'-,"0.1412 unit decrease",[0.098-0.184],"DMRTA1, CDKN2B-AS1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,9:22134254
+rs706779-<b>C</b>,"3 x 10-8",,NR,'-,"0.0963 unit decrease",[0.062-0.13],IL2RA,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,10:6056861
+rs3184504-<b>C</b>,"4 x 10-14",,NR,'-,"0.1433 unit decrease",[0.11-0.18],"ATXN2, SH2B3","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,12:111446804
+rs7167984-<b>A</b>,"3 x 10-8",,NR,'-,"0.1262 unit decrease",[0.082-0.171],"RGMA, SEPHS1P2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,15:93288838
+rs7903146-<b>T</b>,"1 x 10-14",,NR,'-,"0.1668 unit increase",[0.12-0.21],TCF7L2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,10:112998590
+rs3842753-<b>G</b>,"8 x 10-44",,NR,'-,"0.3085 unit increase",[0.26-0.35],"INS, INS-IGF2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,11:2159830
+rs10876866-<b>A</b>,"3 x 10-8",,NR,'-,"0.1105 unit increase",[0.071-0.15],"ERBB3, RPS26","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018925,12:56051582
+rs705705-<b>C</b>,"4 x 10-32",,0.34,1.25,'-,'-,RPS26,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,12:56041720
+rs653178-<b>C</b>,"2 x 10-44",,0.48,1.3,'-,'-,ATXN2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,12:111569952
+rs9585056-<b>C</b>,"3 x 10-8",,0.24,1.12,'-,'-,"CCR12P, TM9SF2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,13:99429512
+rs1456988-<b>G</b>,"3 x 10-8",,0.27,1.12,'-,'-,LINC01550,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,14:98021670
+rs56994090-<b>T</b>,"1 x 10-11",,0.59,1.1363636,'-,'-,MEG3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,14:100840110
+rs72727394-<b>T</b>,"4 x 10-10",,0.19,1.15,'-,'-,RASGRP1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,15:38554821
+rs34593439-<b>G</b>,"9 x 10-14",,0.9,1.2820514,'-,'-,CTSH,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,15:78942615
+rs151234-<b>C</b>,"5 x 10-11",,0.12,1.19,'-,'-,CLN3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,16:28494339
+rs12927355-<b>C</b>,"3 x 10-22",,0.68,1.2195122,'-,'-,CLEC16A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,16:11100914
+rs193778-<b>G</b>,"4 x 10-10",,0.25,1.14,'-,'-,RMI2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,16:11257354
+rs8056814-<b>A</b>,"3 x 10-19",,0.07,1.32,'-,'-,"CTRB1, CTRB2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,16:75218429
+rs12453507-<b>G</b>,"1 x 10-8",,0.51,1.1111112,'-,'-,"ZPBP2, GSDMB","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,17:39896954
+rs757411-<b>T</b>,"1 x 10-7",,0.64,1.1111112,'-,'-,"SMARCE1, CCR7","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,17:40618898
+rs1052553-<b>A</b>,"8 x 10-8",,0.76,1.1235955,'-,'-,MAPT,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,17:45996523
+rs1893217-<b>G</b>,"1 x 10-15",,0.16,1.21,'-,'-,PTPN2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,18:12809341
+rs12971201-<b>G</b>,"2 x 10-6","(conditioned on rs1893217)",0.61,1.1235955,'-,'-,PTPN2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,18:12830539
+rs1615504-<b>T</b>,"2 x 10-11",,0.47,1.13,'-,'-,CD226,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,18:69859408
+rs34536443-<b>G</b>,"4 x 10-15",,0.96,1.4925373,'-,'-,TYK2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,19:10352442
+rs12720356-<b>A</b>,"4 x 10-7","(conditioned on rs34536443)",0.91,1.2195122,'-,'-,TYK2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,19:10359299
+rs402072-<b>T</b>,"5 x 10-8",,0.84,1.1494253,'-,'-,PRKD2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,19:46715865
+rs516246-<b>T</b>,"5 x 10-14",,0.51,1.1494253,'-,'-,FUT2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,19:48702915
+rs6043409-<b>G</b>,"3 x 10-10",,0.65,1.1363636,'-,'-,"SIRPG-AS1, SIRPG","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,20:1635560
+rs11203202-<b>G</b>,"1 x 10-15",,0.33,1.16,'-,'-,UBASH3A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,21:42405248
+rs6518350-<b>A</b>,"1 x 10-7",,0.82,1.1363636,'-,'-,GATD3A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,21:44201934
+rs4820830-<b>C</b>,"1 x 10-12",,0.38,1.14,'-,'-,HORMAD2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,22:30135102
+rs2476601-<b>A</b>,"1 x 10-100",,0.09,1.89,'-,'-,PTPN22,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,1:113834946
+rs6691977-<b>C</b>,"4 x 10-8",,0.19,1.13,'-,'-,CAMSAP2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,1:200845831
+rs3024505-<b>G</b>,"6 x 10-8",,0.84,1.1627907,'-,'-,"Y_RNA, IL10","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,1:206766559
+rs13415583-<b>T</b>,"1 x 10-7",,0.65,1.1111112,'-,'-,AFF3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,2:100147625
+rs4849135-<b>G</b>,"4 x 10-8",,0.71,1.1235955,'-,'-,ACOXL,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,2:110857502
+rs2111485-<b>G</b>,"4 x 10-18",,0.61,1.1764705,'-,'-,"FAP, IFIH1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,2:162254026
+rs35667974-<b>T</b>,"9 x 10-9","(conditioned on rs2111485)",0.98,1.6949153,'-,'-,IFIH1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,2:162268127
+rs72871627-<b>A</b>,"2 x 10-6","(conditioned rs2111485, rs35667974)",0.99,1.6393442,'-,'-,IFIH1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,2:162280432
+rs3087243-<b>G</b>,"7 x 10-21",,0.55,1.1904762,'-,'-,"ICOS, CTLA4","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,2:203874196
+rs113010081-<b>T</b>,"5 x 10-8",,0.89,1.1764705,'-,'-,"LINC02009, CCRL2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,3:46415921
+rs75793288-<b>G</b>,"6 x 10-13",,0.36,1.15,'-,'-,KIAA1109,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,4:122322441
+rs2611215-<b>A</b>,"2 x 10-11",,0.15,1.18,'-,'-,LINC01179,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,4:165653115
+rs11954020-<b>G</b>,"4 x 10-8",,0.39,1.11,'-,'-,"CAPSL, IL7R","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,5:35883149
+rs72928038-<b>A</b>,"6 x 10-14",,0.17,1.2,'-,'-,BACH2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,6:90267049
+rs1538171-<b>G</b>,"7 x 10-10",,0.45,1.12,'-,'-,"CENPW, MIR588","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,6:126431738
+rs62447205-<b>A</b>,"3 x 10-8",,0.72,1.1235955,'-,'-,IKZF1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,7:50398132
+rs10277986-<b>A</b>,"1 x 10-7",,0.96,1.3157895,'-,'-,COBL,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,7:50961290
+rs6476839-<b>T</b>,"1 x 10-9",,0.4,1.12,'-,'-,GLIS3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,9:4290823
+rs61839660-<b>C</b>,"3 x 10-39",,0.9,1.6129031,'-,'-,IL2RA,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,10:6052734
+rs10795791-<b>G</b>,"6 x 10-11","(conditioned rs61839660)",0.41,1.16,'-,'-,"IL2RA, RPL32P23","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,10:6066377
+rs41295121-<b>C</b>,"5 x 10-8","(conditioned rs61839660, rs10795791)",0.99,2.0408163,'-,'-,"RBM17, RPL32P23","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,10:6087680
+rs12416116-<b>C</b>,"4 x 10-15",,0.72,1.1764705,'-,'-,RNLS,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,10:88275897
+rs689-<b>T</b>,"1 x 10-100",,0.7,2.3809524,'-,'-,"INS-IGF2, INS","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,11:2160994
+rs72853903-<b>C</b>,"6 x 10-10","(conditioned on rs689)",0.62,1.1764705,'-,'-,"ASCL2, MIR4686","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,11:2177435
+rs917911-<b>C</b>,"2 x 10-7",,0.36,1.1,'-,'-,CD69,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,12:9753255
+rs229533-<b>C</b>,"2 x 10-8",,0.43,1.11,'-,'-,C1QTNF6,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST005536,22:37191071
+rs138748427-<b>A</b>,"3 x 10-9",,0.507810792,'-,"0.29127777 unit increase",[0.2-0.39],"HLA-DRB5, HLA-DRB9","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018705,6:32516743
+rs3757787-<b>T</b>,"1 x 10-8",,0.088020982,'-,"0.43625864 unit increase",[0.29-0.59],"PAX4, SND1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018705,7:127618330
+rs2237897-<b>T</b>,"2 x 10-8",,0.391598026,'-,"0.24306235 unit decrease",[0.16-0.33],KCNQ1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90018705,11:2837316
+rs926169-<b>T</b>,"9 x 10-6",,0.36,1.28,'-,[1.15–1.42],"RNU6-474P, CTLA4","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST009916,2:203858029
+rs9273363-<b>A</b>,"5 x 10-138",,0.13,5.48,'-,[4.80–6.27],"HLA-DQA1, HLA-DQB1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST009916,6:32658495
+rs1578060-<b>C</b>,"2 x 10-6",,0.13,1.42,'-,[1.23–1.64],"MIR588, CENPW","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST009916,6:126391101
+rs10788599-<b>?</b>,"1 x 10-6",,0.83,1.4492754,'-,'-,RNLS,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST009916,10:88428167
+rs3842727-<b>T</b>,"1 x 10-13",,0.26,1.53,'-,[1.37–1.72],"INS, TH","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST009916,11:2163618
+rs56380902-<b>C</b>,"1 x 10-8",,0.44,1.35,'-,[1.22–1.50],GSDMB,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST009916,17:39910119
+rs79538630-<b>T</b>,"1 x 10-9",,0.035,1.213,'-,'-,"CD6, SLC15A3","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:60961822
+rs34090353-<b>C</b>,"1 x 10-8",,0.361,1.078,'-,'-,RPAP2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:92358141
+rs645078-<b>C</b>,"3 x 10-9",,0.385,0.925,'-,'-,RPS6KA4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:64367826
+rs2229238-<b>C</b>,"1 x 10-12",,0.813,0.896,'-,'-,IL6R,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:154465420
+rs1805731-<b>C</b>,"4 x 10-8",,0.389,1.073,'-,'-,M6PR,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,12:8942630
+rs7313065-<b>A</b>,"3 x 10-9",,0.162,1.101,'-,'-,SPRYD3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,12:53077434
+rs74537115-<b>T</b>,"5 x 10-9",,0.141,1.109,'-,'-,LINC02341,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,13:42343795
+rs911263-<b>T</b>,"3 x 10-8",,0.71,1.083,'-,'-,RAD51B,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,14:68286876
+rs4238595-<b>C</b>,"2 x 10-11",,0.687,0.912,'-,'-,"UMOD, GP2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,16:20331769
+rs1052553-<b>G</b>,"2 x 10-15",,0.232,0.879,'-,'-,MAPT,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,17:45996523
+rs113881148-<b>A</b>,"6 x 10-9",,0.626,1.082,'-,'-,DGKQ,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,4:973543
+rs56178904-<b>T</b>,"7 x 10-11",,0.187,0.898,'-,'-,GATD3A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,21:44204668
+rs34090353-<b>C</b>,"1 x 10-8",,0.361,1.078,'-,'-,RPAP2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:92358141
+rs2641348-<b>G</b>,"2 x 10-8",,0.107,1.113,'-,'-,ADAM30,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:119895261
+rs2229238-<b>C</b>,"1 x 10-12",,0.813,0.896,'-,'-,IL6R,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:154465420
+rs78037977-<b>G</b>,"2 x 10-9",,0.124,0.884,'-,'-,"FASLG, SLC25A38P1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:172746562
+rs2816313-<b>A</b>,"5 x 10-9",,0.719,1.09,'-,'-,RGS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:192570207
+rs11120029-<b>T</b>,"2 x 10-8",,0.147,1.102,'-,'-,TATDN3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:212796238
+rs10169963-<b>T</b>,"3 x 10-8",,0.58,1.074,'-,'-,MIR3681HG,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:12512805
+rs12712067-<b>T</b>,"4 x 10-9",,0.358,0.925,'-,'-,AFF3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:100147438
+rs7582694-<b>G</b>,"3 x 10-9",,0.773,0.916,'-,'-,STAT4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:191105394
+rs10933559-<b>G</b>,"3 x 10-11",,0.208,1.109,'-,'-,FARP2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:241468331
+rs113881148-<b>A</b>,"6 x 10-9",,0.626,1.082,'-,'-,DGKQ,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,4:973543
+rs337637-<b>A</b>,"3 x 10-10",,0.364,0.919,'-,'-,KLF3-AS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,4:38602849
+rs1876142-<b>T</b>,"2 x 10-14",,0.658,0.905,'-,'-,TTC33,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,5:40521603
+rs2269242-<b>C</b>,"5 x 10-12",,0.196,1.11,'-,'-,'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,"Mapping not available"
+rs968567-<b>T</b>,"8 x 10-9",,0.177,0.903,'-,'-,"FADS1, FADS2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:61828092
+rs2641348-<b>G</b>,"2 x 10-8",,0.107,1.113,'-,'-,ADAM30,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:119895261
+rs605093-<b>T</b>,"4 x 10-9",,0.47,1.077,'-,'-,FLI1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:128734337
+rs78037977-<b>G</b>,"2 x 10-9",,0.124,0.884,'-,'-,"FASLG, SLC25A38P1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:172746562
+rs2816313-<b>A</b>,"5 x 10-9",,0.719,1.09,'-,'-,RGS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:192570207
+rs11120029-<b>T</b>,"2 x 10-8",,0.147,1.102,'-,'-,TATDN3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,1:212796238
+rs10169963-<b>T</b>,"3 x 10-8",,0.58,1.074,'-,'-,MIR3681HG,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:12512805
+rs12712067-<b>T</b>,"4 x 10-9",,0.358,0.925,'-,'-,AFF3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:100147438
+rs7582694-<b>G</b>,"3 x 10-9",,0.773,0.916,'-,'-,STAT4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:191105394
+rs10933559-<b>G</b>,"3 x 10-11",,0.208,1.109,'-,'-,FARP2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,2:241468331
+rs2597169-<b>G</b>,"3 x 10-9",,0.348,1.081,'-,'-,PRR15L,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,17:47956725
+rs337637-<b>A</b>,"3 x 10-10",,0.364,0.919,'-,'-,KLF3-AS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,4:38602849
+rs1876142-<b>T</b>,"2 x 10-14",,0.658,0.905,'-,'-,TTC33,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,5:40521603
+rs10213692-<b>C</b>,"3 x 10-9",,0.241,0.912,'-,'-,ANKRD55,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,5:56146422
+rs9405661-<b>A</b>,"2 x 10-9",,0.514,1.08,'-,'-,"IRF4, EXOC2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,6:424915
+rs2269242-<b>C</b>,"5 x 10-12",,0.196,1.11,'-,'-,'-,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,"Mapping not available"
+rs12665429-<b>C</b>,"1 x 10-13",,0.37,0.907,'-,'-,LINC02539,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,6:137682468
+rs212408-<b>T</b>,"1 x 10-15",,0.638,1.112,'-,'-,TAGAP-AS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,6:159049210
+rs17143056-<b>G</b>,"2 x 10-8",,0.183,0.909,'-,'-,EEF1A1P27,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,7:20557306
+rs10245867-<b>T</b>,"3 x 10-8",,0.331,0.928,'-,'-,JAZF1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,7:28102567
+rs2250903-<b>T</b>,"1 x 10-10",,0.283,0.905,'-,'-,"CTSB, OR7E158P","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,8:11877675
+rs1405209-<b>C</b>,"3 x 10-8",,0.375,1.075,'-,'-,"NR4A3, STX17-AS1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,9:99823263
+rs722988-<b>C</b>,"3 x 10-15",,0.367,1.108,'-,'-,"NRP1, IATPR","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,10:33137219
+rs11033048-<b>T</b>,"2 x 10-10",,0.366,1.091,'-,'-,SLC1A2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:35267496
+rs10213692-<b>C</b>,"3 x 10-9",,0.241,0.912,'-,'-,ANKRD55,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,5:56146422
+rs9405661-<b>A</b>,"2 x 10-9",,0.514,1.08,'-,'-,"IRF4, EXOC2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,6:424915
+rs12665429-<b>C</b>,"1 x 10-13",,0.37,0.907,'-,'-,LINC02539,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,6:137682468
+rs212408-<b>T</b>,"1 x 10-15",,0.638,1.112,'-,'-,TAGAP-AS1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,6:159049210
+rs17143056-<b>G</b>,"2 x 10-8",,0.183,0.909,'-,'-,EEF1A1P27,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,7:20557306
+rs10245867-<b>T</b>,"3 x 10-8",,0.331,0.928,'-,'-,JAZF1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,7:28102567
+rs2250903-<b>T</b>,"1 x 10-10",,0.283,0.905,'-,'-,"CTSB, OR7E158P","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,8:11877675
+rs1405209-<b>C</b>,"3 x 10-8",,0.375,1.075,'-,'-,"NR4A3, STX17-AS1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,9:99823263
+rs722988-<b>C</b>,"3 x 10-15",,0.367,1.108,'-,'-,"NRP1, IATPR","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,10:33137219
+rs11033048-<b>T</b>,"2 x 10-10",,0.366,1.091,'-,'-,SLC1A2,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:35267496
+rs79538630-<b>T</b>,"1 x 10-9",,0.035,1.213,'-,'-,"CD6, SLC15A3","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:60961822
+rs968567-<b>T</b>,"8 x 10-9",,0.177,0.903,'-,'-,"FADS1, FADS2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:61828092
+rs645078-<b>C</b>,"3 x 10-9",,0.385,0.925,'-,'-,RPS6KA4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:64367826
+rs605093-<b>T</b>,"4 x 10-9",,0.47,1.077,'-,'-,FLI1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,11:128734337
+rs1805731-<b>C</b>,"4 x 10-8",,0.389,1.073,'-,'-,M6PR,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,12:8942630
+rs7313065-<b>A</b>,"3 x 10-9",,0.162,1.101,'-,'-,SPRYD3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,12:53077434
+rs74537115-<b>T</b>,"5 x 10-9",,0.141,1.109,'-,'-,LINC02341,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,13:42343795
+rs911263-<b>T</b>,"3 x 10-8",,0.71,1.083,'-,'-,RAD51B,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,14:68286876
+rs4238595-<b>C</b>,"2 x 10-11",,0.687,0.912,'-,'-,"UMOD, GP2","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,16:20331769
+rs1052553-<b>G</b>,"2 x 10-15",,0.232,0.879,'-,'-,MAPT,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,17:45996523
+rs2597169-<b>G</b>,"3 x 10-9",,0.348,1.081,'-,'-,PRR15L,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,17:47956725
+rs56178904-<b>T</b>,"7 x 10-11",,0.187,0.898,'-,'-,GATD3A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST90013445,21:44204668
+rs2148655-<b>T</b>,"8 x 10-8",,NR,'-,'-,'-,DGKH,"Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,13:42065933
+rs6448501-<b>C</b>,"2 x 10-7",,NR,'-,'-,'-,"LINC02261, STIM2","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27187197
+rs12508379-<b>A</b>,"4 x 10-7",,NR,'-,'-,'-,"STIM2, LINC02261","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27170830
+rs185335076-<b>T</b>,"4 x 10-7",,NR,'-,'-,'-,"STIM2, LINC02261","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27161458
+rs13132147-<b>G</b>,"9 x 10-7",,NR,'-,'-,'-,"LINC02261, STIM2","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27165208
+rs35956129-<b>A</b>,"9 x 10-7",,NR,'-,'-,'-,"LINC02261, STIM2","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27165352
+rs1275406-<b>G</b>,"2 x 10-6",,NR,'-,'-,'-,DCAF5,"Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,14:69126022
+rs7684596-<b>G</b>,"2 x 10-6",,NR,'-,'-,'-,"STIM2, LINC02261","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27213543
+rs7684597-<b>G</b>,"2 x 10-6",,NR,'-,'-,'-,"STIM2, LINC02261","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27213548
+rs7684611-<b>G</b>,"2 x 10-6",,NR,'-,'-,'-,"STIM2, LINC02261","Neuropeptide Y autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST90132189,4:27213567
+rs689-<b>?</b>,"1 x 10-6",,NR,2.44,'-,[1.69-3.45],"INS-IGF2, INS","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST008377,11:2160994
+rs4320356-<b>T</b>,"3 x 10-8",,0.28,1.26,'-,[1.16-1.36],BTN2A3P,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST008377,6:26423332
+rs3802604-<b>C</b>,"2 x 10-8",,0.38,1.24,'-,[1.15-1.33],GATA3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST008377,10:8060309
+rs1770-<b>G</b>,"2 x 10-232",,0.46,4.28,'-,[3.92-4.68],"HLA-DQB1, HLA-DQB1-AS1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST008377,6:32660056
+rs705699-<b>T</b>,"7 x 10-20",,0.26,1.46,'-,[1.34-1.58],RAB5B,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST008377,12:55991020
+rs3761980-<b>C</b>,"9 x 10-8","(Type 2 diabetes)",NR,'-,'-,'-,"MAPK14, SLC26A8","Foot ulcer in diabetes and neuropathy","diabetic foot","type 1 diabetes mellitus, type 2 diabetes mellitus, neuropathy",GCST004724,6:36026129
+rs80028505-<b>T</b>,"3 x 10-8",,0.09,1.71,'-,[1.41-2.06],MAPK14,"Foot ulcer in diabetes and neuropathy","diabetic foot","type 1 diabetes mellitus, type 2 diabetes mellitus, neuropathy",GCST004724,6:36030611
+rs71597855-<b>?</b>,"1 x 10-7",,NR,2.678,'-,[1.856-3.863],LNX1,"Foot ulcer and neuropathy in diabetes","diabetic foot, neuropathy","type 1 diabetes mellitus, type 2 diabetes mellitus",GCST004725,4:53790270
+rs11154178-<b>?</b>,"2 x 10-7",,NR,1.37,'-,[1.22-1.55],TRDN,"Foot ulcer and neuropathy in diabetes","diabetic foot, neuropathy","type 1 diabetes mellitus, type 2 diabetes mellitus",GCST004725,6:123540174
+rs28485846-<b>?</b>,"4 x 10-7",,NR,2.116,'-,[1.583-2.829],UNC5D,"Foot ulcer and neuropathy in diabetes","diabetic foot, neuropathy","type 1 diabetes mellitus, type 2 diabetes mellitus",GCST004725,8:35265058
+rs559047-<b>A</b>,"4 x 10-6",,0.24,'-,"0.28 unit decrease",[0.16-0.40],KRT18P32,"Stimulated C-peptide levels in type I diabetes","C-peptide measurement","type 1 diabetes mellitus",GCST005435,1:238590616
+rs61211515-<b>?</b>,"1 x 10-7",,0.16,'-,"0.39 unit decrease",[0.25-0.53],"TRIM31-AS1, TRIM40","Stimulated C-peptide levels in type I diabetes","C-peptide measurement","type 1 diabetes mellitus",GCST005435,6:30133199
+rs3135002-<b>A</b>,"3 x 10-8",,0.03,'-,'-,'-,"HLA-DQB1, MTCO3P1","Random C-peptide levels in type I diabetes","C-peptide measurement","type 1 diabetes mellitus",GCST005437,6:32700662
+rs559047-<b>A</b>,"4 x 10-8",,0.23,'-,'-,'-,KRT18P32,"C-peptide levels in type I diabetes","C-peptide measurement","type 1 diabetes mellitus",GCST005436,1:238590616
+rs9260151-<b>T</b>,"8 x 10-8",,0.09,'-,'-,'-,HLA-A,"C-peptide levels in type I diabetes","C-peptide measurement","type 1 diabetes mellitus",GCST005436,6:29943253
+rs61211515-<b>?</b>,"2 x 10-6",,0.16,'-,'-,'-,"TRIM31-AS1, TRIM40","C-peptide levels in type I diabetes","C-peptide measurement","type 1 diabetes mellitus",GCST005436,6:30133199
+rs3135002-<b>A</b>,"7 x 10-8",,0.03,'-,'-,'-,"HLA-DQB1, MTCO3P1","C-peptide levels in type I diabetes","C-peptide measurement","type 1 diabetes mellitus",GCST005436,6:32700662
+rs9810233-<b>G</b>,"7 x 10-7",,0.270,'-,'-,'-,ALCAM,"Erectile dysfunction in type 1 diabetes","erectile dysfunction","type 1 diabetes mellitus",GCST001572,3:105292046
+rs836589-<b>A</b>,"2 x 10-6",,0.186,'-,'-,'-,"RAPGEF4-AS1, PDK1","Erectile dysfunction in type 1 diabetes","erectile dysfunction","type 1 diabetes mellitus",GCST001572,2:172628350
+rs6931865-<b>A</b>,"4 x 10-6",,0.336,'-,'-,'-,PHACTR2,"Erectile dysfunction in type 1 diabetes","erectile dysfunction","type 1 diabetes mellitus",GCST001572,6:143758717
+rs950146-<b>C</b>,"4 x 10-6",,0.491,'-,'-,'-,"RN7SKP227, NBPF21P","Erectile dysfunction in type 1 diabetes","erectile dysfunction","type 1 diabetes mellitus",GCST001572,3:36638607
+rs2990510-<b>G</b>,"6 x 10-6",,0.305,'-,'-,'-,F13B,"Erectile dysfunction in type 1 diabetes","erectile dysfunction","type 1 diabetes mellitus",GCST001572,1:197051528
+rs9850224-<b>A</b>,"5 x 10-6",,0.010,'-,'-,'-,LINC02050,"Erectile dysfunction in type 1 diabetes","erectile dysfunction","type 1 diabetes mellitus",GCST001572,3:80816613
+rs7528684-<b>T</b>,"8 x 10-9",,NR,1.45,'-,'-,"VDAC1P9, FCRL3","Insulinoma-associated antigen 2 autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST004381,1:157701026
+rs657152-<b>G</b>,"1 x 10-13",,'-,2.94,'-,[2.13-4.00],ABO,"Gastric parietal cell autoantibody levels in type 1 diabetes","autoantibody measurement","type 1 diabetes mellitus",GCST004382,9:133263862
+rs11755527-<b>G</b>,"1 x 10-6",,'-,1.2,'-,'-,BACH2,"Thyroid peroxidase autoantibody levels in type 1 diabetes","thyroid peroxidase antibody measurement","type 1 diabetes mellitus",GCST004383,6:90248512
+rs7533564-<b>C</b>,"2 x 10-9",,'-,'-,"0.138 unit increase",[0.093-0.183],"MGC27382, PTGFR","Skin fluorescence in type 1 diabetes","skin fluorescence measurement","type 1 diabetes mellitus",GCST003418,1:78360228
+rs2085277-<b>T</b>,"4 x 10-8",,0.039,'-,"0.046 unit increase",[0.030-0.062],'-,"Glycated hemoglobin levels in type 1 diabetes","HbA1c measurement","type 1 diabetes mellitus",GCST007605,13:31593580
+rs1970112-<b>C</b>,"1 x 10-8",,0.41,1.27,'-,[1.17-1.38],CDKN2B-AS1,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,9:22085599
+rs181176493-<b>A</b>,"2 x 10-7",,0.01,3.88,'-,[2.33-6.47],RN7SL807P,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,2:223293148
+rs70962766-<b>C</b>,"5 x 10-7",,0.99,0.2,'-,[0.11-0.37],"B3GNT2, COMMD1","Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,2:62179865
+rs138181578-<b>AT</b>,"7 x 10-7",,0.99,0.18,'-,[0.09-0.35],RUNX2,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,6:45758094
+rs10625784-<b>TAAA</b>,"8 x 10-7",,0.99,0.23,'-,[0.13-0.42],'-,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,11:106323171
+rs79237700-<b>C</b>,"2 x 10-6",,0.04,1.82,'-,[1.42-2.33],"LINC02490, WDR72","Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,15:53449415
+rs574480779-<b>T</b>,"9 x 10-7",,0.03,2.27,'-,[1.64-3.15],"MRPL22, KIF4B","Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,5:155011321
+rs1344228-<b>T</b>,"8 x 10-6",,0.11,1.33,'-,[1.17-1.51],'-,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,2:123529348
+rs6055069-<b>C</b>,"1 x 10-6",,0.98,0.38,'-,[0.25-0.56],"DEFB126, DEFB127","Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST011116,20:153643
+rs17206992-<b>G</b>,"6 x 10-6",(EA),0.057,2.32,'-,[NR],GALNT13,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,2:154368670
+rs113517532-<b>AGAT</b>,"2 x 10-6",(EA),0.106,1.75,'-,[NR],LINC01117,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,2:176780863
+rs73018809-<b>T</b>,"2 x 10-7",(EA),0.024,3.5,'-,[NR],NUP210,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,3:13329174
+rs28641753-<b>T</b>,"2 x 10-7",(EA),0.071,2.1,'-,[NR],'-,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,3:104256574
+rs78031527-<b>T</b>,"5 x 10-6",(EA),0.201,1.7,'-,[NR],"JAKMIP1, C4orf50","Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,4:6169503
+rs143537377-<b>C</b>,"8 x 10-6",(EA),0.096,1.88,'-,[NR],LINC02212,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,5:10500534
+rs115829748-<b>T</b>,"1 x 10-9",(EA),0.04,3.16,'-,[NR],MAP1B,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,5:72098560
+rs9354144-<b>A</b>,"6 x 10-6",(EA),0.105,1.71,'-,[NR],'-,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,6:94847753
+rs571622299-<b>A</b>,"6 x 10-6",(EA),0.015,4.12,'-,[NR],KCNB2,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,8:72930288
+rs143723948-<b>T</b>,"6 x 10-7",(EA),0.499,1.65,'-,[NR],PAX5,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,9:37034098
+rs117826205-<b>C</b>,"6 x 10-6",(EA),0.026,2.72,'-,[NR],MALRD1,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,10:19168458
+rs61879614-<b>C</b>,"3 x 10-6",(EA),0.048,2.94,'-,[NR],TUB,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,11:8058878
+rs34319244-<b>C</b>,"3 x 10-6",(EA),0.44,1.51,'-,[NR],"UBE2G1, SPNS3","Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,17:4424870
+rs113114656-<b>T</b>,"2 x 10-6",(EA),0.04,2.67,'-,[NR],SMAD2,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,18:47872985
+rs67213764-<b>G</b>,"9 x 10-6",(EA),0.261,1.48,'-,[NR],LINC01683,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,21:19974842
+rs12482425-<b>G</b>,"9 x 10-6",(EA),0.686,1.5151515,'-,[NR],'-,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,21:23556791
+rs373009901-<b>C</b>,"9 x 10-6",(EA),0.019,3.94,'-,[NR],GRK3,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,22:25592812
+rs138760780-<b>T</b>,"9 x 10-6",(EA),0.018,3.48,'-,[NR],CDK18,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,1:205515245
+rs12344245-<b>G</b>,"9 x 10-6",(EA),0.035,2.52,'-,[NR],FAM189A2,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,9:69340801
+rs12344245-<b>G</b>,"9 x 10-6",,0.035,1.85,'-,[1.41-2.43],FAM189A2,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,9:69340801
+rs138760780-<b>T</b>,"2 x 10-6",,0.018,2.6,'-,[1.75-3.85],CDK18,"Coronary artery disease in type 1 diabetes","coronary artery disease","type 1 diabetes mellitus",GCST006281,1:205515245
+rs11580078-<b>G</b>,"8 x 10-11",,0.43,'-,'-,'-,"C1orf141, IL23R","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,1:67203951
+rs6679677-<b>A</b>,"8 x 10-11",,0.09,'-,'-,'-,"RSBN1, PHTF1","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,1:113761186
+rs117372389-<b>T</b>,"8 x 10-11",,0.02,'-,'-,'-,NKD1,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,16:50634166
+rs12232497-<b>C</b>,"3 x 10-7",,0.45,'-,'-,'-,"GSDMB, ZPBP2","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,17:39883866
+rs55705316-<b>G</b>,"1 x 10-6",,0.14,'-,'-,'-,"IL10, Y_RNA","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,1:206760172
+rs602662-<b>G</b>,"5 x 10-8",,0.49,'-,'-,'-,FUT2,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,19:48703728
+rs36001488-<b>C</b>,"8 x 10-11",,0.48,'-,'-,'-,ATG16L1,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,2:233276621
+rs2836882-<b>A</b>,"5 x 10-8",,0.27,'-,'-,'-,RPL23AP12,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,21:39094644
+rs2066363-<b>C</b>,"8 x 10-11",,0.34,'-,'-,'-,ADGRL2,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,1:81771892
+rs62324212-<b>A</b>,"3 x 10-8",,0.42,'-,'-,'-,IL21-AS1,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,4:122639784
+rs7725052-<b>C</b>,"8 x 10-11",,0.43,'-,'-,'-,"RNU1-150P, TTC33","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,5:40487168
+rs7831697-<b>G</b>,"5 x 10-7",,0.25,'-,'-,'-,RNU6-144P,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,8:137124061
+rs7042370-<b>T</b>,"1 x 10-7",,0.43,'-,'-,'-,"LURAP1L, LURAP1L-AS1","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,9:12785074
+rs10988542-<b>C</b>,"7 x 10-7",,0.08,'-,'-,'-,FNBP1,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,9:129894985
+rs7100025-<b>G</b>,"8 x 10-11",,0.34,'-,'-,'-,LINC00993,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,10:37303610
+rs11839053-<b>C</b>,"1 x 10-6",,0.02,'-,'-,'-,"RPL35P9, LINC00460","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,13:106410694
+rs755374-<b>T</b>,"2 x 10-10",,0.32,'-,'-,'-,"IL12B, LINC01845","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,5:159402286
+rs36051895-<b>T</b>,"9 x 10-8",,0.29,'-,'-,'-,"HNRNPA1P41, JAK2","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,9:4981866
+rs4246905-<b>T</b>,"1 x 10-8",,0.28,'-,'-,'-,TNFSF15,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,9:114790969
+rs11145763-<b>C</b>,"3 x 10-8",,0.4,'-,'-,'-,CARD9,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,9:136369144
+rs706778-<b>T</b>,"6 x 10-9",,0.41,'-,'-,'-,IL2RA,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,10:6056986
+rs10822050-<b>C</b>,"8 x 10-11",,0.39,'-,'-,'-,ALDH7A1P4,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,10:62679011
+rs1250563-<b>C</b>,"1 x 10-8",,0.29,'-,'-,'-,ZMIZ1,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,10:79287626
+rs1332099-<b>T</b>,"9 x 10-11",,0.46,'-,'-,'-,"SLC25A28, NKX2-3","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,10:99538694
+rs17885785-<b>T</b>,"8 x 10-11",,0.2,'-,'-,'-,"INS-IGF2, IGF2-AS","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,11:2146620
+rs17466626-<b>G</b>,"3 x 10-10",,0.02,'-,'-,'-,LRRK2,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,12:40366829
+rs1689510-<b>C</b>,"4 x 10-9",,0.31,'-,'-,'-,SUOX,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,12:56002984
+rs72743477-<b>G</b>,"8 x 10-11",,0.21,'-,'-,'-,SMAD3,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,15:67171953
+rs12598357-<b>G</b>,"4 x 10-9",,0.39,'-,'-,'-,"SBK1, NPIPB6","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,16:28329624
+rs12928404-<b>C</b>,"6 x 10-7",,0.38,'-,'-,'-,ATXN2L,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,16:28835925
+rs34884278-<b>C</b>,"4 x 10-7",,0.3,'-,'-,'-,AIMP1P2,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,1:172869708
+rs6689858-<b>C</b>,"2 x 10-7",,0.29,'-,'-,'-,CRB1,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,1:197406337
+rs62131887-<b>T</b>,"4 x 10-7",,0.28,'-,'-,'-,"PDE4A, KEAP1","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,19:10476920
+rs2075184-<b>T</b>,"9 x 10-8",,0.23,'-,'-,'-,"IL18RAP, SLC9A4","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,2:102464132
+rs2738774-<b>A</b>,"9 x 10-7",,0.32,'-,'-,'-,"MHENCR, STMN3","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,20:63637985
+rs4676410-<b>A</b>,"2 x 10-7",,0.19,'-,'-,'-,GPR35,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,2:240624322
+rs4625-<b>G</b>,"8 x 10-11",,0.31,'-,'-,'-,DAG1,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,3:49534707
+rs114846446-<b>A</b>,"2 x 10-7",,0.01,'-,'-,'-,LINC01250,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, psoriasis, ankylosing spondylitis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,2:2944140
+rs7672495-<b>C</b>,"1 x 10-7",,0.18,'-,'-,'-,"CYTL1, RN7SKP113","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,4:4990640
+rs7660520-<b>A</b>,"8 x 10-11",,0.26,'-,'-,'-,"DCTD, TENM3","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,4:182824168
+rs7731626-<b>A</b>,"1 x 10-10",,0.39,'-,'-,'-,ANKRD55,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,5:56148856
+rs4869313-<b>T</b>,"9 x 10-8",,0.42,'-,'-,'-,ERAP2,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,5:96888176
+rs11741255-<b>A</b>,"2 x 10-9",,0.42,'-,'-,'-,"IRF1, IRF1-AS1","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,5:132475490
+rs77150043-<b>T</b>,"6 x 10-9",,0.23,'-,'-,'-,ADCY7,"Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,16:50270338
+rs2807264-<b>C</b>,"1 x 10-8",,0.21,'-,'-,'-,"LINC00892, RNU6-320P","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,X:136583619
+rs12863738-<b>T</b>,"6 x 10-8",,0.17,'-,'-,'-,"SRRM1P3, RPL22P23","Pediatric autoimmune diseases","autoimmune thyroid disease, obsolete_common variable immunodeficiency, type 1 diabetes mellitus, ankylosing spondylitis, psoriasis, celiac disease, obsolete_systemic lupus erythematosus, ulcerative colitis, Crohn's disease, autoimmune disease, juvenile idiopathic arthritis",'-,GCST003097,X:136949968
+rs4972593-<b>A</b>,"4 x 10-8",(Women),0.14,1.81,'-,[1.47-2.24],'-,"End-stage renal disease in Type 1 diabetics","chronic kidney disease","type 1 diabetes mellitus",GCST002182,2:173598126
+rs1326934-<b>T</b>,"6 x 10-7",,0.57,1.19,'-,[1.11-1.27],SORBS1,"Diabetic nephropathy in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST002716,10:95524324
+rs17696736-<b>G</b>,"2 x 10-14",,0.42,1.34,'-,[1.16-1.53],NAA25,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,12:112049014
+rs6534347-<b>A</b>,"2 x 10-6",,0.35,1.3,'-,[1.10-1.55],KIAA1109,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,4:122277280
+rs6679677-<b>A</b>,"5 x 10-26",,0.10,1.82,'-,[1.59-2.09],"RSBN1, PHTF1","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,1:113761186
+rs11171739-<b>C</b>,"1 x 10-11",,0.42,1.34,'-,[1.17-1.54],ERBB3,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,12:56076841
+rs12708716-<b>A</b>,"5 x 10-7",,0.65,1.19,'-,[0.97-1.45],CLEC16A,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,16:11086016
+rs11052552-<b>G</b>,"7 x 10-7",,0.49,1.49,'-,[1.28-1.73],"CLEC2D, LINC02390","Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,12:9703362
+rs17388568-<b>A</b>,"3 x 10-6",,0.26,1.26,'-,[1.11-1.42],ADAD1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,4:122408207
+rs3764021-<b>C</b>,"5 x 10-8",,0.47,1.57,'-,[1.38-1.79],CLEC2D,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,12:9681032
+rs17166496-<b>G</b>,"5 x 10-6",,0.61,1.3,'-,[1.15-1.47],FSTL4,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,5:133293192
+rs9272346-<b>G</b>,"5 x 10-134",,0.61,5.49,'-,[4.83-6.24],HLA-DQA1,"Type 1 diabetes","type 1 diabetes mellitus",'-,GCST000043,6:32636595
+rs61277444-<b>G</b>,"6 x 10-6",,0.08,1.42,'-,[1.20-1.67],PTPN13,"Kidney disease (end stage renal disease vs normoalbuminuria) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003861,4:86607925
+rs6027504-<b>T</b>,"3 x 10-6",,0.60,1.21,'-,[1.12-1.30],MIR646HG,"Chronic kidney disease (severe chronic kidney disease vs normal kidney function) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003863,20:60318758
+rs1989248-<b>C</b>,"6 x 10-7",,0.29,1.26,'-,[1.15-1.38],RN7SL72P,"Chronic kidney disease (severe chronic kidney disease vs normal kidney function) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003863,7:148443990
+rs72809865-<b>T</b>,"7 x 10-6",,0.16,1.17,'-,[1.09-1.26],'-,"Kidney disease (early and late stages) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003864,10:81531934
+rs10186458-<b>C</b>,"2 x 10-6",,0.44,1.24,'-,[1.13-1.35],"RNA5SP86, SLC7A15P","Kidney disease (early stage) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003865,2:20398749
+rs317865-<b>G</b>,"2 x 10-6",,0.12,1.37,'-,[1.19-1.57],"TAPT1, PROM1","Kidney disease (early stage) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003865,4:16155043
+rs35612822-<b>A</b>,"7 x 10-6",,0.68,1.24,'-,[1.13-1.37],RPL37A,"Kidney disease (early stage) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003865,2:216505032
+rs72831309-<b>A</b>,"9 x 10-6",,0.04,1.66,'-,[1.34-2.06],TENM2,"Kidney disease (late stage) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003866,5:167551225
+rs13217044-<b>A</b>,"4 x 10-6",,0.71,1.15,'-,[1.07-1.23],PDE10A,"Chronic kidney disease (chronic kidney disease vs normal or mildly reduced eGFR) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003867,6:8226764
+rs1983890-<b>C</b>,"3 x 10-8",,0.642,1.2302363,'-,[1.14396450049362-1.32301382549448],"RBM17, PFKFB3","Latent autoimmune diabetes","latent autoimmune diabetes in adults",'-,GCST007245,10:6136651
+rs11755527-<b>?</b>,"1 x 10-7",,0.443857,1.203898,'-,[1.125016-1.288312],BACH2,"Latent autoimmune diabetes","latent autoimmune diabetes in adults",'-,GCST007245,6:90248512
+rs11888640-<b>?</b>,"2 x 10-6",,0.481522,1.1833298,'-,[1.1-1.27],THADA,"Latent autoimmune diabetes","latent autoimmune diabetes in adults",'-,GCST007245,2:43579243
+rs9273368-<b>?</b>,"3 x 10-78",,0.301,2.439,'-,[2.222-2.676],"HLA-DQB1, HLA-DQA1","Latent autoimmune diabetes vs. type 2 diabetes","latent autoimmune diabetes in adults, type 2 diabetes mellitus",'-,GCST007246,6:32658698
+rs689-<b>?</b>,"1 x 10-18",,0.715,1.473,'-,[1.352-1.605],"INS-IGF2, INS","Latent autoimmune diabetes vs. type 2 diabetes","latent autoimmune diabetes in adults, type 2 diabetes mellitus",'-,GCST007246,11:2160994
+rs2476601-<b>?</b>,"5 x 10-16",,0.14,1.529,'-,[1.38-1.693],PTPN22,"Latent autoimmune diabetes vs. type 2 diabetes","latent autoimmune diabetes in adults, type 2 diabetes mellitus",'-,GCST007246,1:113834946
+rs3184504-<b>?</b>,"2 x 10-8",,0.52,1.24,'-,[1.151-1.336],"ATXN2, SH2B3","Latent autoimmune diabetes vs. type 2 diabetes","latent autoimmune diabetes in adults, type 2 diabetes mellitus",'-,GCST007246,12:111446804
+rs7588550-<b>A</b>,"2 x 10-7",(T1DN),0.95,1.52,'-,[1.30-1.79],ERBB4,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,2:212304043
+rs12437854-<b>G</b>,"2 x 10-9","(ESRD vs. non-ESRD)",0.04,1.8,'-,[1.48-2.17],'-,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,15:93598604
+rs7583877-<b>C</b>,"1 x 10-8","(ESRD vs. non-ESRD)",0.29,1.29,'-,[1.18-1.40],AFF3,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,2:99844192
+rs6027506-<b>A</b>,"5 x 10-6","(ESRD vs. non-ESRD)",0.63,1.22,'-,[1.12-1.32],MIR646HG,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,20:60321657
+rs7583877-<b>C</b>,"3 x 10-7",(ESRD),0.30,1.29,'-,[1.17-1.42],AFF3,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,2:99844192
+rs11723864-<b>G</b>,"7 x 10-7",(ESRD),0.11,1.51,'-,[1.29-1.78],HAND2-AS1,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,4:173653255
+rs878889-<b>A</b>,"8 x 10-7",(ESRD),0.13,1.43,'-,[1.24-1.65],OTX2,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,14:56754421
+rs614226-<b>C</b>,"2 x 10-6",(ESRD),0.83,1.35,'-,[1.19-1.54],RNF10,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,12:120536707
+rs13045180-<b>T</b>,"9 x 10-6",(ESRD),0.19,1.28,'-,[1.15-1.43],EFCAB8,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,20:32943738
+rs11698685-<b>G</b>,"1 x 10-6",(ESRD),0.68,1.27,'-,[1.15-1.39],MIR646HG,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,20:60320788
+rs4871297-<b>A</b>,"2 x 10-6",(ESRD),0.52,1.23,'-,[1.14-1.35],LINC01151,"Type 1 diabetes nephropathy","diabetic nephropathy","type 1 diabetes mellitus",GCST001688,8:122693916
+rs61277444-<b>G</b>,"2 x 10-6",,0.08,1.41,'-,[1.21-1.65],PTPN13,"Kidney disease (end stage renal disease vs non-end stage renal disease) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003862,4:86607925
+rs7562121-<b>C</b>,"4 x 10-7",,0.24,1.27,'-,[1.17-1.39],AFF3,"Kidney disease (end stage renal disease vs non-end stage renal disease) in type 1 diabetes","chronic kidney disease, diabetic nephropathy","type 1 diabetes mellitus",GCST003862,2:99767892
+rs55703767-<b>G</b>,"5 x 10-12",,0.794,1.2658228,'-,[NR],"MFF-DT, COL4A3","Diabetic nephropathy in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST009278,2:227256385
+rs191449639-<b>A</b>,"1 x 10-8",,0.005,32.42,'-,[NR],"AMTN, MUC7","Diabetic nephropathy in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST009278,4:70493059
+rs55703767-<b>G</b>,"9 x 10-9",,0.794,1.2820514,'-,[NR],"MFF-DT, COL4A3","Macroalbuminuria in type 1 diabetes",albuminuria,"type 1 diabetes mellitus",GCST009284,2:227256385
+rs113554206-<b>A</b>,"5 x 10-7",,0.012,4.6,'-,[NR],PAPLN,"Macroalbuminuria in type 1 diabetes",albuminuria,"type 1 diabetes mellitus",GCST009284,14:73273542
+rs115061173-<b>A</b>,"4 x 10-8",,0.014,9.4,'-,[NR],"LINC01266, RN7SL120P","End-stage renal disease in Type 1 diabetics","diabetic nephropathy","type 1 diabetes mellitus",GCST009279,3:884662
+rs116216059-<b>A</b>,"1 x 10-8",,0.016,8.73,'-,[NR],STAC,"Kidney disease (end stage renal disease vs non-end stage renal disease) in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST009280,3:36524820
+rs551191707-<b>CA</b>,"4 x 10-8",,0.122,1.7,'-,[NR],"PCAT1, CASC19, PRNCR1","Kidney disease (end stage renal disease vs macroalbuminuria) in type 1 diabetes","albuminuria, diabetic nephropathy","type 1 diabetes mellitus",GCST009285,8:127087785
+rs142823282-<b>G</b>,"8 x 10-10",,0.011,6.73,'-,[NR],FANCD2P2,"Microalbuminuria in type 1 diabetes","Moderate albuminuria","type 1 diabetes mellitus",GCST009281,3:11869161
+rs145681168-<b>G</b>,"2 x 10-7",,0.014,5.53,'-,[NR],HAND2-AS1,"Microalbuminuria in type 1 diabetes","Moderate albuminuria","type 1 diabetes mellitus",GCST009281,4:173579655
+rs118124843-<b>T</b>,"4 x 10-8",,0.011,3.79,'-,[NR],VARS2,"Microalbuminuria in type 1 diabetes","Moderate albuminuria","type 1 diabetes mellitus",GCST009281,6:30919688
+rs61983410-<b>C</b>,"1 x 10-7",,0.787,1.2658228,'-,[NR],'-,"Microalbuminuria in type 1 diabetes","Moderate albuminuria","type 1 diabetes mellitus",GCST009281,14:25535506
+rs144434404-<b>T</b>,"3 x 10-9",,0.011,6.78,'-,[NR],BMP7,"Microalbuminuria in type 1 diabetes","Moderate albuminuria","type 1 diabetes mellitus",GCST009281,20:57262207
+rs77273076-<b>T</b>,"1 x 10-8",,0.008,9.16,'-,[NR],"RPL7P60, MBLAC1","Microalbuminuria in type 1 diabetes","Moderate albuminuria","type 1 diabetes mellitus",GCST009281,7:100130923
+rs183937294-<b>G</b>,"2 x 10-8",,0.007,17.22,'-,[NR],PLEKHA7,"Microalbuminuria in type 1 diabetes","Moderate albuminuria","type 1 diabetes mellitus",GCST009281,11:16916299
+rs12615970-<b>A</b>,"9 x 10-9",,0.867,1.3157895,'-,[NR],ALLC,"Chronic kidney disease (reduced eGFR or end stage renal disease) in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST009286,2:3697625
+rs185299109-<b>T</b>,"1 x 10-8",,0.007,20.75,'-,[NR],"LINC00470, AIDAP3","Chronic kidney disease (reduced eGFR or end stage renal disease) in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST009286,18:1811107
+rs149641852-<b>T</b>,"1 x 10-8",,0.012,9.01,'-,[NR],"SNCAIP, MGC32805","Chronic kidney disease (end stage renal disease vs. normal eGFR) in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST009287,5:122438887
+rs55703767-<b>G</b>,"5 x 10-9",,0.794,1.2987013,'-,[NR],"MFF-DT, COL4A3","Kidney disease (reduced eGFR and albuminuria or end stage renal disease) in type 1 diabetes","diabetic nephropathy","type 1 diabetes mellitus",GCST009289,2:227256385
+rs55703767-<b>G</b>,"4 x 10-10",,0.794,1.2048193,'-,[NR],"MFF-DT, COL4A3","Kidney disease (end stage renal disease or albuminuria) in type 1 diabetes","albuminuria, diabetic nephropathy","type 1 diabetes mellitus",GCST009292,2:227256385
