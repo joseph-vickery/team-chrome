@@ -1,2 +1,2 @@
 # team-chrome
-for QMUL Bioinformatics MSc Group Project
+this is the read-me file for QMUL Bioinformatics MSc Group Project - Team Google Chrome. 
