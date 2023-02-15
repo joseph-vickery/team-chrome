@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>Team Google Chrome</title>
+    <link rel = "icon" type="image/PNG" href="./img/favicon-16x16.png" />
+</head>
+<body>
+    <h1>Google Chrome SNP Portal</h1>
+    <form method="POST">
+        {{form.csrf_token}}
+        {{form.snp_name.label}} {{form.snp_name()}}
+        {{form.submit()}}
+    </form>
+</body>
+   
