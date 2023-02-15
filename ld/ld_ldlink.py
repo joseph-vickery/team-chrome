@@ -1,3 +1,5 @@
+##Linkage disequilibrium data from LDlink website (better) 
+
 import requests
 import sys
 import pandas as pd 
