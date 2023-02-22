@@ -1,3 +1,5 @@
+##retrieivng LD data from ensembl 
+
 def LD(rsid1,rsid2): 
     import requests, sys
 
