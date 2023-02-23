@@ -1,12 +1,9 @@
-{% extends "base.html" %} <!-- THIS IS THE PARENT PAGE THAT IS INHERITED-->
+{% extends "base.html" %} 
 
 {% block content %}
-
 <input type="button" value="back" onclick="history.back()"/>
 
-<!----THIS TABLE IS THE SNP SEARCH PAGE -->
-
-<div> <!---- NEED DIV TAG TO SEPARATE BOTH TABLES -->
+<!---THIS PAGE IS FOR CHROMOSOME INFORMATION -->
 <table class="table table-striped">
     <thead class="thead-dark">
         <tr>
@@ -26,9 +23,7 @@
         </tr>
     </thead>
     <tbody>
-    <!---FOR LOOP NECESSARY TO GET ALL INFO FROM EACH TABLE -->
     {% for item in search_snp %}
-    
     <tr>
         <td>{{item[0]}}</td> 
         <td>{{item[1]}}</td>
@@ -43,39 +38,10 @@
         <td>{{item[10]}}</td>
         <td>{{item[11]}}</td>
         <td>{{item[12]}}</td>
-        <td>{{item[13]}}</td>
-    
         
-    </tr>
-  {% endfor %}
-    </tbody>
-</table>
-</div>
-<!---NEW TABLE STARTED AFTER THE ENDING OF THE DIV TAG-->
-<!--THIS TABLE IS FOR THE GO TERMS ASSOCIATED WITH THE RSID-->
-<div>
-<table class="table table-striped">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">GO Term Accession #</th>
-            <th scope="col">GO Term Name</th>
-            <th scope="col">GO Term def.</th>
-            <th scope="col">GO Term Evidence</th>
-            <th scope="col">GO Term Domain</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for row in search_GO %}
-        <td>{{row[1]}}</td> 
-        <td>{{row[2]}}</td>
-        <td>{{row[3]}}</td>
-        <td>{{row[4]}}</td>
-        <td>{{row[5]}}</td>
-        
-    </tr>
-  {% endfor %}
-    </tbody>
-</table>
-</div>
 
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
 {% endblock %}

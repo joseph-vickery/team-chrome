@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<head>
-    <title>Team Google Chrome</title>
-    <link rel = "icon" type="image/PNG" href="./img/favicon-16x16.png" />
-</head>
-<body>
-    <h1>Google Chrome SNP Portal</h1>
-    <form method="POST">
-        {{form.csrf_token}}
-        {{form.snp_name.label}} {{form.snp_name()}}
-        {{form.submit()}}
-    </form>
-</body>
+{% extends "base.html" %}
+
+{% block content %}
+<!---THIS IS WHERE THE USER SEARCHES FOR INFO, SUBMIT BUTTON -->
+<form method="POST">
+    {{form.csrf_token}}
+
+    {{form.snp_name.label(class="form-label")}}
+    {{form.snp_name(class="form-control", placeholder="Enter text here...")}}
+    <br/>
+    {{form.submit(class="btn btn-primary")}}
+</form>
+{% endblock %}
+
    
