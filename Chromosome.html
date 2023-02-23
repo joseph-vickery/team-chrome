@@ -1,0 +1,47 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<input type="button" value="back" onclick="history.back()"/>
+
+<!---THIS PAGE IS FOR CHROMOSOME INFORMATION -->
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">rsID </th>
+            <th scope="col">Gene Name</th>
+            <th scope="col">P-value</th>
+            <th scope="col">Chromosome</th>
+            <th scope="col">Position</th>
+            <th scope="col">REF_Allele</th>
+            <th scope="col">ALT_Allele</th>
+            <th scope="col">Minor_Allele</th>
+            <th scope="col">AFR_FREQ</th>
+            <th scope="col">AMR_FREQ</th>
+            <th scope="col">EAS_FREQ</th>
+            <th scope="col">EURO_FREQ</th>
+            <th scope="col">SAS_FREQ</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for item in search_snp %}
+    <tr>
+        <td>{{item[0]}}</td> 
+        <td>{{item[1]}}</td>
+        <td>{{item[2]}}</td>
+        <td>{{item[3]}}</td>
+        <td>{{item[4]}}</td>
+        <td>{{item[5]}}</td>
+        <td>{{item[6]}}</td>
+        <td>{{item[7]}}</td>
+        <td>{{item[8]}}</td>
+        <td>{{item[9]}}</td>
+        <td>{{item[10]}}</td>
+        <td>{{item[11]}}</td>
+        <td>{{item[12]}}</td>
+        
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
