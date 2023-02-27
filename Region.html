@@ -33,7 +33,6 @@
         <td>{{item[0]}}</td> 
         <td>{{item[1]}}</td>
         <td>{{item[2]}}</td>
-        <td>{{item[3]}}</td>
         <td>{{item[4]}}</td>
         <td>{{item[5]}}</td>
         <td>{{item[6]}}</td>
@@ -44,6 +43,7 @@
         <td>{{item[11]}}</td>
         <td>{{item[12]}}</td>
         <td>{{item[13]}}</td>
+        <td>{{item[14]}}</td>
     
         
     </tr>
@@ -80,6 +80,11 @@
         </tbody>
     </table>
 </div>
+
+<h1>Plot!</h1>
+    {% if result != None %}
+    <img src="data:image/png;base64,{{ result }}"\>
+    {% endif %}
 
 
 
