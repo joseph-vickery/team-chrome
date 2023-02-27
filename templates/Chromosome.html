@@ -1,16 +1,8 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 
 {% block content %}
-<input type="button" value="back" onclick="history.back()"/>
-<br>
-<br>
-</form>
-<form method="POST" action="/">
-    <div>{{ form.rsid.label }} {{ form.rsid(rows=3, multiple=True) }}</div>
-    <button type="submit" class="btn">Submit</button>    
-</form>
-<br>
 
+<input type="button" value="back" onclick="history.back()"/>
 
 <!---THIS PAGE IS FOR CHROMOSOME INFORMATION -->
 <table class="table table-striped">
@@ -53,4 +45,19 @@
     {% endfor %}
     </tbody>
 </table>
+<br>
+<body>
+    <h1>Linkage Disequilibrium Analysis</h1>
+ <form method="POST" action = "" class = "" autocomplete="off", id="rsid_select">
+         {{form.csrf_token}}
+    <label for ='population'> Select population of interest: </label>
+         {{ form.population_select }}
+    <br>
+     <label for ='rsid_select' class ='col-form-label'> Select your SNPs (larger queries will take longer): *</label>
+         {{ form.rsid_select(size=10, class='form-control', multiple='multiple', Name='rsid_select') }}
+     <span style="color: #f00"> {% if form.rsid_select.errors %}{{ form.rsid_select.errors[0] }}{% endif %}</span>
+     
+         {{ form.submit }} 
+ </form>
+ </body>
 {% endblock %}

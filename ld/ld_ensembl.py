@@ -1,3 +1,5 @@
+####code for api for ensembl -- backup if LDlink fails
+
 def LD(rsid1,rsid2): 
     import requests, sys
 

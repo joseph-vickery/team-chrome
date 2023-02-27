@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<input type="button" value="back" onclick="history.back()"/>
+<table class="table table-striped">
+  <thead class="thead-dark">
+      <tr>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for key, value in ld_dict.items() %}
+     <tr>
+         <td> {{ key }} </td>
+         <td> {{ value }} </td>
+     </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    <br>
+    <br>
+    <h1>Heatmap of LD values</h1>
+    {% if result != None %}
+    <img src="data:image/png;base64,{{ result }}"\>
+    {% endif %}
+    <br>
+    <html><body>
+      <a href="{{ url_for('file_download', filename=filename) }}">Click here to download csv file of LD values</a>
+      </body></html>
+
+{% endblock %}

@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sb
 
+
 ############################################################################
 
 #function for retrieving LD values from LDlink API, making a dictionary of LD values 
@@ -92,15 +93,17 @@ def ld_file_maker(ld_dict, population):
 
 ############################################################################
 
-def ld_graph_maker(ld_dict, rsid_list): 
+def ld_graph_maker(ld_dict): 
     rsid1 = []
     rsid2 = []
     values = []
     #seperating out rsid pairs and corresponding values:
-    for pair in list(ld_dict.keys()): 
+    ld_sort = sorted(ld_dict.items(), key=lambda x:x[1], reverse=False)
+    ld_dict_sort = dict(ld_sort)
+    for pair in list(ld_dict_sort.keys()): 
         rsid1.append(pair[0])
         rsid2.append(pair[1])
-        values.append(ld_dict[pair])
+        values.append(ld_dict_sort[pair])
     
     #outputting data into df 
     df = pd.DataFrame({'rsid1':rsid1, 'rsid2':rsid2, 'values':values})
@@ -113,20 +116,20 @@ def ld_graph_maker(ld_dict, rsid_list):
     mask = np.triu(np.ones_like(ret))
 
     #creating the heat map using seaborn packages 
-    dataplot = sb.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
     plt.show()
     
-    return dataplot, ret
+    return ret, mask
 
 def ld_csv_maker(df, ld_dict, population):
+    ld_dict_sort = dict(sorted(ld_dict.items(), key=lambda x:x[1]))
     rsids = [] 
     #seperating out the rsid values in each pair:
-    for k in ld_dict.keys():
+    for k in ld_dict_sort.keys():
         if k[0] not in rsids:
             rsids.append(k[0])
         else:
             rsids.append(k[1])
+    filename = '{rsids}_{pop}.csv'.format(rsids='_'.join(rsids),pop=population)
     
-    file = df.to_csv('LD_{rsids}_{population}.csv'.format(rsids='_'.join(rsids), population=population), sep=',')
-    print(file)
-    return file
+    file = df.to_csv(sep=',', path_or_buf = "/Users/jvickery/coding/GitHub/team-chrome/LD_files/{filename}".format(filename=filename))
+    return file, filename
