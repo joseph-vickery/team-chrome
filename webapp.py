@@ -19,7 +19,7 @@ app.config['SECRET_KEY'] = 'PURPLE HAZE 123'
 
 #Created a class to establish what the user searches for in the web app
 class QueryForm(FlaskForm):
-    snp_name = StringField('Enter a valid rsID: ', validators=[InputRequired()])
+    snp_name = StringField('Enter in search field: ', validators=[InputRequired()])
     submit = SubmitField('Submit')
 
 #This is the home page 
@@ -34,16 +34,18 @@ def index():
             print('YAY IT HAS AN rsID')
             return redirect(url_for('SNP', snp_name= snp_name))
         #Redirect user to chromosome page if chr is typed
-        elif snp_name[:3] == "chr":
+        if snp_name[:3] == "chr":
             print('Going to chromosome page')
             return redirect(url_for('Chromosome',snp_name=snp_name))
+        #id digit - digits then route to region page 
+        #split string to numerical values start and end. 
+        elif "," in snp_name:
+            print('Going to Region page')
+            return redirect(url_for('Region', snp_name=snp_name))
 
-#TEST ELSE STATEMENT##
-        #else:
-            redirect(url_for('MAPPED GENE', snp_name=snp_name))
-        #elif snp_name 
-        #elif type(snp_name) is int:
-        #need to make region url
+        elif snp_name != 'rs' or snp_name != 'chr' or "," not in snp_name:
+            print('REDIRECT TO MAPPED GENE')
+            return redirect(url_for('MAPPED_GENE', snp_name=snp_name))
         # this else stamenet can be used for mapped gene function
         #else:
             #print("yay it works here")
@@ -62,7 +64,7 @@ def SNP(snp_name):
         con = db.connect("GC.db", check_same_thread=False)
         cursor = con.cursor() #this allows us to query our database  
         #this is selecting specific info on snp
-        snp_name = snp_name.lower()
+        #snp_name = snp_name.lower()
         #queried data is executed below to get all info from tables
         cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,population.Chromosome,
         population.Position, population.REF_Allele, 
@@ -91,22 +93,6 @@ def SNP(snp_name):
         WHERE Gene_name="%s" """ % gene_name)
                         
         search_GO = cursor.fetchall()
-
-        for row in search_GO:
-            if row[3] == None:
-                continue
-            else:
-                search_gene = row[1]
-                accession = row[2]
-                print(accession)
-                go_term_name = row[3]
-                print(go_term_name)
-                go_term_def = row[4]
-                print(go_term_def)
-                go_term_evidence = row[5]
-                print(go_term_evidence)
-                go_domain = row[6]
-                print(go_domain)
             
 #Finish the search hmtl and see if it connects.
         return render_template("search.html", name=snp_name, search_snp=search_snp, search_GO=search_GO)
@@ -121,7 +107,7 @@ def Chromosome(snp_name):
         con = db.connect("GC.db", check_same_thread=False)
         cursor = con.cursor() #this allows us to query our database  
     
-        snp_name = snp_name.lower()
+        #snp_name = snp_name.lower()
         #Cursor.execute function allows use to choose what tables and columns we can include within our search.
         cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,
         population.Chromosome, population.Position, population.REF_Allele, 
@@ -142,15 +128,66 @@ def Chromosome(snp_name):
 
 
 
-#@app.route('/MAPPED GENE/<snp_name>')
-#def MAPPED_GENE(snp_name):
+@app.route('/MAPPED_GENE/<snp_name>')
+def MAPPED_GENE(snp_name):
 
     try:
     #connecting to database every time we generate a new route
+        
         con = db.connect("GC.db", check_same_thread=False)
-        cursor = con.cursor() #this allows us to query our database  
-        #this is selecting specific info on snp
-        snp_name = snp_name.upper()
+        cursor = con.cursor()
+        cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,population.Chromosome,
+        population.Position, population.REF_Allele, CADD.PHRED, CADD.Raw_Score,
+        population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
+        population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
+        population.SAS_Frequency 
+
+        FROM gwas 
+        INNER JOIN CADD ON gwas.snp = CADD.snp 
+        INNER JOIN population on CADD.snp = population.snp
+
+
+        WHERE gwas.Gene_name LIKE '%{snp_name}%' """.format(snp_name=snp_name))
+
+        gene_search = cursor.fetchall()
+        print(gene_search)
+
+####### GO TERMS WITHIN THE MAPPED GENE SEARCH ###### 
+         
+        for row in gene_search:
+            gene_name = row[1]
+
+
+        cursor = con.cursor()
+        cursor.execute ("""SELECT * 
+        FROM GO 
+        WHERE Gene_name="%s" """ % gene_name)
+                        
+        search_GO = cursor.fetchall()
+
+        return render_template("Map.html", name=snp_name, gene_search=gene_search, search_GO=search_GO)
+    except:
+        return "No information availabe for %s." % snp_name
+
+@app.route('/Region/<snp_name>')
+def Region(snp_name):
+    try:
+        con = db.connect("GC.db", check_same_thread=False)
+        cursor = con.cursor()
+
+    
+        sep_genes = snp_name.split(',')
+        print(sep_genes)
+        #sorted takes the list and arranges from lowest to greatest.
+        sorted_genes = sorted(sep_genes)
+        gene1, gene2 = [sorted_genes[i] for i in (0, 1)]
+        gene2 = gene2.strip()
+        print(gene1)
+        print(gene2)
+
+
+            ########snp search######
+
         #queried data is executed below to get all info from tables
         cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,population.Chromosome,
         population.Position, population.REF_Allele, 
@@ -161,15 +198,33 @@ def Chromosome(snp_name):
         FROM gwas 
         INNER JOIN CADD ON gwas.snp = CADD.snp 
         INNER JOIN population on CADD.snp = population.snp 
-        WHERE gwas.Gene_name= '%s' """ % snp_name) 
+        WHERE CAST(SUBSTR(gwas.location,3,15) AS UNSIGNED) BETWEEN '%s' and '%s' """ % (gene1,gene2) )
         #^^^^Very important to include '%s' because that is substituted with snp_name^
 
         search_snp = cursor.fetchall()
+        print(search_snp)
 
-        return render_template("Map.html", name=snp_name, search_snp=search_snp)
+        ##########   GO TERM SEARCH   ##############
+        #query for GO terms from gene_name for SNP input
+        
+        for row in search_snp:
+           gene_name = row[1]
+
+
+        cursor = con.cursor()
+        cursor.execute ("""SELECT * 
+        FROM GO 
+        WHERE Gene_name="%s" """ % gene_name)
+                        
+        search_GO = cursor.fetchall()
+
+      
+####### WE NEED TO MAKE MULTIPLE GO TERMS RETURNED FOR SNP THAT HAVE MULTPE MAPPED GENES#######
     except:
         return "No information availabe for %s." % snp_name
 
+
+    return render_template("Region.html", name=snp_name, search_snp=search_snp, search_GO=search_GO)
 
 
 if __name__ == "__main__":
