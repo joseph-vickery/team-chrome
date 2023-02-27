@@ -46,6 +46,32 @@
         </tbody>
     </table>
     </div>
-
+<!--THIS TABLE IS FOR THE GO TERMS ASSOCIATED WITH THE RSID-->
+<div>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Gene Name</th>
+                <th scope="col">GO Term Accession #</th>
+                <th scope="col">GO Term Name</th>
+                <th scope="col">GO Term def.</th>
+                <th scope="col">GO Term Evidence</th>
+                <th scope="col">GO Term Domain</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in GO_search %}
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td> 
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[6]}}</td>
+                  
+        </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+    </div>
 
 {% endblock %}
