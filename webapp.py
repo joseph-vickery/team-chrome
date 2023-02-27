@@ -12,6 +12,19 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import InputRequired
 
+#import all libraries for manhattan plots
+import sqlite3
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.use('SVG')
+import numpy as np
+from scipy.stats import uniform
+from scipy.stats import randint 
+import seaborn as sns
+from io import BytesIO
+import base64
+
 #Creates the flask application object
 app = Flask(__name__)
 #Just a key for production. dont worry about it
@@ -19,7 +32,7 @@ app.config['SECRET_KEY'] = 'PURPLE HAZE 123'
 
 #Created a class to establish what the user searches for in the web app
 class QueryForm(FlaskForm):
-    snp_name = StringField('Enter a valid rsID: ', validators=[InputRequired()])
+    snp_name = StringField('Enter valid input: ', validators=[InputRequired()])
     submit = SubmitField('Submit')
 
 #This is the home page 
@@ -49,7 +62,7 @@ def index():
             print('REDIRECT TO MAPPED GENE')
             return redirect(url_for('MAPPED_GENE', snp_name=snp_name))
         
-        print('\n\n\n'+snp_name+'\n\n\n')
+        
         #redirects to the "SNP" url down below app route
         return redirect(url_for('SNP', snp_name= snp_name))
 
@@ -196,6 +209,9 @@ def MAPPED_GENE(snp_name):
 
         GO_search = cursor.fetchall()
 
+        
+
+
         return render_template("Map.html", name=snp_name, search_snp=search_snp, GO_search=GO_search)
     except:
         return "No information availabe for %s." % snp_name
@@ -222,7 +238,7 @@ def Region(snp_name):
             ########snp search######
 
         #queried data is executed below to get all info from tables
-        cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,population.Chromosome,
+        cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value, gwas.location, population.Chromosome,
         population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
         population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
@@ -246,7 +262,7 @@ def Region(snp_name):
            gene_name_list.append(gene_name)
         
 
-    #Initialize a list to hold all of the queries
+        #Initialize a list to hold all of the queries
         all_region_GO_queries=[]
         
         #iterate through the gene name list and limit the query to 1 per mapped gene
@@ -273,14 +289,71 @@ def Region(snp_name):
                 #combine the query information into one list and append this list to list containing all the mapped gene queries
                 new_query = [gene_name, go_term_accession, go_name, go_definition, go_evidence, go_domain]
                 all_region_GO_queries.append(new_query)
+        print(search_snp)
+        man_info=[]
+        for row in search_snp:
+            rs_ID = row[0]
+            p_value = row[2]
+            location = row[3]
+            new_row=[rs_ID, p_value, location]        
+            man_info.append(new_row)
+       
+                #dictionary
+        data_dict = {'snp': [row[0] for row in man_info],
+                    'p_value':[row[1] for row in man_info],
+                    'location': [row[2] for row in man_info]}
+            #convert into a pandas
+        df=pd.DataFrame.from_dict(data_dict)
         
-          
 
+        #change structure of the loop-- try iterows as seem to be overwriting everything 
+        i=0
+        #have a counter that starts with 0
+        for p_value_f in df['p_value']:  # produces this for all values 4.000000e-08
+            #df['p_value_f']=float(p_value_f.replace(' x 10', 'e')) #the replace is approved
+            #print(float(p_value_f.replace(' x 10', 'e')))
+            df.at[i,'p_value'] = p_value_f.replace(' x 10', 'e')
+            i+=1
+        print(df)        
+            #issue-so basically its changing evry value in column to last value that we loop through
+
+        df['p_value']=df['p_value'].astype(float) #make the p_value column a float
+
+            #create a df coloumn for the chromosome number
+        df['chr']=np.vectorize(lambda x: x.split(':')[0])(np.array(df['location'],dtype=str)) #for new column called chromosome, take where there is a : in 'location', split and take the values before it and transalte to new column.
+        print(df)
+        #adjust position coloumn to only show the bits after :
+        df['location']=np.vectorize(lambda x:x.split(':')[1])(np.array(df['location'],dtype=str)) #split and keep the values after the dleimiter by [1], overwrote the locarion column
+        df['location']=df['location'].astype(int)
+        #-log_10 pvalue
+        df['-log_pv']=-np.log10(df.p_value) #convert to -log10 pvalue and store in new column of dataframe
+
+        #generating plot works
+
+        #group each snp by chromosome
+        df=df.sort_values(['chr','location'])  #inorder of location 
+        df.reset_index(inplace=True, drop=True); df['i']=df.index
+        print(df)
+
+        #generate plot
+        plot=sns.relplot(data=df, x='i', y='-log_pv', aspect=4,
+                        hue='chr', palette='bright', legend=None, linewidth=0)
+        chrom_df=df.groupby('chr')['i'].median()
+        plot.ax.set_xlabel('chr'); plot.ax.set_xticks(chrom_df)
+        plot.ax.set_xticklabels(chrom_df.index)
+        plot.fig.suptitle('Manhattan plot showing association between SNPs and Diabetes Mellitus 1 ')
+
+        buf = BytesIO()
+        plt.savefig(buf, format="png")
+        buf.seek(0)
+        figdata_png = base64.b64encode(buf.getvalue())
+    
+
+
+
+        return render_template("Region.html", name=snp_name, search_snp=search_snp, all_region_GO_queries=all_region_GO_queries, result = figdata_png.decode('utf8'))
     except:
         return "No information availabe for %s." % snp_name
-
-
-    return render_template("Region.html", name=snp_name, search_snp=search_snp, all_region_GO_queries=all_region_GO_queries)
 
 
 
