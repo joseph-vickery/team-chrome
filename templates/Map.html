@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<input type="button" value="back" onclick="history.back()"/>
 <div> <!---- NEED DIV TAG TO SEPARATE BOTH TABLES -->
     <table class="table table-striped">
         <thead class="thead-dark">
@@ -18,6 +19,8 @@
                 <th scope="col">EAS_FREQ</th>
                 <th scope="col">EURO_FREQ</th>
                 <th scope="col">SAS_FREQ</th>
+                <th scope="col">Raw CADD Score</th>
+                <th scope="col">PHRED Score</th>
             </tr>
         </thead>
         <tbody>
@@ -39,6 +42,8 @@
             <td>{{item[11]}}</td>
             <td>{{item[12]}}</td>
             <td>{{item[13]}}</td>
+            <td>{{item[14]}}</td>
+            <td>{{item[15]}}</td>
         
             
         </tr>
@@ -74,4 +79,19 @@
     </table>
     </div>
 
+<br>
+    <body>
+        <h1>Linkage Disequilibrium Analysis</h1>
+     <form method="POST" action = "" class = "" autocomplete="off", id="rsid_select">
+             {{form.csrf_token}}
+        <label for ='population'> Select population of interest: </label>
+             {{ form.population_select }}
+        <br>
+         <label for ='rsid_select' class ='col-form-label'> Select your SNPs (larger queries will take longer): *</label>
+             {{ form.rsid_select(size=10, class='form-control', multiple='multiple', Name='rsid_select') }}
+         <span style="color: #f00"> {% if form.rsid_select.errors %}{{ form.rsid_select.errors[0] }}{% endif %}</span>
+         
+             {{ form.submit }} 
+     </form>
+     </body>
 {% endblock %}

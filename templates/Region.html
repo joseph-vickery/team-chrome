@@ -23,6 +23,8 @@
             <th scope="col">EAS_FREQ</th>
             <th scope="col">EURO_FREQ</th>
             <th scope="col">SAS_FREQ</th>
+            <th scope="col">Raw CADD Score</th>
+            <th scope="col">PHRED Score</th>
         </tr>
     </thead>
     <tbody>
@@ -44,6 +46,7 @@
         <td>{{item[12]}}</td>
         <td>{{item[13]}}</td>
         <td>{{item[14]}}</td>
+        <td>{{item[15]}}</td>
     
         
     </tr>
@@ -83,9 +86,26 @@
 
 <h1>Plot!</h1>
     {% if result != None %}
-    <img src="data:image/png;base64,{{ result }}"\>
+    <img src="data:image/png;base64,{{ man_plot }}"
+            width="1250"
+            height="400"\>
     {% endif %}
 
+    <br>
+<body>
+    <h1>Linkage Disequilibrium Analysis</h1>
+ <form method="POST" action = "" class = "" autocomplete="off", id="rsid_select">
+         {{form.csrf_token}}
+    <label for ='population'> Select population of interest: </label>
+         {{ form.population_select }}
+    <br>
+     <label for ='rsid_select' class ='col-form-label'> Select your SNPs (larger queries will take longer): *</label>
+         {{ form.rsid_select(size=10, class='form-control', multiple='multiple', Name='rsid_select') }}
+     <span style="color: #f00"> {% if form.rsid_select.errors %}{{ form.rsid_select.errors[0] }}{% endif %}</span>
+     
+         {{ form.submit }} 
+ </form>
+ </body>
 
 
 {% endblock %}
