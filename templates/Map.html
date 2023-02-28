@@ -46,6 +46,47 @@
         </tbody>
     </table>
     </div>
+<!--THIS TABLE IS FOR THE GO TERMS ASSOCIATED WITH THE RSID-->
+<div>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Gene Name</th>
+                <th scope="col">GO Term Accession #</th>
+                <th scope="col">GO Term Name</th>
+                <th scope="col">GO Term def.</th>
+                <th scope="col">GO Term Evidence</th>
+                <th scope="col">GO Term Domain</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in GO_search %}
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td> 
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[6]}}</td>
+                  
+        </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+    </div>
 
-
+<br>
+    <body>
+        <h1>Linkage Disequilibrium Analysis</h1>
+     <form method="POST" action = "" class = "" autocomplete="off", id="rsid_select">
+             {{form.csrf_token}}
+        <label for ='population'> Select population of interest: </label>
+             {{ form.population_select }}
+        <br>
+         <label for ='rsid_select' class ='col-form-label'> Select your SNPs (larger queries will take longer): *</label>
+             {{ form.rsid_select(size=10, class='form-control', multiple='multiple', Name='rsid_select') }}
+         <span style="color: #f00"> {% if form.rsid_select.errors %}{{ form.rsid_select.errors[0] }}{% endif %}</span>
+         
+             {{ form.submit }} 
+     </form>
+     </body>
 {% endblock %}

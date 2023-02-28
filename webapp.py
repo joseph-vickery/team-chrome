@@ -1,16 +1,15 @@
 #webapp packages
-from flask import Flask, render_template, url_for, redirect, request, session, render_template_string, Response, send_from_directory
-from flask_debugtoolbar import DebugToolbarExtension
+from flask import Flask, render_template, url_for, redirect, request, send_from_directory
+
 #database package
 import sqlite3 as db
 #data manipulation package
 import pandas as pd
 
 #import libraries needed to create and process forms
-from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectMultipleField, Form, SelectField
-from wtforms.validators import InputRequired, DataRequired
+from wtforms import StringField, SubmitField, SelectMultipleField, SelectField
+from wtforms.validators import InputRequired
 
 #for LD functions 
 from ld.LD_functions import ld_dict_maker, ld_graph_maker, ld_csv_maker
@@ -24,19 +23,22 @@ from io import BytesIO
 from matplotlib.figure import Figure
 import base64
 
+#libraries for manhattan plots
+import sqlite3
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.use('SVG')
+import numpy as np
 
 #Creates the flask application object
 app = Flask(__name__)
-
-
 #Just a key for production. dont worry about it
 app.config['SECRET_KEY'] = 'PURPLE HAZE 123'
-app.debug=True
-
 
 #Created a class to establish what the user searches for in the web app
 class QueryForm(FlaskForm):
-    snp_name = StringField('Enter a valid rsID: ', validators=[InputRequired()])
+    snp_name = StringField('Enter valid input: ', validators=[InputRequired()])
     submit = SubmitField('Submit')
 
 class OwnForm(FlaskForm):
@@ -45,15 +47,7 @@ class OwnForm(FlaskForm):
     submit = SubmitField(u"Submit")
     #takes the first point (the rsid) from the query result so becomes list of rsids
     def __init__(self, *args, **kwargs):
-        #rsIDs = 
-        #['rs9501130', 'rs9405661','rs9388489','rs9356171','rs9354144','rs9275358','rs9273368','rs9273363','rs9272346','rs9268853','rs9268645','rs9268576',
-        #'rs926592','rs9264758','rs9260151','rs924043','rs886424','rs80028505','rs78824139','rs7760731','rs73043122','rs72928038','rs6931865','rs4320356','rs4148870','rs3997848',
-        #'rs3761980','rs3757247','rs35122968','rs34941730','rs3135365','rs3135002','rs3134938','rs3128930','rs3093664','rs2857595','rs2647044','rs2471863','rs241427',
-        #'rs2251396','rs212408','rs1980493','rs17711850','rs1770','rs1578060','rs1538171','rs138748427','rs13217044','rs1270942','rs12665429','rs1265057','rs12203596','rs118124843',
-        #'rs11755527','rs116763857','rs116020851','rs114631266','rs11154178','rs1050979','rs1015166']
-        #rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
         super(OwnForm, self).__init__(*args, **kwargs)
-        #self.rsid_select.choices = rsid_tuples
         self.population_select.choices = [('ALL', 'ALL'), ('AFR', 'AFR'), ('AMR','AMR'), ('EAS','EAS'),('EUR','EUR'), ('SAS','SAS')]
                       
 #This is the home page 
@@ -68,24 +62,23 @@ def index():
             print('YAY IT HAS AN rsID')
             return redirect(url_for('SNP', snp_name= snp_name))
         #Redirect user to chromosome page if chr is typed
-        elif snp_name[:3] == "chr":
+        if snp_name[:3] == "chr":
             print('Going to chromosome page')
             return redirect(url_for('Chromosome',snp_name=snp_name))
+        
+        #Redirect user to region page if they enter two locations separated by a comma
+        elif "," in snp_name:
+            print('Going to Region page')
+            return redirect(url_for('Region', snp_name=snp_name))
+        
+        #redirect to mapped gene page if the beginning != rs or chr or ,
+        elif snp_name != 'rs' or snp_name != 'chr' or "," not in snp_name:
+            print('REDIRECT TO MAPPED GENE')
+            return redirect(url_for('MAPPED_GENE', snp_name=snp_name))
 
-#TEST ELSE STATEMENT##
-        #else:
-            redirect(url_for('MAPPED GENE', snp_name=snp_name))
-        #elif snp_name 
-        #elif type(snp_name) is int:
-        #need to make region url
-        # this else stamenet can be used for mapped gene function
-        #else:
-            #print("yay it works here")
-        print('\n\n\n'+snp_name+'\n\n\n')
         #redirects to the "SNP" url down below app route
         return redirect(url_for('SNP', snp_name= snp_name))
-
-        
+    
     return render_template("index.html", form = form, snp_name=snp_name)
 
 #SNP page redirect to here where we queried all info based on that gene and rsID
@@ -114,36 +107,52 @@ def SNP(snp_name):
 
     ##########   GO TERM SEARCH   ##############
     #query for GO terms from gene_name for SNP input
-        
+
         for row in search_snp:
             gene_name = row[1]
 
+    #If there are multiple mapped genes per SNP then the string needs to be separated into gene 1 and gene 2
+        if ',' in gene_name:
+            sep_genes = gene_name.split(',')
+            gene1, gene2 = [sep_genes[i] for i in (0, 1)]
+            gene2 = gene2.strip()
 
-        cursor = con.cursor()
-        cursor.execute ("""SELECT * 
-        FROM GO 
-        WHERE Gene_name="%s" """ % gene_name)
+#query for GO terms from gene_name for SNP input
+#if there are two mapped genes run two separate queries for both of the genes
+        if ',' in gene_name:
+            cursor = con.cursor()
+            cursor.execute ("""SELECT * 
+                FROM GO 
+                WHERE Gene_name="%s" """ % gene1)
+
+            #set search_GO = "" for the html to output the correct query corresponding to the input
+            search_GO = ""
+
+            search_GO1 = cursor.fetchall()
+
+            cursor = con.cursor()
+            cursor.execute("""SELECT *
+                            FROM GO
+                            WHERE Gene_name="%s" """ % gene2)
+                    
+            search_GO2 = cursor.fetchall()
+
+#if there is only one mapped gene run the query once
+        else:
+            cursor = con.cursor()
+            cursor.execute ("""SELECT * 
+                FROM GO 
+                WHERE Gene_name="%s" """ % gene_name)
                         
-        search_GO = cursor.fetchall()
+            search_GO = cursor.fetchall()
 
-        for row in search_GO:
-            if row[3] == None:
-                continue
-            else:
-                search_gene = row[1]
-                accession = row[2]
-                print(accession)
-                go_term_name = row[3]
-                print(go_term_name)
-                go_term_def = row[4]
-                print(go_term_def)
-                go_term_evidence = row[5]
-                print(go_term_evidence)
-                go_domain = row[6]
-                print(go_domain)
+            #set search_GO1 and search_GO2 = "" for the html to output the correct query corresponding to the input
+            search_GO1 = ""
+            search_GO2 = ""
+
             
 #Finish the search hmtl and see if it connects.
-        return render_template("search.html", name=snp_name, search_snp=search_snp, search_GO=search_GO)
+        return render_template("search.html", name=snp_name, search_snp=search_snp, search_GO=search_GO, search_GO1=search_GO1, search_GO2=search_GO2)
     except:
         return "No information availabe for rs#: %s." % snp_name
 
@@ -167,7 +176,7 @@ def Chromosome(snp_name):
         on gwas.snp = population.snp
         WHERE population.Chromosome= '%s' """ % snp_name)
         cursor.execute(query)
-        
+
         search_snp = cursor.fetchall()
         
         ####code for LD analysis:###
@@ -214,11 +223,9 @@ def Chromosome(snp_name):
 @app.route('/table/<filename>')
 def file_download(filename):
     return send_from_directory('LD_files', filename)
-    
 
-#@app.route('/MAPPED GENE/<snp_name>')
-#def MAPPED_GENE(snp_name):
-
+@app.route('/MAPPED_GENE/<snp_name>', methods = ['GET', 'POST'])
+def MAPPED_GENE(snp_name):
     try:
     #connecting to database every time we generate a new route
         con = db.connect("GC.db", check_same_thread=False)
@@ -239,11 +246,228 @@ def file_download(filename):
         #^^^^Very important to include '%s' because that is substituted with snp_name^
 
         search_snp = cursor.fetchall()
+        for row in search_snp:
+            gene_name = row[1]
 
-        return render_template("Map.html", name=snp_name, search_snp=search_snp)
+        cursor = con.cursor()
+        cursor.execute ("""SELECT * 
+        FROM GO 
+        WHERE Gene_name="%s" """ % gene_name)
+
+        GO_search = cursor.fetchall()
+
+        ####code for LD analysis:###
+        ##rsIDs are taken from query and made into tuple. 
+        rsIDs = [] 
+        result = search_snp
+        rsIDs = [i[0] for i in result]
+        rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
+        
+        ##calling wtf form class
+        form = OwnForm()
+        #making choices specific to query
+        form.rsid_select.choices = rsid_tuples
+
+        if request.method == 'POST' and form.validate_on_submit():
+            #retrieving data from forms 
+            rsid_list = request.form.getlist('rsid_select')
+            population = form.population_select.data
+        
+            #getting dictionary of LD values for each RSID pair
+            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+            #getting heatmap components from LD values 
+            ret, mask = ld_graph_maker(ld_dict)
+
+            ####PLOTTING HEATMAP:
+            plt.figure()
+            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
+            plt.title('LD Heatmap')
+            #making bytes object to save to heatmap - makes into binary object
+            buf = BytesIO()
+            plt.savefig(buf, format="png")
+            buf.seek(0) 
+            #encoding the data which is then decoded when sent to html 
+            figdata_png = base64.b64encode(buf.getvalue())
+            
+            ###making downloadbale file. 
+            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
+            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+        return render_template("Map.html", name=snp_name, search_snp=search_snp, GO_search=GO_search, form=form)
     except:
         return "No information availabe for %s." % snp_name
 
-if __name__ == "__main__":
-    app.run(debug=True)
+@app.route('/Region/<snp_name>', methods = ['GET', 'POST'])
+def Region(snp_name):
+    try:
+        con = db.connect("GC.db", check_same_thread=False)
+        cursor = con.cursor()
 
+    
+        #separate the two locations from the user input by a comma
+        sep_genes = snp_name.split(',')
+        print(sep_genes)
+        #sorted takes the list and arranges from lowest to greatest.
+        sorted_genes = sorted(sep_genes)
+        gene1, gene2 = [sorted_genes[i] for i in (0, 1)]
+        gene2 = gene2.strip()
+        print(gene1)
+        print(gene2)
+
+
+        ########snp search######
+
+        #queried data is executed below to get all info from tables
+        cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value, gwas.location, population.Chromosome,
+        population.Position, population.REF_Allele, 
+        population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
+        population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
+        population.SAS_Frequency
+        FROM gwas 
+        INNER JOIN CADD ON gwas.snp = CADD.snp 
+        INNER JOIN population on CADD.snp = population.snp 
+        WHERE CAST(SUBSTR(gwas.location,3,15) AS UNSIGNED) BETWEEN '%s' and '%s' """ % (gene1,gene2) )
+        #^^^^Very important to include '%s' because that is substituted with snp_name^
+
+        search_snp = cursor.fetchall()
+        
+
+        ##########   GO TERM SEARCH   ##############
+        #query for GO terms from gene_name for SNP input
+
+        #Initialize a list of all of the mapped genes for every snp within the user's input region
+        gene_name_list = []
+        for row in search_snp:
+           gene_name = row[1]
+           gene_name_list.append(gene_name)
+        
+
+        #Initialize a list to hold all of the queries
+        all_region_GO_queries=[]
+        
+        #iterate through the gene name list and limit the query to 1 per mapped gene
+        for item in gene_name_list:
+            
+            cursor = con.cursor()
+            cursor.execute ("""SELECT * 
+                FROM GO 
+                WHERE Gene_name="%s" 
+                LIMIT 1""" % item)
+            
+            #for every query fetchall the information
+            search_item = cursor.fetchall()
+
+            #in order to create a list iterate through the fetchall and separate the information
+            for row in search_item:
+                gene_name=row[1]
+                go_term_accession=row[2]
+                go_name=row[3]
+                go_definition=row[4]
+                go_evidence=row[5]
+                go_domain=row[6]
+
+                #combine the query information into one list and append this list to list containing all the mapped gene queries
+                new_query = [gene_name, go_term_accession, go_name, go_definition, go_evidence, go_domain]
+                all_region_GO_queries.append(new_query)
+        print(search_snp)
+        man_info=[]
+        for row in search_snp:
+            rs_ID = row[0]
+            p_value = row[2]
+            location = row[3]
+            new_row=[rs_ID, p_value, location]        
+            man_info.append(new_row)
+       
+                #dictionary
+        data_dict = {'snp': [row[0] for row in man_info],
+                    'p_value':[row[1] for row in man_info],
+                    'location': [row[2] for row in man_info]}
+            #convert into a pandas
+        df=pd.DataFrame.from_dict(data_dict)
+        
+
+        #change structure of the loop-- try iterows as seem to be overwriting everything 
+        i=0
+        #have a counter that starts with 0
+        for p_value_f in df['p_value']:  # produces this for all values 4.000000e-08
+            #df['p_value_f']=float(p_value_f.replace(' x 10', 'e')) #the replace is approved
+            #print(float(p_value_f.replace(' x 10', 'e')))
+            df.at[i,'p_value'] = p_value_f.replace(' x 10', 'e')
+            i+=1
+        print(df)        
+            #issue-so basically its changing evry value in column to last value that we loop through
+
+        df['p_value']=df['p_value'].astype(float) #make the p_value column a float
+
+            #create a df coloumn for the chromosome number
+        df['chr']=np.vectorize(lambda x: x.split(':')[0])(np.array(df['location'],dtype=str)) #for new column called chromosome, take where there is a : in 'location', split and take the values before it and transalte to new column.
+        print(df)
+        #adjust position coloumn to only show the bits after :
+        df['location']=np.vectorize(lambda x:x.split(':')[1])(np.array(df['location'],dtype=str)) #split and keep the values after the dleimiter by [1], overwrote the locarion column
+        df['location']=df['location'].astype(int)
+        #-log_10 pvalue
+        df['-log_pv']=-np.log10(df.p_value) #convert to -log10 pvalue and store in new column of dataframe
+
+        #generating plot works
+
+        #group each snp by chromosome
+        df=df.sort_values(['chr','location'])  #inorder of location 
+        df.reset_index(inplace=True, drop=True); df['i']=df.index
+        print(df)
+
+        #generate plot
+        plot=sns.relplot(data=df, x='i', y='-log_pv', aspect=4,
+                        hue='chr', palette='bright', legend=None, linewidth=0)
+        chrom_df=df.groupby('chr')['i'].median()
+        plot.ax.set_xlabel('chr'); plot.ax.set_xticks(chrom_df)
+        plot.ax.set_xticklabels(chrom_df.index)
+        plot.fig.suptitle('Manhattan plot showing association between SNPs and Diabetes Mellitus 1 ')
+
+        buf = BytesIO()
+        plt.savefig(buf, format="png")
+        buf.seek(0)
+        figdata_png = base64.b64encode(buf.getvalue())
+
+        ####code for LD analysis:###
+        ##rsIDs are taken from query and made into tuple. 
+        rsIDs = [] 
+        result = search_snp
+        rsIDs = [i[0] for i in result]
+        rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
+        
+        ##calling wtf form class
+        form = OwnForm()
+        #making choices specific to query
+        form.rsid_select.choices = rsid_tuples
+
+        if request.method == 'POST' and form.validate_on_submit():
+            #retrieving data from forms 
+            rsid_list = request.form.getlist('rsid_select')
+            population = form.population_select.data
+        
+            #getting dictionary of LD values for each RSID pair
+            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+            #getting heatmap components from LD values 
+            ret, mask = ld_graph_maker(ld_dict)
+
+            ####PLOTTING HEATMAP:
+            plt.figure()
+            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
+            plt.title('LD Heatmap')
+            #making bytes object to save to heatmap - makes into binary object
+            buf = BytesIO()
+            plt.savefig(buf, format="png")
+            buf.seek(0) 
+            #encoding the data which is then decoded when sent to html 
+            figdata_png = base64.b64encode(buf.getvalue())
+            
+            ###making downloadbale file. 
+            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
+            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+        return render_template("Region.html", name=snp_name, search_snp=search_snp, all_region_GO_queries=all_region_GO_queries,
+                                man_plot = figdata_png.decode('utf8'), form=form)
+    except:
+        return "No information availabe for %s." % snp_name
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=8001)
