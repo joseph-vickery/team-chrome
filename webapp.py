@@ -95,7 +95,7 @@ def SNP(snp_name):
         population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
         population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
-        population.SAS_Frequency
+        population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
 
         FROM gwas 
         INNER JOIN CADD ON gwas.snp = CADD.snp 
@@ -124,7 +124,6 @@ def SNP(snp_name):
             cursor.execute ("""SELECT * 
                 FROM GO 
                 WHERE Gene_name="%s" """ % gene1)
-
             #set search_GO = "" for the html to output the correct query corresponding to the input
             search_GO = ""
 
@@ -162,23 +161,20 @@ def Chromosome(snp_name):
     #connecting to database
         con = db.connect("GC.db", check_same_thread=False)
         cursor = con.cursor() #this allows us to query our database  
-
+    
         snp_name = snp_name.lower()
         #Cursor.execute function allows use to choose what tables and columns we can include within our search.
-        #i put the query in a seperate variable just so easier to see/manipulate 
-        query = ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,
+        cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,
         population.Chromosome, population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency, 
-        population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, population.SAS_Frequency
+        population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
 
         FROM gwas
-        INNER JOIN population
-        on gwas.snp = population.snp
+        INNER JOIN CADD ON gwas.snp = CADD.snp 
+        INNER JOIN population on CADD.snp = population.snp 
         WHERE population.Chromosome= '%s' """ % snp_name)
-        cursor.execute(query)
-
         search_snp = cursor.fetchall()
-        
+
         ####code for LD analysis:###
         ##rsIDs are taken from query and made into tuple. 
         rsIDs = [] 
@@ -219,11 +215,6 @@ def Chromosome(snp_name):
     except:
         return "No information availabe for rs#: %s." % snp_name
 
-##route for csv file download
-@app.route('/table/<filename>')
-def file_download(filename):
-    return send_from_directory('LD_files', filename)
-
 @app.route('/MAPPED_GENE/<snp_name>', methods = ['GET', 'POST'])
 def MAPPED_GENE(snp_name):
     try:
@@ -237,7 +228,7 @@ def MAPPED_GENE(snp_name):
         population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
         population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
-        population.SAS_Frequency
+        population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
 
         FROM gwas 
         INNER JOIN CADD ON gwas.snp = CADD.snp 
@@ -321,7 +312,7 @@ def Region(snp_name):
         population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
         population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
-        population.SAS_Frequency
+        population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
         FROM gwas 
         INNER JOIN CADD ON gwas.snp = CADD.snp 
         INNER JOIN population on CADD.snp = population.snp 
@@ -468,6 +459,10 @@ def Region(snp_name):
     except:
         return "No information availabe for %s." % snp_name
 
+##route for csv file download
+@app.route('/table/<filename>')
+def file_download(filename):
+    return send_from_directory('LD_files', filename)
 
 if __name__ == "__main__":
     app.run(debug=True, port=8001)

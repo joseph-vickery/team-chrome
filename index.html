@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!---THIS IS WHERE THE USER SEARCHES FOR INFO, SUBMIT BUTTON -->
+<form method="POST">
+    {{form.csrf_token}}
+
+    {{form.snp_name.label(class="form-label")}}
+    {{form.snp_name(class="form-control", placeholder="Enter text here...")}}
+    <br/>
+    {{form.submit(class="btn btn-primary")}}
+</form>
+{% endblock %}
+
+   
