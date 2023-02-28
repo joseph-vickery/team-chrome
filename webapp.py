@@ -1,5 +1,5 @@
 #webapp packages
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, request, send_from_directory
 
 #database package
 import sqlite3 as db
@@ -7,23 +7,28 @@ import sqlite3 as db
 import pandas as pd
 
 #import libraries needed to create and process forms
-from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, SelectMultipleField, SelectField
 from wtforms.validators import InputRequired
 
-#import all libraries for manhattan plots
+#for LD functions 
+from analysis_scripts.LD_functions import ld_dict_maker, ld_graph_maker, ld_csv_maker
+import matplotlib 
+matplotlib.use('Agg') 
+import matplotlib.pyplot as plt, mpld3
+import seaborn as sns
+import numpy as np
+from io import BytesIO
+from matplotlib.figure import Figure
+import base64
+
+#libraries for manhattan plots
 import sqlite3
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('SVG')
 import numpy as np
-from scipy.stats import uniform
-from scipy.stats import randint 
-import seaborn as sns
-from io import BytesIO
-import base64
 
 #Creates the flask application object
 app = Flask(__name__)
@@ -35,6 +40,15 @@ class QueryForm(FlaskForm):
     snp_name = StringField('Enter valid input: ', validators=[InputRequired()])
     submit = SubmitField('Submit')
 
+class OwnForm(FlaskForm):
+    rsid_select = SelectMultipleField(u'rsid_list',coerce=str, choices =[])
+    population_select = SelectField(u'pop_list', coerce=str)
+    submit = SubmitField(u"Submit")
+    #takes the first point (the rsid) from the query result so becomes list of rsids
+    def __init__(self, *args, **kwargs):
+        super(OwnForm, self).__init__(*args, **kwargs)
+        self.population_select.choices = [('ALL', 'ALL'), ('AFR', 'AFR'), ('AMR','AMR'), ('EAS','EAS'),('EUR','EUR'), ('SAS','SAS')]
+                      
 #This is the home page 
 @app.route('/', methods = ['GET', 'POST'])
 def index():
@@ -46,27 +60,24 @@ def index():
         if snp_name[:2]== "rs":
             print('YAY IT HAS AN rsID')
             return redirect(url_for('SNP', snp_name= snp_name))
-        
         #Redirect user to chromosome page if chr is typed
         if snp_name[:3] == "chr":
             print('Going to chromosome page')
             return redirect(url_for('Chromosome',snp_name=snp_name))
-
+        
         #Redirect user to region page if they enter two locations separated by a comma
         elif "," in snp_name:
             print('Going to Region page')
             return redirect(url_for('Region', snp_name=snp_name))
-
+        
         #redirect to mapped gene page if the beginning != rs or chr or ,
         elif snp_name != 'rs' or snp_name != 'chr' or "," not in snp_name:
             print('REDIRECT TO MAPPED GENE')
             return redirect(url_for('MAPPED_GENE', snp_name=snp_name))
-        
-        
+
         #redirects to the "SNP" url down below app route
         return redirect(url_for('SNP', snp_name= snp_name))
-
-        
+    
     return render_template("index.html", form = form, snp_name=snp_name)
 
 #SNP page redirect to here where we queried all info based on that gene and rsID
@@ -83,7 +94,7 @@ def SNP(snp_name):
         population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
         population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
-        population.SAS_Frequency
+        population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
 
         FROM gwas 
         INNER JOIN CADD ON gwas.snp = CADD.snp 
@@ -95,7 +106,7 @@ def SNP(snp_name):
 
     ##########   GO TERM SEARCH   ##############
     #query for GO terms from gene_name for SNP input
-        
+
         for row in search_snp:
             gene_name = row[1]
 
@@ -108,27 +119,23 @@ def SNP(snp_name):
 #query for GO terms from gene_name for SNP input
 #if there are two mapped genes run two separate queries for both of the genes
         if ',' in gene_name:
-            
             cursor = con.cursor()
             cursor.execute ("""SELECT * 
                 FROM GO 
                 WHERE Gene_name="%s" """ % gene1)
-            
             #set search_GO = "" for the html to output the correct query corresponding to the input
             search_GO = ""
 
             search_GO1 = cursor.fetchall()
 
             cursor = con.cursor()
-            cursor.execute ("""SELECT * 
-                FROM GO 
-                WHERE Gene_name="%s" """ % gene2)
+            cursor.execute("""SELECT *
+                            FROM GO
+                            WHERE Gene_name="%s" """ % gene2)
                     
             search_GO2 = cursor.fetchall()
 
-
-#if there is only one mapped gene run the query once            
-
+#if there is only one mapped gene run the query once
         else:
             cursor = con.cursor()
             cursor.execute ("""SELECT * 
@@ -143,13 +150,12 @@ def SNP(snp_name):
 
             
 #Finish the search hmtl and see if it connects.
-        return render_template("search.html", name=snp_name, search_snp=search_snp, search_GO=search_GO, search_GO1=search_GO1, search_GO2=search_GO2, dumb = "stupid")
+        return render_template("search.html", name=snp_name, search_snp=search_snp, search_GO=search_GO, search_GO1=search_GO1, search_GO2=search_GO2)
     except:
         return "No information availabe for rs#: %s." % snp_name
 
-@app.route('/Chromosome/<snp_name>')
+@app.route('/Chromosome/<snp_name>', methods = ['GET', 'POST'])
 def Chromosome(snp_name):
-
     try:
     #connecting to database
         con = db.connect("GC.db", check_same_thread=False)
@@ -160,25 +166,56 @@ def Chromosome(snp_name):
         cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value,
         population.Chromosome, population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency, 
-        population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, population.SAS_Frequency
+        population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
 
         FROM gwas
-        INNER JOIN population
-        on gwas.snp = population.snp
+        INNER JOIN CADD ON gwas.snp = CADD.snp 
+        INNER JOIN population on CADD.snp = population.snp 
         WHERE population.Chromosome= '%s' """ % snp_name)
         search_snp = cursor.fetchall()
 
+        ####code for LD analysis:###
+        ##rsIDs are taken from query and made into tuple. 
+        rsIDs = [] 
+        result = search_snp
+        rsIDs = [i[0] for i in result]
+        rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
+        
+        ##calling wtf form class
+        form = OwnForm()
+        #making choices specific to query
+        form.rsid_select.choices = rsid_tuples
 
-        return render_template("Chromosome.html", name=snp_name,search_snp=search_snp)
+        if request.method == 'POST' and form.validate_on_submit():
+            #retrieving data from forms 
+            rsid_list = request.form.getlist('rsid_select')
+            population = form.population_select.data
+        
+            #getting dictionary of LD values for each RSID pair
+            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+            #getting heatmap components from LD values 
+            ret, mask = ld_graph_maker(ld_dict)
+
+            ####PLOTTING HEATMAP:
+            plt.figure()
+            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
+            plt.title('LD Heatmap')
+            #making bytes object to save to heatmap - makes into binary object
+            buf = BytesIO()
+            plt.savefig(buf, format="png")
+            buf.seek(0) 
+            #encoding the data which is then decoded when sent to html 
+            figdata_png = base64.b64encode(buf.getvalue())
+            
+            ###making downloadbale file. 
+            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
+            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+        return render_template("Chromosome.html", form=form, search_snp=search_snp)
     except:
         return "No information availabe for rs#: %s." % snp_name
 
-
-
-
-@app.route('/MAPPED_GENE/<snp_name>')
+@app.route('/MAPPED_GENE/<snp_name>', methods = ['GET', 'POST'])
 def MAPPED_GENE(snp_name):
-
     try:
     #connecting to database every time we generate a new route
         con = db.connect("GC.db", check_same_thread=False)
@@ -190,7 +227,7 @@ def MAPPED_GENE(snp_name):
         population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
         population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
-        population.SAS_Frequency
+        population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
 
         FROM gwas 
         INNER JOIN CADD ON gwas.snp = CADD.snp 
@@ -209,15 +246,47 @@ def MAPPED_GENE(snp_name):
 
         GO_search = cursor.fetchall()
 
+        ####code for LD analysis:###
+        ##rsIDs are taken from query and made into tuple. 
+        rsIDs = [] 
+        result = search_snp
+        rsIDs = [i[0] for i in result]
+        rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
         
+        ##calling wtf form class
+        form = OwnForm()
+        #making choices specific to query
+        form.rsid_select.choices = rsid_tuples
 
+        if request.method == 'POST' and form.validate_on_submit():
+            #retrieving data from forms 
+            rsid_list = request.form.getlist('rsid_select')
+            population = form.population_select.data
+        
+            #getting dictionary of LD values for each RSID pair
+            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+            #getting heatmap components from LD values 
+            ret, mask = ld_graph_maker(ld_dict)
 
-        return render_template("Map.html", name=snp_name, search_snp=search_snp, GO_search=GO_search)
+            ####PLOTTING HEATMAP:
+            plt.figure()
+            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
+            plt.title('LD Heatmap')
+            #making bytes object to save to heatmap - makes into binary object
+            buf = BytesIO()
+            plt.savefig(buf, format="png")
+            buf.seek(0) 
+            #encoding the data which is then decoded when sent to html 
+            figdata_png = base64.b64encode(buf.getvalue())
+            
+            ###making downloadbale file. 
+            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
+            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+        return render_template("Map.html", name=snp_name, search_snp=search_snp, GO_search=GO_search, form=form)
     except:
         return "No information availabe for %s." % snp_name
 
-
-@app.route('/Region/<snp_name>')
+@app.route('/Region/<snp_name>', methods = ['GET', 'POST'])
 def Region(snp_name):
     try:
         con = db.connect("GC.db", check_same_thread=False)
@@ -235,14 +304,14 @@ def Region(snp_name):
         print(gene2)
 
 
-            ########snp search######
+        ########snp search######
 
         #queried data is executed below to get all info from tables
         cursor.execute ("""SELECT  gwas.snp, gwas.Gene_name,gwas.p_value, gwas.location, population.Chromosome,
         population.Position, population.REF_Allele, 
         population.ALT_Allele, population.Minor_Allele, population.AFR_Frequency,
         population.AMR_Frequency, population.EAS_Frequency, population.EUR_Frequency, 
-        population.SAS_Frequency
+        population.SAS_Frequency, CADD.Raw_Score, CADD.PHRED
         FROM gwas 
         INNER JOIN CADD ON gwas.snp = CADD.snp 
         INNER JOIN population on CADD.snp = population.snp 
@@ -347,17 +416,52 @@ def Region(snp_name):
         plt.savefig(buf, format="png")
         buf.seek(0)
         figdata_png = base64.b64encode(buf.getvalue())
-    
 
+        ####code for LD analysis:###
+        ##rsIDs are taken from query and made into tuple. 
+        rsIDs = [] 
+        result = search_snp
+        rsIDs = [i[0] for i in result]
+        rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
+        
+        ##calling wtf form class
+        form = OwnForm()
+        #making choices specific to query
+        form.rsid_select.choices = rsid_tuples
 
+        if request.method == 'POST' and form.validate_on_submit():
+            #retrieving data from forms 
+            rsid_list = request.form.getlist('rsid_select')
+            population = form.population_select.data
+        
+            #getting dictionary of LD values for each RSID pair
+            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+            #getting heatmap components from LD values 
+            ret, mask = ld_graph_maker(ld_dict)
 
-        return render_template("Region.html", name=snp_name, search_snp=search_snp, all_region_GO_queries=all_region_GO_queries, result = figdata_png.decode('utf8'))
+            ####PLOTTING HEATMAP:
+            plt.figure()
+            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
+            plt.title('LD Heatmap')
+            #making bytes object to save to heatmap - makes into binary object
+            buf = BytesIO()
+            plt.savefig(buf, format="png")
+            buf.seek(0) 
+            #encoding the data which is then decoded when sent to html 
+            figdata_png = base64.b64encode(buf.getvalue())
+            
+            ###making downloadbale file. 
+            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
+            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+        return render_template("Region.html", name=snp_name, search_snp=search_snp, all_region_GO_queries=all_region_GO_queries,
+                                man_plot = figdata_png.decode('utf8'), form=form)
     except:
         return "No information availabe for %s." % snp_name
 
-
+##route for csv file download
+@app.route('/table/<filename>')
+def file_download(filename):
+    return send_from_directory('LD_files', filename)
 
 if __name__ == "__main__":
     app.run(debug=True, port=8001)
-
-
