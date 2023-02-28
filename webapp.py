@@ -12,13 +12,12 @@ from wtforms import StringField, SubmitField, SelectMultipleField, SelectField
 from wtforms.validators import InputRequired
 
 #for LD functions 
-from ld.LD_functions import ld_dict_maker, ld_graph_maker, ld_csv_maker
+from analysis_scripts.LD_functions import ld_dict_maker, ld_graph_maker, ld_csv_maker
 import matplotlib 
 matplotlib.use('Agg') 
 import matplotlib.pyplot as plt, mpld3
 import seaborn as sns
 import numpy as np
-import io
 from io import BytesIO
 from matplotlib.figure import Figure
 import base64
