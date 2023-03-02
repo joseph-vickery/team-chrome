@@ -1,6 +1,5 @@
 # Team Google Chrome - Type I Diabetes Web App
-
-### This web application contains information about SNPs related to Type I diabetes 
+> This web application contains information about SNPs related to Type I diabetes 
 
 ## Description 
 
@@ -17,6 +16,7 @@ The user interface has been designed to be simple and easy to use. Here is how t
 - Download this repository to your local computer. 
 - Download the libraires and packages needed for the application to run by using the requirements.txt file 
 - Run the file webapp.py with python, this should create a temporary server on which the application runs 
+- For a more detailed explaination of the github repository - see the repository layout section
 
 ### Navigating the app: 
 
@@ -35,3 +35,38 @@ The user interface has been designed to be simple and easy to use. Here is how t
 **Chromosome position:** If you want to query the database for a specific range of coordinates on the chromosome, type in “starting position,ending position” and this would return results located between the two coordinates entered. As the database only has data from chromosome 6, this information is assumed and so you can omit the 6 identifier at the start of their query. For example, if you want to query between 6:32421478 and 6:170063801, type in “32421478,170063801”. 
 
 **Mapped gene:** If you want to query the database for all the information pertaining to a mapped gene, type in the gene name. This query is not case-sensitive.  
+
+## Repository Layout ##
+```
+.
+
+├── LD_files            #contains LD matrix text file which is downloaded in LD analysis page
+│   └── LD_matrix.csv
+├── analysis_scripts    #contains LD functions used for LD analysis
+│   └── LD_functions.py
+├── data                #contains the data used to create database and code to build database (SNP_code.txt)
+│   ├── SNP_code.txt
+│   ├── CADD.csv
+│   ├── T1D_association.csv
+│   ├── chr6_df_cleaned.csv
+│   ├── gwas.csv
+│   └── pop_freq.txt
+├── templates           #contains html templates for web page rendering
+│   ├── Chromosome.html
+│   ├── LD.html
+│   ├── Map.html
+│   ├── Region.html
+│   ├── base.html
+│   ├── index.html
+│   └── search.html
+├── GC.db             #database used for web application
+├── README.md         #Read Me file -  see for app instructions
+├── requirements.txt  #use to download libraries and packages needed for app
+└── webapp.py         #code whihc runs application via Flask
+```
+
+## Credits ##
+Alex Vasquez <br>
+Maddy May Creach <br>
+Kelis Rossi <br>
+Joseph Vickery <br>
