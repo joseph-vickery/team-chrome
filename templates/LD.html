@@ -6,6 +6,7 @@
 <br>
 <!-- making the table for the LD values - iterate through dictonary to output keys and values-->
 <h2> Table of LD values </h2>
+<br>
 <table class="table table-striped">
   <thead class="thead-dark">
       <tr>
@@ -27,11 +28,13 @@
 <!-- display heatmap of LD values -->
     <br>
     <h2>Heatmap of LD values</h2>
+    <br>
     {% if result != None %}
     <img width="50%" height="auto" src="data:image/png;base64,{{ result }}">
     {% endif %}
     <br>
     <!-- download link for file-->
+    <br>
     <h2> Download text file here </h2>
     <html><body>
       <a href="{{ url_for('file_download', filename=filename) }}">Click here to download a text file of the LD values in a matrix</a>

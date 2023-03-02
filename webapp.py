@@ -420,40 +420,41 @@ def Region(snp_name):
         df=pd.DataFrame.from_dict(data_dict)
         
 
-        #change structure of the loop-- try iterows as seem to be overwriting everything 
+        #code to replace 'x10' with 'e' in the p_value so that it is written in scientific notation
         i=0
         #have a counter that starts with 0
-        for p_value_f in df['p_value']:  # produces this for all values 4.000000e-08
-            #df['p_value_f']=float(p_value_f.replace(' x 10', 'e')) #the replace is approved
+        for p_value_f in df['p_value']:  
             df.at[i,'p_value'] = p_value_f.replace(' x 10', 'e')
             i+=1  
-            #issue-so basically its changing evry value in column to last value that we loop through
+        
+        #convert p_value column to float
+        df['p_value']=df['p_value'].astype(float) 
 
-        df['p_value']=df['p_value'].astype(float) #make the p_value column a float
-
-            #create a df coloumn for the chromosome number
-        df['chr']=np.vectorize(lambda x: x.split(':')[0])(np.array(df['location'],dtype=str)) #for new column called chromosome, take where there is a : in 'location', split and take the values before it and transalte to new column.
-        #adjust position coloumn to only show the bits after :
-        df['location']=np.vectorize(lambda x:x.split(':')[1])(np.array(df['location'],dtype=str)) #split and keep the values after the dleimiter by [1], overwrote the locarion column
+        #split location values at (:), take everything before the delimiter and create a new column title chromosome
+        df['chromosome']=np.vectorize(lambda x: x.split(':')[0])(np.array(df['location'],dtype=str)) 
+        ##split and keep the values after the dleimiter by [1], overwrite the location column
+        df['location']=np.vectorize(lambda x:x.split(':')[1])(np.array(df['location'],dtype=str)) 
         df['location']=df['location'].astype(int)
         #-log_10 pvalue
-        df['-log_pv']=-np.log10(df.p_value) #convert to -log10 pvalue and store in new column of dataframe
+        df['-log_pvalue']=-np.log10(df.p_value) #convert to -log10 pvalue and store in new column of dataframe
 
-        #generating plot works
+        
 
         #group each snp by chromosome
-        df=df.sort_values(['chr','location'])  #inorder of location 
+        df=df.sort_values(['chromosome','location'])  #inorder of location 
         df.reset_index(inplace=True, drop=True); df['i']=df.index
 
         #generate plot
-        plot=sns.relplot(data=df, x='i', y='-log_pv', aspect=4,
-                        hue='chr', palette='bright', legend=None, linewidth=0)
-        chrom_df=df.groupby('chr')['i'].median()
-        plot.ax.set_xlabel('chr'); plot.ax.set_xticks(chrom_df)
+        plot=sns.relplot(data=df, x='i', y='-log_pvalue', aspect=4,
+                        hue='chromosome', palette='bright', legend=None, linewidth=0)
+        chrom_df=df.groupby('chromosome')['i'].median()
+        plot.ax.set_xlabel('chromosome'); plot.ax.set_xticks(chrom_df)
         plot.ax.set_xticklabels(chrom_df.index)
+        plot.ax.axhline(5.000000e-08, linestyle="--")  
         plot.fig.suptitle('Manhattan plot showing association between SNPs and Type I Diabetes')
+        
 
-        buf = BytesIO()
+        buf = BytesIO() 
         plt.savefig(buf, format="png")
         buf.seek(0)
         figdata_png = base64.b64encode(buf.getvalue())
