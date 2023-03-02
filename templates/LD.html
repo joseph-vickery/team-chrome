@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- back button -->
+<input type="button" value="back" onclick="history.back()"/>
+<br>
+<!-- making the table for the LD values - iterate through dictonary to output keys and values-->
+<h2> Table of LD values </h2>
+<table class="table table-striped">
+  <thead class="thead-dark">
+      <tr>
+    <thead>
+      <tr>
+        <th>SNP Pair</th>
+        <th>r<sup>2</sup> Value</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for key, value in ld_dict.items() %}
+     <tr>
+         <td> {{ key }} </td>
+         <td> {{ value }} </td>
+     </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<!-- display heatmap of LD values -->
+    <br>
+    <h2>Heatmap of LD values</h2>
+    {% if result != None %}
+    <img width="50%" height="auto" src="data:image/png;base64,{{ result }}">
+    {% endif %}
+    <br>
+    <!-- download link for file-->
+    <h2> Download text file here </h2>
+    <html><body>
+      <a href="{{ url_for('file_download', filename=filename) }}">Click here to download a text file of the LD values in a matrix</a>
+      </body></html>
+
+{% endblock %}

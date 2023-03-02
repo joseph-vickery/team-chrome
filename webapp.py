@@ -1,5 +1,5 @@
 #webapp packages
-from flask import Flask, render_template, url_for, redirect, request, send_from_directory
+from flask import Flask, render_template, url_for, redirect, request, send_from_directory, render_template_string
 
 #database package
 import sqlite3 as db
@@ -15,18 +15,16 @@ from wtforms.validators import InputRequired
 from analysis_scripts.LD_functions import ld_dict_maker, ld_graph_maker, ld_csv_maker
 import matplotlib 
 matplotlib.use('Agg') 
-import matplotlib.pyplot as plt, mpld3
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
 import seaborn as sns
 import numpy as np
 from io import BytesIO
-from matplotlib.figure import Figure
 import base64
 
 #libraries for manhattan plots
-import sqlite3
 import pandas as pd
 import matplotlib
-import matplotlib.pyplot as plt
 matplotlib.use('SVG')
 import numpy as np
 
@@ -40,15 +38,16 @@ class QueryForm(FlaskForm):
     snp_name = StringField('Enter valid input: ', validators=[InputRequired()])
     submit = SubmitField('Submit')
 
+###creating class for analysis query forms: SNP select, population and the submit button
 class OwnForm(FlaskForm):
+    ##making choices empty so can be adjusted to match query searches within app routes
     rsid_select = SelectMultipleField(u'rsid_list',coerce=str, choices =[])
-    population_select = SelectField(u'pop_list', coerce=str)
+    population_select = SelectField(u'pop_list', coerce=str, choices = [('ALL', 'ALL'), ('AFR', 'AFR'), ('AMR','AMR'), ('EAS','EAS'),('EUR','EUR'), ('SAS','SAS')])
     submit = SubmitField(u"Submit")
-    #takes the first point (the rsid) from the query result so becomes list of rsids
-    def __init__(self, *args, **kwargs):
-        super(OwnForm, self).__init__(*args, **kwargs)
-        self.population_select.choices = [('ALL', 'ALL'), ('AFR', 'AFR'), ('AMR','AMR'), ('EAS','EAS'),('EUR','EUR'), ('SAS','SAS')]
-                      
+
+### this is to make the plots the right size when rendered in html 
+rcParams.update({'figure.autolayout': True})
+
 #This is the home page 
 @app.route('/', methods = ['GET', 'POST'])
 def index():
@@ -58,21 +57,17 @@ def index():
         snp_name = form.snp_name.data
         #Redirect user to snp page if rs is typed
         if snp_name[:2]== "rs":
-            print('YAY IT HAS AN rsID')
             return redirect(url_for('SNP', snp_name= snp_name))
         #Redirect user to chromosome page if chr is typed
         if snp_name[:3] == "chr":
-            print('Going to chromosome page')
             return redirect(url_for('Chromosome',snp_name=snp_name))
         
         #Redirect user to region page if they enter two locations separated by a comma
         elif "," in snp_name:
-            print('Going to Region page')
             return redirect(url_for('Region', snp_name=snp_name))
         
         #redirect to mapped gene page if the beginning != rs or chr or ,
         elif snp_name != 'rs' or snp_name != 'chr' or "," not in snp_name:
-            print('REDIRECT TO MAPPED GENE')
             return redirect(url_for('MAPPED_GENE', snp_name=snp_name))
 
         #redirects to the "SNP" url down below app route
@@ -104,8 +99,8 @@ def SNP(snp_name):
 
         search_snp = cursor.fetchall()
 
-    ##########   GO TERM SEARCH   ##############
-    #query for GO terms from gene_name for SNP input
+        ##########   GO TERM SEARCH   ##############
+        #query for GO terms from gene_name for SNP input
 
         for row in search_snp:
             gene_name = row[1]
@@ -116,14 +111,14 @@ def SNP(snp_name):
             gene1, gene2 = [sep_genes[i] for i in (0, 1)]
             gene2 = gene2.strip()
 
-#query for GO terms from gene_name for SNP input
-#if there are two mapped genes run two separate queries for both of the genes
+    #query for GO terms from gene_name for SNP input
+    #if there are two mapped genes run two separate queries for both of the genes
         if ',' in gene_name:
             cursor = con.cursor()
             cursor.execute ("""SELECT * 
                 FROM GO 
                 WHERE Gene_name="%s" """ % gene1)
-            #set search_GO = "" for the html to output the correct query corresponding to the input
+        #set search_GO = "" for the html to output the correct query corresponding to the input
             search_GO = ""
 
             search_GO1 = cursor.fetchall()
@@ -135,7 +130,7 @@ def SNP(snp_name):
                     
             search_GO2 = cursor.fetchall()
 
-#if there is only one mapped gene run the query once
+    #if there is only one mapped gene run the query once
         else:
             cursor = con.cursor()
             cursor.execute ("""SELECT * 
@@ -175,41 +170,67 @@ def Chromosome(snp_name):
         search_snp = cursor.fetchall()
 
         ####code for LD analysis:###
-        ##rsIDs are taken from query and made into tuple. 
+        ##rsIDs are taken from query and made into tuple for form list. 
         rsIDs = [] 
         result = search_snp
         rsIDs = [i[0] for i in result]
         rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
         
-        ##calling wtf form class
+        ##calling wtf form class for analysis
         form = OwnForm()
         #making choices specific to query
         form.rsid_select.choices = rsid_tuples
 
+        ##checking if the form is working and the submit button has been pressed:
         if request.method == 'POST' and form.validate_on_submit():
-            #retrieving data from forms 
-            rsid_list = request.form.getlist('rsid_select')
-            population = form.population_select.data
-        
-            #getting dictionary of LD values for each RSID pair
-            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
-            #getting heatmap components from LD values 
-            ret, mask = ld_graph_maker(ld_dict)
-
-            ####PLOTTING HEATMAP:
-            plt.figure()
-            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
-            plt.title('LD Heatmap')
-            #making bytes object to save to heatmap - makes into binary object
-            buf = BytesIO()
-            plt.savefig(buf, format="png")
-            buf.seek(0) 
-            #encoding the data which is then decoded when sent to html 
-            figdata_png = base64.b64encode(buf.getvalue())
+            try:
+                #retrieving data from the forms 
+                rsid_list = request.form.getlist('rsid_select')
+                population = form.population_select.data
             
-            ###making downloadbale file. 
-            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
-            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+                #getting dictionary of LD values for each rsID pair - this function contains the API access
+                ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+                
+                ####creating HEATMAP####
+                
+                #getting heatmap components from LD values 
+                ret, mask = ld_graph_maker(ld_dict)
+
+                ##initialising figure
+                plt.figure()
+
+                #if the graph is too big, the annotations are removed due to it crowding up the graph and looking messy
+                if len(ret) > 15: 
+                    sns.heatmap(ret, cmap="RdYlGn_r", annot=False, mask=mask, vmin=0,vmax=1)
+                else: 
+                    sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask, vmin=0,vmax=1)
+                #setting plot title 
+                plt.title('LD Heatmap for population: {pop}'.format(pop=population))
+
+                #setting the x axis labels to be vertical so they don't overlap
+                plt.xticks(rotation=90)
+                plt.yticks(rotation=360)
+                
+                #making bytes object to save to heatmap - makes into binary object
+                buf = BytesIO()
+
+                #saving the figure as a png
+                plt.savefig(buf, format="png")
+                buf.seek(0) 
+
+                #encoding the data which is then decoded when sent to html 
+                figdata_png = base64.b64encode(buf.getvalue())
+                
+                ###making downloadable file - file name is passed to html which is used to access file from file download function 
+                filename = ld_csv_maker(df=ret)
+                #rendering the html template with the figure being decoded when sent to html page
+                return render_template('LD.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+            #error message if form fails for some reason. 
+            except: 
+                return render_template_string("""The search has errored. <br> Firstly, please ensure more than one SNP was selected. <br> 
+                Furthermore, There may not be any available information for this combination of SNPs and population. <br> Please try again with different parameters. <br>
+                If this is a persistant problem, it is likely you have made too many requests in a short amount of time and this link has thus been blocked from accessing the API server. <br> 
+                Please wait for 15 mins and try again or contact LDlink at NCILDlinkWebAdmin@mail.nih.gov who may be able to remedy this issue. """)
         return render_template("Chromosome.html", form=form, search_snp=search_snp)
     except:
         return "No information availabe for rs#: %s." % snp_name
@@ -247,41 +268,68 @@ def MAPPED_GENE(snp_name):
         GO_search = cursor.fetchall()
 
         ####code for LD analysis:###
-        ##rsIDs are taken from query and made into tuple. 
+        ##rsIDs are taken from query and made into tuple for form list. 
         rsIDs = [] 
         result = search_snp
         rsIDs = [i[0] for i in result]
         rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
         
-        ##calling wtf form class
+        ##calling wtf form class for analysis
         form = OwnForm()
         #making choices specific to query
         form.rsid_select.choices = rsid_tuples
 
+        ##checking if the form is working and the submit button has been pressed:
         if request.method == 'POST' and form.validate_on_submit():
-            #retrieving data from forms 
-            rsid_list = request.form.getlist('rsid_select')
-            population = form.population_select.data
-        
-            #getting dictionary of LD values for each RSID pair
-            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
-            #getting heatmap components from LD values 
-            ret, mask = ld_graph_maker(ld_dict)
-
-            ####PLOTTING HEATMAP:
-            plt.figure()
-            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
-            plt.title('LD Heatmap')
-            #making bytes object to save to heatmap - makes into binary object
-            buf = BytesIO()
-            plt.savefig(buf, format="png")
-            buf.seek(0) 
-            #encoding the data which is then decoded when sent to html 
-            figdata_png = base64.b64encode(buf.getvalue())
+            try:
+                #retrieving data from the forms 
+                rsid_list = request.form.getlist('rsid_select')
+                population = form.population_select.data
             
-            ###making downloadbale file. 
-            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
-            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+                #getting dictionary of LD values for each rsID pair - this function contains the API access
+                ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+                
+                ####creating HEATMAP####
+                
+                #getting heatmap components from LD values 
+                ret, mask = ld_graph_maker(ld_dict)
+
+                ##initialising figure
+                plt.figure()
+
+                #if the graph is too big, the annotations are removed due to it crowding up the graph and looking messy
+                if len(ret) > 15: 
+                    sns.heatmap(ret, cmap="RdYlGn_r", annot=False, mask=mask, vmin=0,vmax=1)
+                else: 
+                    sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask, vmin=0,vmax=1)
+                #setting plot title 
+                plt.title('LD Heatmap for population: {pop}'.format(pop=population))
+
+                #setting the x axis labels to be vertical so they don't overlap
+                plt.xticks(rotation=90)
+                plt.yticks(rotation=360)
+                
+                #making bytes object to save to heatmap - makes into binary object
+                buf = BytesIO()
+
+                #saving the figure as a png
+                plt.savefig(buf, format="png")
+                buf.seek(0) 
+
+                #encoding the data which is then decoded when sent to html 
+                figdata_png = base64.b64encode(buf.getvalue())
+                
+                ###making downloadable file - file name is passed to html which is used to access file from file download function 
+                filename = ld_csv_maker(df=ret)
+
+                #rendering the html template with the figure being decoded when sent to html page
+                return render_template('LD.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+            #error message if form fails for some reason. 
+            except: 
+                return render_template_string("""The search has errored. <br> Firstly, please ensure more than one SNP was selected. <br> 
+                Furthermore, There may not be any available information for this combination of SNPs and population. <br> Please try again with different parameters. <br>
+                If this is a persistant problem, it is likely you have made too many requests in a short amount of time and this link has thus been blocked from accessing the API server. <br> 
+                Please wait for 15 mins and try again or contact LDlink at NCILDlinkWebAdmin@mail.nih.gov who may be able to remedy this issue. """)
         return render_template("Map.html", name=snp_name, search_snp=search_snp, GO_search=GO_search, form=form)
     except:
         return "No information availabe for %s." % snp_name
@@ -295,14 +343,10 @@ def Region(snp_name):
     
         #separate the two locations from the user input by a comma
         sep_genes = snp_name.split(',')
-        print(sep_genes)
         #sorted takes the list and arranges from lowest to greatest.
         sorted_genes = sorted(sep_genes)
         gene1, gene2 = [sorted_genes[i] for i in (0, 1)]
         gene2 = gene2.strip()
-        print(gene1)
-        print(gene2)
-
 
         ########snp search######
 
@@ -358,7 +402,8 @@ def Region(snp_name):
                 #combine the query information into one list and append this list to list containing all the mapped gene queries
                 new_query = [gene_name, go_term_accession, go_name, go_definition, go_evidence, go_domain]
                 all_region_GO_queries.append(new_query)
-        print(search_snp)
+
+        ###Code for creating Manhattan Plot ###        
         man_info=[]
         for row in search_snp:
             rs_ID = row[0]
@@ -367,7 +412,7 @@ def Region(snp_name):
             new_row=[rs_ID, p_value, location]        
             man_info.append(new_row)
        
-                #dictionary
+            #creating dictionary for man plot 
         data_dict = {'snp': [row[0] for row in man_info],
                     'p_value':[row[1] for row in man_info],
                     'location': [row[2] for row in man_info]}
@@ -380,17 +425,14 @@ def Region(snp_name):
         #have a counter that starts with 0
         for p_value_f in df['p_value']:  # produces this for all values 4.000000e-08
             #df['p_value_f']=float(p_value_f.replace(' x 10', 'e')) #the replace is approved
-            #print(float(p_value_f.replace(' x 10', 'e')))
             df.at[i,'p_value'] = p_value_f.replace(' x 10', 'e')
-            i+=1
-        print(df)        
+            i+=1  
             #issue-so basically its changing evry value in column to last value that we loop through
 
         df['p_value']=df['p_value'].astype(float) #make the p_value column a float
 
             #create a df coloumn for the chromosome number
         df['chr']=np.vectorize(lambda x: x.split(':')[0])(np.array(df['location'],dtype=str)) #for new column called chromosome, take where there is a : in 'location', split and take the values before it and transalte to new column.
-        print(df)
         #adjust position coloumn to only show the bits after :
         df['location']=np.vectorize(lambda x:x.split(':')[1])(np.array(df['location'],dtype=str)) #split and keep the values after the dleimiter by [1], overwrote the locarion column
         df['location']=df['location'].astype(int)
@@ -402,7 +444,6 @@ def Region(snp_name):
         #group each snp by chromosome
         df=df.sort_values(['chr','location'])  #inorder of location 
         df.reset_index(inplace=True, drop=True); df['i']=df.index
-        print(df)
 
         #generate plot
         plot=sns.relplot(data=df, x='i', y='-log_pv', aspect=4,
@@ -418,41 +459,69 @@ def Region(snp_name):
         figdata_png = base64.b64encode(buf.getvalue())
 
         ####code for LD analysis:###
-        ##rsIDs are taken from query and made into tuple. 
+        ##rsIDs are taken from query and made into tuple for form list. 
         rsIDs = [] 
         result = search_snp
         rsIDs = [i[0] for i in result]
         rsid_tuples = [(a,b) for a,b in zip(rsIDs, rsIDs)]
         
-        ##calling wtf form class
+        ##calling wtf form class for analysis
         form = OwnForm()
         #making choices specific to query
         form.rsid_select.choices = rsid_tuples
 
+        ##checking if the form is working and the submit button has been pressed:
         if request.method == 'POST' and form.validate_on_submit():
-            #retrieving data from forms 
-            rsid_list = request.form.getlist('rsid_select')
-            population = form.population_select.data
-        
-            #getting dictionary of LD values for each RSID pair
-            ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
-            #getting heatmap components from LD values 
-            ret, mask = ld_graph_maker(ld_dict)
-
-            ####PLOTTING HEATMAP:
-            plt.figure()
-            sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask)
-            plt.title('LD Heatmap')
-            #making bytes object to save to heatmap - makes into binary object
-            buf = BytesIO()
-            plt.savefig(buf, format="png")
-            buf.seek(0) 
-            #encoding the data which is then decoded when sent to html 
-            figdata_png = base64.b64encode(buf.getvalue())
+            try:
+                #retrieving data from the forms 
+                rsid_list = request.form.getlist('rsid_select')
+                population = form.population_select.data
             
-            ###making downloadbale file. 
-            file, filename = ld_csv_maker(df=ret, ld_dict=ld_dict, population=population)
-            return render_template('table.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+                #getting dictionary of LD values for each rsID pair - this function contains the API access
+                ld_dict = ld_dict_maker(rsid_list=rsid_list, population=population)
+                
+                ####creating HEATMAP####
+                
+                #getting heatmap components from LD values 
+                ret, mask = ld_graph_maker(ld_dict)
+
+                ##initialising figure
+                plt.figure()
+
+                #if the graph is too big, the annotations are removed due to it crowding up the graph and looking messy
+                if len(ret) > 15: 
+                    sns.heatmap(ret, cmap="RdYlGn_r", annot=False, mask=mask, vmin=0,vmax=1)
+                else: 
+                    sns.heatmap(ret, cmap="RdYlGn_r", annot=True, mask=mask, vmin=0,vmax=1)
+                #setting plot title 
+                plt.title('LD Heatmap for population: {pop}'.format(pop=population))
+
+                #setting the x axis labels to be vertical so they don't overlap
+                plt.xticks(rotation=90)
+                plt.yticks(rotation=360)
+                
+                #making bytes object to save to heatmap - makes into binary object
+                buf = BytesIO()
+
+                #saving the figure as a png
+                plt.savefig(buf, format="png")
+                buf.seek(0) 
+
+                #encoding the data which is then decoded when sent to html 
+                figdata_png = base64.b64encode(buf.getvalue())
+                
+                ###making downloadable file - file name is passed to html which is used to access file from file download function 
+                filename = ld_csv_maker(df=ret)
+
+                #rendering the html template with the figure being decoded when sent to html page
+                return render_template('LD.html', ld_dict=ld_dict, result=figdata_png.decode('utf8'), filename=filename)
+            #error message if form fails for some reason. 
+            except: 
+                return render_template_string("""The search has errored. <br> Firstly, please ensure more than one SNP was selected. <br> 
+                Furthermore, There may not be any available information for this combination of SNPs and population. <br> Please try again with different parameters. <br>
+                If this is a persistant problem, it is likely you have made too many requests in a short amount of time and this link has thus been blocked from accessing the API server. <br> 
+                Please wait for 15 mins and try again or contact LDlink at NCILDlinkWebAdmin@mail.nih.gov who may be able to remedy this issue. """)
+            
         return render_template("Region.html", name=snp_name, search_snp=search_snp, all_region_GO_queries=all_region_GO_queries,
                                 man_plot = figdata_png.decode('utf8'), form=form)
     except:
