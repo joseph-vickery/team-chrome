@@ -451,7 +451,7 @@ def Region(snp_name):
         chrom_df=df.groupby('chr')['i'].median()
         plot.ax.set_xlabel('chr'); plot.ax.set_xticks(chrom_df)
         plot.ax.set_xticklabels(chrom_df.index)
-        plot.fig.suptitle('Manhattan plot showing association between SNPs and Diabetes Mellitus 1 ')
+        plot.fig.suptitle('Manhattan plot showing association between SNPs and Type I Diabetes')
 
         buf = BytesIO()
         plt.savefig(buf, format="png")
