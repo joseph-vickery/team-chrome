@@ -45,7 +45,7 @@ The user interface has been designed to be simple and easy to use. Here is how t
 ├── analysis_scripts    #contains LD functions used for LD analysis
 │   └── LD_functions.py
 ├── data                #contains the data used to create database and code to build database (SNP_code.txt)
-│   ├── SNP_code.txt
+│   ├── SQL_code.txt
 │   ├── CADD.csv
 │   ├── T1D_association.csv
 │   ├── chr6_df_cleaned.csv
