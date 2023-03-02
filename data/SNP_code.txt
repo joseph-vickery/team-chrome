@@ -1,0 +1,48 @@
+#Create a table to contain the CADD data
+CREATE TABLE "CADD" (
+	"snp"	VARCHAR(15),
+	"Raw_Score"	INT,
+	"PHRED"	INT,
+	PRIMARY KEY("snp")
+);
+
+#Create a table to contain the GO term information data
+CREATE TABLE "GO" (
+	"Index" INT,
+	"Gene_name" VARCHAR(10),
+	"GO_term_accession" VARCHAR(12),
+	"GO_term_name" VARCHAR(100),
+	"GO_term_definition" VARCHAR(400),
+	"GO_term_evidence_code" VARCHAR(5),
+	"GO_domain" VARCHAR(30),
+	PRIMARY KEY("Index", "Gene_name")
+	);
+
+#Create a table to contain the population allele frequency data
+CREATE TABLE "population" (
+	"snp" VARCHAR(15),
+	"Chromosome" VARCHAR(10),
+	"Position" INT,
+	"REF_Allele" VARCHAR(3),
+	"ALT_Allele" VARCHAR(3),
+	"Minor_Allele" VARCHAR(3),
+	"AFR_Frequency" INT,
+	"AMR_Frequency" INT,
+	"EAS_Frequency" INT,
+	"EUR_Frequency" INT,
+	"SAS_Frequency" INT,
+	Primary Key("snp")
+	);
+
+#Create a table to contain the GWAS information
+CREATE TABLE "gwas" (
+	"snp"	VARCHAR(15),
+	"Gene_name"	VARCHAR(10),
+	"p_value"	INT,
+	"location"	VARCHAR(10),
+	PRIMARY KEY("snp")
+);
+
+#Delete all rows from the GO table where there is null information present
+DELETE FROM "GO"
+WHERE "GO_term_accession" IS NULL;
