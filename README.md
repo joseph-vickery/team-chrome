@@ -60,6 +60,7 @@ The user interface has been designed to be simple and easy to use. Here is how t
 │   ├── index.html
 │   └── search.html
 ├── GC.db             #database used for web application
+├── team_google_chrome_documentation.pdf # documentation for app.
 ├── README.md         #Read Me file -  see for app instructions
 ├── requirements.txt  #use to download libraries and packages needed for app
 └── webapp.py         #code whihc runs application via Flask
